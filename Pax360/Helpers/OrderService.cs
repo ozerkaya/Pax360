@@ -83,6 +83,9 @@ namespace Pax360.Helpers
 
                 if (result.Item1)
                 {
+                    _httpContextAccessor.HttpContext.Session.SetObject("ORDERINPUT", new List<OrderInputModel>());
+                    List<OrderInputModel> list = _httpContextAccessor.HttpContext.Session.GetObject<List<OrderInputModel>>("ORDERINPUT") ?? new List<OrderInputModel>();
+
                     return string.Empty;
                 }
                 else

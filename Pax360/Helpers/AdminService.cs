@@ -274,6 +274,7 @@ namespace Pax360.Helpers
                         Module_Users = role.Module_Users,
                         Module_Role = role.Module_Role,
                         Module_Order = role.Module_Order,
+                        Module_Offer = role.Module_Offer,
                     };
 
                     _db.Authorizations.Add(auth);
@@ -341,6 +342,7 @@ namespace Pax360.Helpers
                         Module_Users = role.Module_Users,
                         Module_Role = role.Module_Role,
                         Module_Order = role.Module_Order,
+                        Module_Offer = role.Module_Offer,
                     };
 
                     _db.Authorizations.Add(auth);

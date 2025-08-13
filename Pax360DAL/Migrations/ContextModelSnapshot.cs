@@ -30,6 +30,9 @@ namespace Pax360DAL.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
 
+                    b.Property<bool>("Module_Offer")
+                        .HasColumnType("bit");
+
                     b.Property<bool>("Module_Order")
                         .HasColumnType("bit");
 
@@ -47,6 +50,70 @@ namespace Pax360DAL.Migrations
                     b.ToTable("Authorizations");
                 });
 
+            modelBuilder.Entity("Pax360DAL.Models.Offers", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
+
+                    b.Property<string>("MusteriAdi")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("TeklifSartlari")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("TeklifStatus")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid>("cari_Guid")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("cari_kod")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("ID");
+
+                    b.ToTable("Offers");
+                });
+
+            modelBuilder.Entity("Pax360DAL.Models.OffersItem", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
+
+                    b.Property<int>("Adet")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("Fiyat")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<int>("OfferID")
+                        .HasColumnType("int");
+
+                    b.Property<string>("UrunAdi")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UrunKodu")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("ID");
+
+                    b.HasIndex("OfferID");
+
+                    b.ToTable("OffersItem");
+                });
+
             modelBuilder.Entity("Pax360DAL.Models.RoleTypes", b =>
                 {
                     b.Property<int>("ID")
@@ -54,6 +121,9 @@ namespace Pax360DAL.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
+
+                    b.Property<bool>("Module_Offer")
+                        .HasColumnType("bit");
 
                     b.Property<bool>("Module_Order")
                         .HasColumnType("bit");
@@ -148,6 +218,22 @@ namespace Pax360DAL.Migrations
                     b.HasKey("ID");
 
                     b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("Pax360DAL.Models.OffersItem", b =>
+                {
+                    b.HasOne("Pax360DAL.Models.Offers", "Offer")
+                        .WithMany("OfferItems")
+                        .HasForeignKey("OfferID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Offer");
+                });
+
+            modelBuilder.Entity("Pax360DAL.Models.Offers", b =>
+                {
+                    b.Navigation("OfferItems");
                 });
 #pragma warning restore 612, 618
         }

@@ -124,6 +124,20 @@
                                 </ul>
                             </li>
                         }
+                        @if (HttpContextAccessor.HttpContext.Session.GetString("Module_Offer")?.ToString() == "True")
+                        {
+                            <li class="has_sub">
+                                <a href="#" class="waves-effect"><i class="fas fa-edit"></i><span> Teklifler </span> </a>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="/Offer/SelectCompany">Teklif Ekle</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Offer/OfferList">Sipariş Listesi</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        }
                         @if (HttpContextAccessor.HttpContext.Session.GetString("Module_Users")?.ToString() == "True")
                         {
                             <li class="has_sub">
@@ -167,7 +181,7 @@
             });
 
             //sleep = milliseconds => new Promise(resolve => setTimeout(resolve, milliseconds));
-            ConfirmationsCount();
+            // ConfirmationsCount();
         });
     </script>
     <!-- jQuery  -->

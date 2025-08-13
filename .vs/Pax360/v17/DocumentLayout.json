@@ -1,7 +1,72 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\Pax360\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C9238B47-ABA5-4E82-A525-FC3A1C32A3C5}|Pax360\\Pax360.csproj|c:\\users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\pax360\\controllers\\offercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9238B47-ABA5-4E82-A525-FC3A1C32A3C5}|Pax360\\Pax360.csproj|solutionrelative:pax360\\controllers\\offercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9238B47-ABA5-4E82-A525-FC3A1C32A3C5}|Pax360\\Pax360.csproj|c:\\users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\pax360\\views\\offer\\offerlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C9238B47-ABA5-4E82-A525-FC3A1C32A3C5}|Pax360\\Pax360.csproj|solutionrelative:pax360\\views\\offer\\offerlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\Pax360\\Pax360DAL\\Migrations\\20250813184506_ver10.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Pax360DAL\\Migrations\\20250813184506_ver10.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30F85695-904C-457D-829F-D81837349587}|Pax360DAL\\Pax360DAL.csproj|c:\\users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\pax360dal\\models\\offers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30F85695-904C-457D-829F-D81837349587}|Pax360DAL\\Pax360DAL.csproj|solutionrelative:pax360dal\\models\\offers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9238B47-ABA5-4E82-A525-FC3A1C32A3C5}|Pax360\\Pax360.csproj|c:\\users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\pax360\\helpers\\offerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9238B47-ABA5-4E82-A525-FC3A1C32A3C5}|Pax360\\Pax360.csproj|solutionrelative:pax360\\helpers\\offerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9238B47-ABA5-4E82-A525-FC3A1C32A3C5}|Pax360\\Pax360.csproj|c:\\users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\pax360\\models\\offerlistmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9238B47-ABA5-4E82-A525-FC3A1C32A3C5}|Pax360\\Pax360.csproj|solutionrelative:pax360\\models\\offerlistmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9238B47-ABA5-4E82-A525-FC3A1C32A3C5}|Pax360\\Pax360.csproj|c:\\users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\pax360\\views\\offer\\selectcompany.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C9238B47-ABA5-4E82-A525-FC3A1C32A3C5}|Pax360\\Pax360.csproj|solutionrelative:pax360\\views\\offer\\selectcompany.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9238B47-ABA5-4E82-A525-FC3A1C32A3C5}|Pax360\\Pax360.csproj|c:\\users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\pax360\\models\\offerdetailsmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9238B47-ABA5-4E82-A525-FC3A1C32A3C5}|Pax360\\Pax360.csproj|solutionrelative:pax360\\models\\offerdetailsmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9238B47-ABA5-4E82-A525-FC3A1C32A3C5}|Pax360\\Pax360.csproj|c:\\users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\pax360\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C9238B47-ABA5-4E82-A525-FC3A1C32A3C5}|Pax360\\Pax360.csproj|solutionrelative:pax360\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9238B47-ABA5-4E82-A525-FC3A1C32A3C5}|Pax360\\Pax360.csproj|c:\\users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\pax360\\views\\offer\\offer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C9238B47-ABA5-4E82-A525-FC3A1C32A3C5}|Pax360\\Pax360.csproj|solutionrelative:pax360\\views\\offer\\offer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9238B47-ABA5-4E82-A525-FC3A1C32A3C5}|Pax360\\Pax360.csproj|c:\\users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\pax360\\models\\orderdetailsmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9238B47-ABA5-4E82-A525-FC3A1C32A3C5}|Pax360\\Pax360.csproj|solutionrelative:pax360\\models\\orderdetailsmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9238B47-ABA5-4E82-A525-FC3A1C32A3C5}|Pax360\\Pax360.csproj|c:\\users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\pax360\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9238B47-ABA5-4E82-A525-FC3A1C32A3C5}|Pax360\\Pax360.csproj|solutionrelative:pax360\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9238B47-ABA5-4E82-A525-FC3A1C32A3C5}|Pax360\\Pax360.csproj|c:\\users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\pax360\\helpers\\mikrohelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9238B47-ABA5-4E82-A525-FC3A1C32A3C5}|Pax360\\Pax360.csproj|solutionrelative:pax360\\helpers\\mikrohelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9238B47-ABA5-4E82-A525-FC3A1C32A3C5}|Pax360\\Pax360.csproj|c:\\users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\pax360\\controllers\\jscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9238B47-ABA5-4E82-A525-FC3A1C32A3C5}|Pax360\\Pax360.csproj|solutionrelative:pax360\\controllers\\jscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30F85695-904C-457D-829F-D81837349587}|Pax360DAL\\Pax360DAL.csproj|c:\\users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\pax360dal\\models\\offersitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30F85695-904C-457D-829F-D81837349587}|Pax360DAL\\Pax360DAL.csproj|solutionrelative:pax360dal\\models\\offersitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30F85695-904C-457D-829F-D81837349587}|Pax360DAL\\Pax360DAL.csproj|c:\\users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\pax360dal\\context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30F85695-904C-457D-829F-D81837349587}|Pax360DAL\\Pax360DAL.csproj|solutionrelative:pax360dal\\context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +74,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 16,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,6 +119,214 @@
             {
               "$type": "Bookmark",
               "Name": "ST:133:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "20250813184506_ver10.cs",
+              "DocumentMoniker": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\Pax360\\Pax360DAL\\Migrations\\20250813184506_ver10.cs",
+              "RelativeDocumentMoniker": "Pax360DAL\\Migrations\\20250813184506_ver10.cs",
+              "ToolTip": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\Pax360\\Pax360DAL\\Migrations\\20250813184506_ver10.cs",
+              "RelativeToolTip": "Pax360DAL\\Migrations\\20250813184506_ver10.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T18:45:06.548Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OfferList.cshtml",
+              "DocumentMoniker": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\Pax360\\Pax360\\Views\\Offer\\OfferList.cshtml",
+              "RelativeDocumentMoniker": "Pax360\\Views\\Offer\\OfferList.cshtml",
+              "ToolTip": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\Pax360\\Pax360\\Views\\Offer\\OfferList.cshtml",
+              "RelativeToolTip": "Pax360\\Views\\Offer\\OfferList.cshtml",
+              "ViewState": "AQIAACAAAAAAAAAAAAAawCYAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-13T17:51:45.116Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\Pax360\\Pax360\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Pax360\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\Pax360\\Pax360\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Pax360\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAGkAAAAAAAAAAAAAAIcAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-13T17:50:33.775Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MikroHelper.cs",
+              "DocumentMoniker": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\Pax360\\Pax360\\Helpers\\MikroHelper.cs",
+              "RelativeDocumentMoniker": "Pax360\\Helpers\\MikroHelper.cs",
+              "ToolTip": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\Pax360\\Pax360\\Helpers\\MikroHelper.cs",
+              "RelativeToolTip": "Pax360\\Helpers\\MikroHelper.cs",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAkwFUAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T17:28:30.581Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "OfferDetailsModel.cs",
+              "DocumentMoniker": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\Pax360\\Pax360\\Models\\OfferDetailsModel.cs",
+              "RelativeDocumentMoniker": "Pax360\\Models\\OfferDetailsModel.cs",
+              "ToolTip": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\Pax360\\Pax360\\Models\\OfferDetailsModel.cs",
+              "RelativeToolTip": "Pax360\\Models\\OfferDetailsModel.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAIA1wBIAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T17:28:17.393Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "OfferController.cs",
+              "DocumentMoniker": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\Pax360\\Pax360\\Controllers\\OfferController.cs",
+              "RelativeDocumentMoniker": "Pax360\\Controllers\\OfferController.cs",
+              "ToolTip": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\Pax360\\Pax360\\Controllers\\OfferController.cs",
+              "RelativeToolTip": "Pax360\\Controllers\\OfferController.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAmwC4AAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T17:27:49.818Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\Pax360\\Pax360\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "Pax360\\Controllers\\OrderController.cs",
+              "ToolTip": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\Pax360\\Pax360\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "Pax360\\Controllers\\OrderController.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAawJcAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T17:26:47.27Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Offers.cs",
+              "DocumentMoniker": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\Pax360\\Pax360DAL\\Models\\Offers.cs",
+              "RelativeDocumentMoniker": "Pax360DAL\\Models\\Offers.cs",
+              "ToolTip": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\Pax360\\Pax360DAL\\Models\\Offers.cs",
+              "RelativeToolTip": "Pax360DAL\\Models\\Offers.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAA0wBEAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T15:45:44.229Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "OfferService.cs",
+              "DocumentMoniker": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\Pax360\\Pax360\\Helpers\\OfferService.cs",
+              "RelativeDocumentMoniker": "Pax360\\Helpers\\OfferService.cs",
+              "ToolTip": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\Pax360\\Pax360\\Helpers\\OfferService.cs",
+              "RelativeToolTip": "Pax360\\Helpers\\OfferService.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAASwCUAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T17:22:58.08Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "OfferListModel.cs",
+              "DocumentMoniker": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\Pax360\\Pax360\\Models\\OfferListModel.cs",
+              "RelativeDocumentMoniker": "Pax360\\Models\\OfferListModel.cs",
+              "ToolTip": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\Pax360\\Pax360\\Models\\OfferListModel.cs",
+              "RelativeToolTip": "Pax360\\Models\\OfferListModel.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAIA1wB0AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T17:32:34.679Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SelectCompany.cshtml",
+              "DocumentMoniker": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\Pax360\\Pax360\\Views\\Offer\\SelectCompany.cshtml",
+              "RelativeDocumentMoniker": "Pax360\\Views\\Offer\\SelectCompany.cshtml",
+              "ToolTip": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\Pax360\\Pax360\\Views\\Offer\\SelectCompany.cshtml",
+              "RelativeToolTip": "Pax360\\Views\\Offer\\SelectCompany.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-13T18:38:21.55Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "JSController.cs",
+              "DocumentMoniker": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\Pax360\\Pax360\\Controllers\\JSController.cs",
+              "RelativeDocumentMoniker": "Pax360\\Controllers\\JSController.cs",
+              "ToolTip": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\Pax360\\Pax360\\Controllers\\JSController.cs",
+              "RelativeToolTip": "Pax360\\Controllers\\JSController.cs",
+              "ViewState": "AQIAAIYAAAAAAAAAAAAswJEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T17:24:35.696Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Offer.cshtml",
+              "DocumentMoniker": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\Pax360\\Pax360\\Views\\Offer\\Offer.cshtml",
+              "RelativeDocumentMoniker": "Pax360\\Views\\Offer\\Offer.cshtml",
+              "ToolTip": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\Pax360\\Pax360\\Views\\Offer\\Offer.cshtml",
+              "RelativeToolTip": "Pax360\\Views\\Offer\\Offer.cshtml",
+              "ViewState": "AQIAACEAAAAAAAAAAAAuwDkAAACcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-13T17:21:46.816Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "OrderDetailsModel.cs",
+              "DocumentMoniker": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\Pax360\\Pax360\\Models\\OrderDetailsModel.cs",
+              "RelativeDocumentMoniker": "Pax360\\Models\\OrderDetailsModel.cs",
+              "ToolTip": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\Pax360\\Pax360\\Models\\OrderDetailsModel.cs",
+              "RelativeToolTip": "Pax360\\Models\\OrderDetailsModel.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAswBYAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T17:42:29.533Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Context.cs",
+              "DocumentMoniker": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\Pax360\\Pax360DAL\\Context.cs",
+              "RelativeDocumentMoniker": "Pax360DAL\\Context.cs",
+              "ToolTip": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\Pax360\\Pax360DAL\\Context.cs",
+              "RelativeToolTip": "Pax360DAL\\Context.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAQwB4AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T17:18:38.35Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "OffersItem.cs",
+              "DocumentMoniker": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\Pax360\\Pax360DAL\\Models\\OffersItem.cs",
+              "RelativeDocumentMoniker": "Pax360DAL\\Models\\OffersItem.cs",
+              "ToolTip": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\Pax360\\Pax360DAL\\Models\\OffersItem.cs",
+              "RelativeToolTip": "Pax360DAL\\Models\\OffersItem.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T17:16:19.146Z",
+              "EditorCaption": ""
             }
           ]
         }

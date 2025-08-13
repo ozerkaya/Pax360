@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Azure;
+using Microsoft.EntityFrameworkCore;
 using Pax360DAL.Models;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -17,11 +18,15 @@ namespace Pax360DAL
         public DbSet<RoleTypes> RoleTypes { get; set; }
         public DbSet<Teams> Teams { get; set; }
         public DbSet<Authorizations> Authorizations { get; set; }
-       
+        public DbSet<Offers> Offers { get; set; }
+        public DbSet<OffersItem> OffersItem { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-
+            modelBuilder.Entity<Offers>()
+              .HasMany(c => c.OfferItems)
+              .WithOne(e => e.Offer)
+              .HasForeignKey(s => s.OfferID);
         }
-
     }
 }

@@ -1,0 +1,223 @@
+﻿@model Pax360.Models.OfferListModel
+@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+
+@using X.PagedList.Mvc.Core;
+@using X.PagedList;
+@using X.PagedList.Web.Common;
+
+@{
+    ViewData["Title"] = "Users";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    var durumList = new List<SelectListItem>()
+{
+             new SelectListItem { Text = "Seçiniz", Value = "" },
+             new SelectListItem { Text = "Yolda", Value = "Yolda" },
+             new SelectListItem { Text = "Depoda", Value = "Depoda" },
+             new SelectListItem { Text = "Antrepoda", Value = "Antrepoda" },
+             new SelectListItem { Text = "Teslim Edildi", Value = "Teslim Edildi" },
+             new SelectListItem { Text = "Kurulumda", Value = "Kurulumda" },
+    };
+}
+
+
+@using (Html.BeginForm())
+{
+    <div class="content">
+        @await Html.PartialAsync("_Messages", new Dictionary<string, string> { { "ErrorMessage", Model.ErrorMessage }, { "SuccessMessage", Model.SuccessMessage } })
+        <div class="container">
+            @await Html.PartialAsync("_PageHeader", new Dictionary<string, string> { { "UserName", @HttpContextAccessor.HttpContext.Session.GetString("NAMESURNAME") }, { "Page", "Sipariş Listesi" } })
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-color panel-info">
+                        <div class="panel-heading" style="padding:8px 10px;">
+                            <a href="#"><h3 class="panel-title">SİPARİŞ İŞLEMLERİ</h3></a>
+                        </div>
+                        <div class="card-box" style="padding: 18px !important;border:none;margin-bottom:0px;">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="form-group">
+                                        <div class="form-group">
+                                            @Html.Label("Müşteri Ünvanı")
+                                            @Html.DropDownListFor(ok => ok.SelectedCari, new SelectList(Model.MikroCompanyList, "Value", "Text"), new { @class = "form-control select2" })
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2">
+                                    <button name="operation" type="submit" class="btn btn-facebook width-md waves-effect" value="Search" style="margin-top:21px;padding:7px;min-width: 70px;">Ara</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            @if (Model.OfferList.FirstOrDefault() != null && Model.OfferList.FirstOrDefault().OfferItems != null)
+            {
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="panel panel-color panel-info">
+                            <div class="panel-heading" style="border: none !important; padding: 15px 20px; border-radius:4px 4px 0 0;background-color: #387ec3;color: #fff;">
+                                <a href="#"><h3 class="panel-title" style="color:#fff;"><a href="/Offer/OfferList" style="padding-right: 10px;"><i class="fas fa-refresh"></i></a> SİPARİŞ KALEM LİSTESİ </h3></a>
+                            </div>
+                            <div class="panel-body" style="padding:0px !important">
+                                <div id="no-more-tables">
+                                    <table class="table m-0 col-sm-12 table-colored-bordered table-striped table-condensed table-bordered-info cf sortable">
+                                        <thead class="cf">
+                                            <tr>
+                                                <th>ID</th>
+                                                <th>Ürün Adı</th>
+                                                <th>Ürün Kodu</th>
+                                                <th>Adet</th>
+                                                <th>Fiyat</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @{
+                                                @foreach (var item in Model.OfferList.FirstOrDefault().OfferItems)
+                                                {
+                                                    <tr style="margin-top: 10px;">
+                                                        <td data-title="ID">
+                                                            @item.ID
+                                                        </td>
+                                                        <td data-title="Ürün Adı">
+                                                            @item.UrunAdi
+                                                        </td>
+                                                        <td data-title="Ürün Kodu">
+                                                            @item.UrunKodu
+                                                        </td>
+                                                        <td data-title="Adet">
+                                                            @item.Adet
+                                                        </td>
+                                                        <td data-title="Fiyat">
+                                                            @item.Fiyat
+                                                        </td>
+                                                    </tr>
+                                                }
+                                            }
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-color panel-info">
+                        <div class="panel-heading" style="border: none !important; padding: 15px 20px; border-radius:4px 4px 0 0;background-color: #387ec3;color: #fff;">
+                            <a href="#"><h3 class="panel-title" style="color:#fff;"><a href="/Offer/OfferList" style="padding-right: 10px;"><i class="fas fa-refresh"></i></a> SİPARİŞ LİSTESİ </h3></a>
+                        </div>
+
+                        <div class="panel-body" style="padding:0px !important">
+                            <div id="no-more-tables">
+                                <table class="table m-0 col-sm-12 table-colored-bordered table-striped table-condensed table-bordered-info cf sortable">
+                                    <thead class="cf">
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Müşteri Ünvanı</th>
+                                            <th>Cari Kod</th>
+                                            <th>Teklif Statüsü</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @{
+                                            int i = 1;
+                                            @foreach (var item in Model.OfferList)
+                                            {
+                                                <tr style="margin-top: 10px;">
+                                                    <td data-title="ID">
+                                                        @item.ID
+                                                    </td>
+                                                    <td data-title="Müşteri Ünvanı">
+                                                        @item.MusteriAdi
+                                                    </td>
+                                                    <td data-title="Cari Kod">
+                                                        @item.cari_kod
+                                                    </td>
+                                                    <td data-title="Teklif Statüsü">
+                                                        @item.TeklifStatus
+                                                    </td>
+                                                    <td data-title="İşlemler" style="width:20px;">
+                                                        <div class="btn-group">
+                                                            <button type="button" class="btn btn-facebook width-md waves-effect" data-toggle="dropdown" aria-expanded="false"><i class="fas fa-cog" style="color: #fff;"></i></button>
+                                                            <ul class="dropdown-menu dropdown-menu-right" style="padding:5px;">
+                                                                <li>
+                                                                    <a class="btn btn-default btn-block" href="/Offer/OfferList?DetailID=@item.ID" style="background-color: transparent;margin-top:3px;">İncele</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                i++;
+                                            }
+                                        }
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+
+                        <div class="text-right">
+                            <center>
+                                <ul class="pagination pagination-split m-t-0">
+                                    @Html.PagedListPager(new StaticPagedList<Pax360DAL.Models.Offers>(Model.OfferList, Model.PagingMetaData), page => Url.Action("OfferList", new
+                                        {
+                                            page,
+                                        }), PagedListRenderOptions.ClassicPlusFirstAndLast)
+                                </ul>
+                            </center>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="durumModal" class="modal fade" role="dialog" style="padding-right: 16px;" aria-modal="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content p-0 b-0">
+                <div class="card mb-0" style="border: 1px solid #e7eaed; border-radius: .25rem;">
+                    <div class="card-header bg-primary" style="padding: .75rem 1.5rem;">
+                        <h5 class="modal-title font-18 text-white float-left mt-0">Ekü Bilgilerini Giriniz.</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin-top: -22px;">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <div style="margin-left: 20px; margin-right: 20px; margin-top: 10px; margin-bottom: 10px;">
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <div class="form-group">
+                                        @Html.Label("Sipariş Durumu")
+                                        @Html.DropDownListFor(Ok => Ok.SelectedDurum, new SelectList(durumList, "Value", "Text"), new { @class = "form-control", autocomplete = "off", style = "background:white;" })
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" style="margin-top:15px;">
+                                <button name="operation" type="submit" class="btn btn-facebook width-md waves-effect" value="DurumUpdate" style="margin-left: 10px; padding: 7px; min-width: 70px; display: inline;">Kaydet</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @Html.HiddenFor(ok => ok.ID)
+}
+
+
+<script>
+    function appID(id) {
+        jQuery("#ID").val(id);
+    }
+
+</script>

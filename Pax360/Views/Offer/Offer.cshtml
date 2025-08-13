@@ -1,0 +1,336 @@
+﻿@model Pax360.Models.OfferDetailsModel
+@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+
+<script src="~/UIFramework/admin/assets/angular/functions/newoffer.js"></script>
+
+@{
+    ViewData["Title"] = "Users";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    var statuList = new List<SelectListItem>()
+{
+             new SelectListItem { Text = "Seçiniz", Value = "" },
+             new SelectListItem { Text = "Sıcak", Value = "Sıcak" },
+             new SelectListItem { Text = "Soğuk", Value = "Soğuk" }
+    };
+
+    var CihazList = new List<SelectListItem>()
+{
+             new SelectListItem { Text = "Seçiniz", Value = "" },
+             new SelectListItem { Text = "A910SF", Value = "A910SF" },
+             new SelectListItem { Text = "MOVE5000F", Value = "MOVE5000F" },
+    };
+}
+
+@using (Html.BeginForm())
+{
+    <div id="offerinputapp" ng-app="offerinputapp" ng-controller="offerinputController">
+        <div class="content">
+            @await Html.PartialAsync("_Messages", new Dictionary<string, string> { { "ErrorMessage", Model.ErrorMessage }, { "SuccessMessage", Model.SuccessMessage } })
+            <div class="container">
+                @await Html.PartialAsync("_PageHeader", new Dictionary<string, string> { { "UserName", @HttpContextAccessor.HttpContext.Session.GetString("NAMESURNAME") }, { "Page", "Teklif Ekle" } })
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="panel panel-color panel-info">
+                            <div class="panel-heading" style="border: none !important; padding: 15px 20px; border-radius:4px 4px 0 0;background-color: #737a84;color: #fff;">
+                                <h3 class="panel-title" style="color:#fff;">TEKLİF BİLGİLERİ</h3>
+                            </div>
+
+                            <div class="card-box" style="padding: 18px !important;border:none;margin-bottom:0px;">
+                                <div class="row">
+                                     <div class="col-lg-12">
+                                        <div class="form-group">
+                                            @Html.Label("Müşteri Ünvanı")
+                                            @Html.TextBoxFor(Ok => Ok.MusteriAdi, new { @class = "form-control", autocomplete = "off", @readonly = "readonly" })
+                                        </div>
+                                    </div>
+                                     <div class="col-lg-12">
+                                        <div class="form-group">
+                                            @Html.Label("Müşteri Cari Kod")
+                                            @Html.TextBoxFor(Ok => Ok.cari_kod, new { @class = "form-control", autocomplete = "off", @readonly = "readonly" })
+                                        </div>
+                                    </div>
+                                     <div class="col-lg-12">
+                                        <div class="form-group">
+                                            @Html.Label("Müşteri Cari Guid")
+                                            @Html.TextBoxFor(Ok => Ok.cari_Guid, new { @class = "form-control", autocomplete = "off", @readonly = "readonly" })
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-12">
+                                        <div class="form-group">
+                                            @Html.Label("Teklif Statüsü")
+                                            @Html.DropDownListFor(ok => ok.TeklifStatus, new SelectList(@statuList, "Value", "Text"), new { @class = "form-control select2" })
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="form-group">
+                                            @Html.Label("Teklif Şartları")
+                                            @Html.TextBoxFor(Ok => Ok.TeklifSartlari, new { @class = "form-control", autocomplete = "off" })
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="panel panel-color panel-info">
+                            <div class="panel-heading" style="border: none !important; padding: 15px 20px; border-radius:4px 4px 0 0;background-color: #387ec3;color: #fff;">
+                                <a href="#"><h3 class="panel-title" style="color:#fff;"><a href="/Order/Order" style="padding-right: 10px;"><i class="fas fa-refresh"></i></a> SİPARİŞ KALEMLERİ</h3></a>
+                                <div class="btn-group" style="float:right;margin-top: -24px;">
+                                    <buton class="btn btn-danger width-md waves-effect" style="margin-right: 10px;" data-toggle="modal" data-target="#saveAllModal" ng-click="SetID(item.sira)">Kaydet</buton>
+                                    <buton class="btn btn-danger width-md waves-effect" style="margin-right: -14px;" data-toggle="modal" data-target="#kalemEkleModal" ng-click="SetID(item.sira)"><i class="fas fa-plus" style="color: #fff;" aria-hidden="true"></i></buton>
+                                </div>
+                            </div>
+                            <div class="panel-body" style="padding:0px !important">
+                                <div id="no-more-tables">
+                                    <table class="table m-0 col-sm-12 table-colored-bordered table-striped table-condensed table-bordered-info cf">
+                                        <thead class="cf">
+                                            <tr>
+                                                <th>Sıra</th>
+                                                <th>Ürün Modeli</th>
+                                                <th>Miktar</th>
+                                                <th>Birim Fiyat</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+
+                                            <tr style="margin-top: 10px;" ng-repeat="item in offerlist">
+                                                <td style="width:80px;">
+                                                    {{item.sira}}
+                                                </td>
+                                                <td>
+                                                    {{item.adi}}
+                                                </td>
+                                                <td>
+                                                    {{item.fiyat}}
+                                                </td>
+                                                <td>
+                                                    {{item.adet}}
+                                                </td>
+                                                <td style="width:20px;">
+                                                    <buton class="btn btn-danger width-md waves-effect" data-toggle="modal" data-target="#removeModal" ng-click="SetID(item.sira)"><i class="fas fa-trash" style="color: #fff;"></i></buton>
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div id="removeAllModal" class="modal fade" tabindex="-1" role="dialog" style="padding-right: 16px;" aria-modal="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content p-0 b-0">
+                <div class="card mb-0" style="border: 1px solid #e7eaed; border-radius: .25rem;">
+                    <div class="card-header bg-primary" style="padding: .75rem 1.5rem;">
+                        <h5 class="modal-title font-18 text-white float-left mt-0">Silmek istediğinize emin misiniz?</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin-top: -22px;">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <div class="row" style="margin-left: -5px; margin-right: -3px; margin-top: 5px; margin-bottom: 5px;">
+                            <div class="col-md-6">
+                                <a class="btn btn-default btn-lg btn-block waves-effect waves-light" onclick="clickRemoveAll();">
+                                    <i class="fas fa-check-circle" style="font-size: 60px; color: #666 !important"></i><br />
+                                    SİL
+                                </a>
+                            </div>
+                            <div class="col-md-6">
+                                <a name="operation" class="btn btn-default btn-lg btn-block waves-effect waves-light" data-dismiss="modal">
+                                    <i class="fas fa-times-circle" style="font-size: 60px; color: #666 !important"></i><br />
+                                    İPTAL
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="saveAllModal" class="modal fade" tabindex="-1" role="dialog" style="padding-right: 16px;" aria-modal="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content p-0 b-0">
+                <div class="card mb-0" style="border: 1px solid #e7eaed; border-radius: .25rem;">
+                    <div class="card-header bg-primary" style="padding: .75rem 1.5rem;">
+                        <h5 class="modal-title font-18 text-white float-left mt-0">Kaydetmek istediğinize emin misiniz?</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin-top: -22px;">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <div class="row" style="margin-left: -5px; margin-right: -3px; margin-top: 5px; margin-bottom: 5px;">
+                            <div class="col-md-6">
+                                <a class="btn btn-default btn-lg btn-block waves-effect waves-light" onclick="clickSaveAll();">
+                                    <i class="fas fa-check-circle" style="font-size: 60px; color: #666 !important"></i><br />
+                                    KAYDET
+                                </a>
+                            </div>
+                            <div class="col-md-6">
+                                <a name="operation" class="btn btn-default btn-lg btn-block waves-effect waves-light" data-dismiss="modal">
+                                    <i class="fas fa-times-circle" style="font-size: 60px; color: #666 !important"></i><br />
+                                    İPTAL
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="kalemEkleModal" class="modal fade" tabindex="-1" role="dialog" style="padding-right: 16px;" aria-modal="true">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content p-0 b-0">
+                <div class="card mb-0" style="border: 1px solid #e7eaed; border-radius: .25rem;">
+                    <div class="card-header bg-primary" style="padding: .75rem 1.5rem;">
+                        <h5 class="modal-title font-18 text-white float-left mt-0">Ürün Seçiniz...</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin-top: -22px;">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="card-body" style="padding: 20px;">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    @Html.Label("Ürün Modeli")
+                                    @Html.DropDownListFor(ok => ok.UrunAdi, new SelectList(CihazList, "Value", "Text"), new { @class = "form-control select2" })
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    @Html.Label("Ürün Fiyat")
+                                    @Html.TextBoxFor(Ok => Ok.Fiyat, new { @class = "form-control", autocomplete = "off", type = "number" })
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    @Html.Label("Ürün Adet")
+                                    @Html.TextBoxFor(Ok => Ok.Adet, new { @class = "form-control", autocomplete = "off", type = "number" })
+                                </div>
+                            </div>
+                            <div class="col-lg-2">
+                                <a name="KalemEkle" id="KalemEkle" onclick="clickAdd();" class="btn btn-facebook width-md waves-effect" style="margin-top:22px;min-width: 70px;">Ekle</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @await Html.PartialAsync("_ErrorPopup")
+    @await Html.PartialAsync("_SuccessPopup")
+    @await Html.PartialAsync("_RemoveModal")
+    @Html.HiddenFor(ok => ok.ID)
+   
+
+    <button id="operation" name="operation" type="submit" class="btn btn-facebook width-md waves-effect" value="Save" style="margin-top:18px;padding:7px;min-width: 70px;visibility:hidden;">Kaydet</button>
+
+}
+
+<script>
+    $(document).ready(function () {
+
+        var scope = angular.element(document.getElementById("offerinputapp")).scope();
+        scope.$apply(function () {
+            scope.GetOffers();
+        });
+    });
+
+    function clickAdd() {
+
+        $('#kalemEkleModal').modal('hide');
+
+        let adi = document.getElementById("UrunAdi").value;
+        let fiyat = document.getElementById("Fiyat").value;
+        let adet = document.getElementById("Adet").value;
+
+
+        if (adi == "") {
+            document.getElementById('lblErrorPopup').textContent = "Ürün Modeli Boş Olamaz!"
+            $('#errorModal').modal('show');
+        }
+        else if (adet == "" || adet == "0") {
+            document.getElementById('lblErrorPopup').textContent = "Adet Boş yada Sıfır Olamaz!"
+            $('#errorModal').modal('show');
+        }
+        else if (fiyat == "" || fiyat == "0") {
+            document.getElementById('lblErrorPopup').textContent = "Fiyat Boş yada Sıfır Olamaz!"
+            $('#errorModal').modal('show');
+        }
+        else {
+            var scope = angular.element(document.getElementById("offerinputapp")).scope();
+            scope.$apply(function () {
+                scope.SetOfferInput();
+            });
+
+            document.getElementById("CihazModeli").value = "";
+            document.getElementById("Adet").value = "";
+        }
+    }
+
+
+    function clickSave() {
+        let partner = document.getElementById("PartnerID").value;
+        let model = document.getElementById("Model").value;
+        let stocktype = document.getElementById("StokType").value;
+        let ikinciel = document.getElementById("IkinciEl").value;
+        let barcode = document.getElementById("Barcode").value;
+
+        if (partner == "" || model == "" || stocktype == "" || ikinciel == "") {
+            document.getElementById('lblErrorPopup').textContent = "Lütfen Tüm Alanları Seçiniz!"
+            $('#errorModal').modal('show');
+            document.getElementById("Barcode").value = "";
+        }
+        else if (barcode == "") {
+            document.getElementById('lblErrorPopup').textContent = "Barkod Boş Olamaz!"
+            $('#errorModal').modal('show');
+        }
+        else {
+
+            var scope = angular.element(document.getElementById("offerinputapp")).scope();
+            scope.$apply(function () {
+                scope.SetStoksendoffer();
+            });
+
+        }
+    }
+
+    function clickRemove() {
+        var scope = angular.element(document.getElementById("offerinputapp")).scope();
+        scope.$apply(function () {
+            scope.RemoveOffer();
+        });
+    }
+
+    function clickRemoveAll() {
+        var scope = angular.element(document.getElementById("offerinputapp")).scope();
+        scope.$apply(function () {
+            scope.RemoveAllOffer();
+        });
+    }
+
+    function clickSaveAll() {
+        document.getElementById("operation").click();
+    }
+</script>

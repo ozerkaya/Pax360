@@ -118,7 +118,7 @@ namespace Pax360.Controllers
                 _httpContextAccessor.HttpContext.Session.SetString("Module_Users", auth.Module_Users.ToString());
                 _httpContextAccessor.HttpContext.Session.SetString("Module_Role", auth.Module_Role.ToString());
                 _httpContextAccessor.HttpContext.Session.SetString("Module_Order", auth.Module_Order.ToString());
-               
+                _httpContextAccessor.HttpContext.Session.SetString("Module_Offer", auth.Module_Offer.ToString());
 
 
             }

@@ -424,6 +424,7 @@ namespace Pax360.Controllers
                     Module_Users = role.Module_Users,
                     Module_Role = role.Module_Role,
                     Module_Order = role.Module_Order,
+                    Module_Offer = role.Module_Offer,
 
                     List = RolesList()
                 };
@@ -450,6 +451,8 @@ namespace Pax360.Controllers
                     Module_Users = role.Module_Users,
                     Module_Role = role.Module_Role,
                     Module_Order = role.Module_Order,
+                    Module_Offer = role.Module_Offer,
+
                     List = RolesList()
                 };
                 return model;
@@ -478,6 +481,7 @@ namespace Pax360.Controllers
                     Module_Users = item.Module_Users,
                     Module_Role = item.Module_Role,
                     Module_Order = item.Module_Order,
+                    Module_Offer = item.Module_Offer,
                 });
             }
             return list;
@@ -503,6 +507,7 @@ namespace Pax360.Controllers
                     Module_Role = dataModel.Module_Role,
                     Module_Users = dataModel.Module_Users,
                     Module_Order = dataModel.Module_Order,
+                    Module_Offer = dataModel.Module_Offer,
                 };
                 db.RoleTypes.Add(role);
 
@@ -553,6 +558,7 @@ namespace Pax360.Controllers
                 role.Module_Users = dataModel.Module_Users;
                 role.Module_Role = dataModel.Module_Role;
                 role.Module_Order = dataModel.Module_Order;
+                role.Module_Offer = dataModel.Module_Offer;
 
                 db.RoleTypes.Attach(role);
                 db.Entry(role).State = EntityState.Modified;
@@ -568,7 +574,7 @@ namespace Pax360.Controllers
                         auth.Module_Users = dataModel.Module_Users;
                         auth.Module_Role = dataModel.Module_Role;
                         auth.Module_Order = dataModel.Module_Order;
-                        auth.Module_Order = dataModel.Module_Order;
+                        auth.Module_Offer = dataModel.Module_Offer;
 
                         db.Authorizations.Attach(auth);
                         db.Entry(auth).State = EntityState.Modified;
@@ -598,6 +604,7 @@ namespace Pax360.Controllers
                 role.Module_Role = dataModel.Module_Role;
                 role.Module_Users = dataModel.Module_Users;
                 role.Module_Order = dataModel.Module_Order;
+                role.Module_Offer = dataModel.Module_Offer;
 
                 db.Authorizations.Attach(role);
                 db.Entry(role).State = EntityState.Modified;

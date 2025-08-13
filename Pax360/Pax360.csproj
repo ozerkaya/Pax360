@@ -25,10 +25,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\UIFramework\Admin\assets\angular\functions\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Content Update="Views\Order\SelectCompany.cshtml">
       <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>

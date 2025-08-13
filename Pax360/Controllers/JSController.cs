@@ -131,5 +131,79 @@ namespace Pax360.Controllers
 
             return Json(list.OrderByDescending(ok => ok.sira).ToList());
         }
+
+
+
+
+
+
+
+
+
+        [HttpPost]
+        public ActionResult SetOffer([FromBody] OfferInputModel dataModel)
+        {
+            List<OfferInputModel> list = _httpContextAccessor.HttpContext.Session.GetObject<List<OfferInputModel>>("OFFERINPUT") ?? new List<OfferInputModel>();
+
+            if (string.IsNullOrWhiteSpace(dataModel.adi))
+            {
+                return BadRequest("Ürün Modeli zorunlu!");
+            }
+            else if (dataModel.adet == 0)
+            {
+                return BadRequest("Adet zorunlu!");
+            }
+            else if (dataModel.fiyat == 0)
+            {
+                return BadRequest("Fiyat zorunlu!");
+            }
+
+            dataModel.sira = list.Count + 1;
+            list.Add(dataModel);
+            _httpContextAccessor.HttpContext.Session.SetObject("OFFERINPUT", list);
+
+
+            return Json(list.OrderByDescending(ok => ok.sira).ToList());
+        }
+
+        [HttpPost]
+        public ActionResult GetOffers()
+        {
+            List<OfferInputModel> list = _httpContextAccessor.HttpContext.Session.GetObject<List<OfferInputModel>>("OFFERINPUT") ?? new List<OfferInputModel>();
+            return Json(list.OrderByDescending(ok => ok.sira).ToList());
+        }
+
+        [HttpPost]
+        public ActionResult RemoveOffer([FromBody] string sira)
+        {
+            List<OfferInputModel> list = _httpContextAccessor.HttpContext.Session.GetObject<List<OfferInputModel>>("OFFERINPUT") ?? new List<OfferInputModel>();
+
+            if (list != null)
+            {
+                list.RemoveAll(Ok => Ok.sira == Convert.ToInt32(sira));
+                List<OfferInputModel> newList = new List<OfferInputModel>();
+                int i = 1;
+                foreach (var item in list)
+                {
+                    OfferInputModel newItem = item;
+                    newItem.sira = i;
+
+                    newList.Add(newItem);
+                    i++;
+                }
+                _httpContextAccessor.HttpContext.Session.SetObject("OFFERINPUT", list);
+            }
+
+            return Json(list.OrderByDescending(ok => ok.sira).ToList());
+        }
+
+        [HttpPost]
+        public ActionResult RemoveAllOffer()
+        {
+            _httpContextAccessor.HttpContext.Session.SetObject("OFFERINPUT", new List<OfferInputModel>());
+            List<OfferInputModel> list = _httpContextAccessor.HttpContext.Session.GetObject<List<OfferInputModel>>("OFFERINPUT") ?? new List<OfferInputModel>();
+
+            return Json(list.OrderByDescending(ok => ok.sira).ToList());
+        }
     }
 }

@@ -27,7 +27,8 @@ namespace Pax360.Models
         [JsonRequired]
         public bool Module_Order { get; set; }
 
-
+        [JsonRequired]
+        public bool Module_Offer { get; set; }
 
 
 
@@ -48,6 +49,6 @@ namespace Pax360.Models
         public bool Module_Users { get; set; }
         public bool Module_Role { get; set; }
         public bool Module_Order { get; set; }
-
+        public bool Module_Offer { get; set; }
     }
 }

@@ -1,1871 +1,1875 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Pax360.bundle.scp.css",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Pax360.bundle.scp.css",
       "PackagePath": "staticwebassets\\Pax360.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\Excel\\OwnerEx.xlsx",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\Excel\\OwnerEx.xlsx",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\Excel\\OwnerEx.xlsx"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\angular\\angular-sanitize.min.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\angular\\angular-sanitize.min.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\angular\\angular-sanitize.min.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\angular\\angular.min.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\angular\\angular.min.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\angular\\angular.min.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\angular\\functions\\neworder.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\angular\\functions\\newoffer.js",
+      "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\angular\\functions\\newoffer.js"
+    },
+    {
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\angular\\functions\\neworder.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\angular\\functions\\neworder.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\css\\Loginblue.css",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\css\\Loginblue.css",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\css\\Loginblue.css"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\css\\Loginbootstrap.min.css",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\css\\Loginbootstrap.min.css",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\css\\Loginbootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\css\\Loginstyle.css",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\css\\Loginstyle.css",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\css\\Loginstyle.css"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\css\\MobileTable.css",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\css\\MobileTable.css",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\css\\MobileTable.css"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\css\\blink.css",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\css\\blink.css",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\css\\blink.css"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\css\\bootstrap.min.css",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\css\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\css\\buttonimage.css",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\css\\buttonimage.css",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\css\\buttonimage.css"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\css\\card.css",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\css\\card.css",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\css\\card.css"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\css\\card2.css",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\css\\card2.css",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\css\\card2.css"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\css\\components.css",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\css\\components.css",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\css\\components.css"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\css\\core.css",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\css\\core.css",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\css\\core.css"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\css\\elements.css",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\css\\elements.css",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\css\\elements.css"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\css\\hero.css",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\css\\hero.css",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\css\\hero.css"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\css\\icons.css",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\css\\icons.css",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\css\\icons.css"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\css\\menu.css",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\css\\menu.css",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\css\\menu.css"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\css\\menu_sm.css",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\css\\menu_sm.css",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\css\\menu_sm.css"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\css\\pages.css",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\css\\pages.css",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\css\\pages.css"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\css\\responsive.css",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\css\\responsive.css",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\css\\responsive.css"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\css\\typicons.css",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\css\\typicons.css",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\css\\typicons.css"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\css\\uploader.css",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\css\\uploader.css",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\css\\uploader.css"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\css\\variables.css",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\css\\variables.css",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\css\\variables.css"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\fonts\\FontAwesome.otf",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\fonts\\FontAwesome.otf",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\fonts\\FontAwesome.otf"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\fonts\\fontawesome-webfont.eot",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\fonts\\fontawesome-webfont.eot",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\fonts\\fontawesome-webfont.eot"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\fonts\\fontawesome-webfont.svg",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\fonts\\fontawesome-webfont.svg",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\fonts\\fontawesome-webfont.svg"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\fonts\\fontawesome-webfont.ttf",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\fonts\\fontawesome-webfont.ttf",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\fonts\\fontawesome-webfont.ttf"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\fonts\\fontawesome-webfont.woff",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\fonts\\fontawesome-webfont.woff",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\fonts\\fontawesome-webfont.woff"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\fonts\\fontawesome-webfont.woff2",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\fonts\\fontawesome-webfont.woff2",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\fonts\\fontawesome-webfont.woff2"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\fonts\\glyphicons-halflings-regular.eot",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\fonts\\glyphicons-halflings-regular.eot",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\fonts\\glyphicons-halflings-regular.eot"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\fonts\\glyphicons-halflings-regular.svg",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\fonts\\glyphicons-halflings-regular.svg",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\fonts\\glyphicons-halflings-regular.svg"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\fonts\\glyphicons-halflings-regular.ttf",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\fonts\\glyphicons-halflings-regular.ttf",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\fonts\\glyphicons-halflings-regular.ttf"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\fonts\\glyphicons-halflings-regular.woff",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\fonts\\glyphicons-halflings-regular.woff",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\fonts\\glyphicons-halflings-regular.woff"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\fonts\\glyphicons-halflings-regular.woff2",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\fonts\\glyphicons-halflings-regular.woff2",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\fonts\\glyphicons-halflings-regular.woff2"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\fonts\\ionicons.eot",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\fonts\\ionicons.eot",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\fonts\\ionicons.eot"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\fonts\\ionicons.svg",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\fonts\\ionicons.svg",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\fonts\\ionicons.svg"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\fonts\\ionicons.ttf",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\fonts\\ionicons.ttf",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\fonts\\ionicons.ttf"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\fonts\\ionicons.woff",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\fonts\\ionicons.woff",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\fonts\\ionicons.woff"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\fonts\\materialdesignicons-webfont.eot",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\fonts\\materialdesignicons-webfont.eot",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\fonts\\materialdesignicons-webfont.eot"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\fonts\\materialdesignicons-webfont.svg",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\fonts\\materialdesignicons-webfont.svg",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\fonts\\materialdesignicons-webfont.svg"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\fonts\\materialdesignicons-webfont.ttf",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\fonts\\materialdesignicons-webfont.ttf",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\fonts\\materialdesignicons-webfont.ttf"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\fonts\\materialdesignicons-webfont.woff",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\fonts\\materialdesignicons-webfont.woff",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\fonts\\materialdesignicons-webfont.woff"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\fonts\\materialdesignicons-webfont.woff2",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\fonts\\materialdesignicons-webfont.woff2",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\fonts\\materialdesignicons-webfont.woff2"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\fonts\\themify.eot",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\fonts\\themify.eot",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\fonts\\themify.eot"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\fonts\\themify.svg",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\fonts\\themify.svg",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\fonts\\themify.svg"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\fonts\\themify.ttf",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\fonts\\themify.ttf",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\fonts\\themify.ttf"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\fonts\\themify.woff",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\fonts\\themify.woff",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\fonts\\themify.woff"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\fonts\\typicons.eot",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\fonts\\typicons.eot",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\fonts\\typicons.eot"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\fonts\\typicons.less",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\fonts\\typicons.less",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\fonts\\typicons.less"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\fonts\\typicons.svg",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\fonts\\typicons.svg",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\fonts\\typicons.svg"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\fonts\\typicons.ttf",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\fonts\\typicons.ttf",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\fonts\\typicons.ttf"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\fonts\\typicons.woff",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\fonts\\typicons.woff",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\fonts\\typicons.woff"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\images\\Clock-icon.png",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\images\\Clock-icon.png",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\images\\Clock-icon.png"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\images\\Documents-icon.png",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\images\\Documents-icon.png",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\images\\Documents-icon.png"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\images\\Error-icon.png",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\images\\Error-icon.png",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\images\\Error-icon.png"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\images\\Game-Center-icon.png",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\images\\Game-Center-icon.png",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\images\\Game-Center-icon.png"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\images\\Photos-icon.png",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\images\\Photos-icon.png",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\images\\Photos-icon.png"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\images\\Save-icon.png",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\images\\Save-icon.png",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\images\\Save-icon.png"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\images\\Success-icon.png",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\images\\Success-icon.png",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\images\\Success-icon.png"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\images\\United-Kingdom-flat-icon.png",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\images\\United-Kingdom-flat-icon.png",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\images\\United-Kingdom-flat-icon.png"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\images\\United-kingdom-icon.png",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\images\\United-kingdom-icon.png",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\images\\United-kingdom-icon.png"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\images\\add-icon.png",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\images\\add-icon.png",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\images\\add-icon.png"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\images\\animat-customize-color.gif",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\images\\animat-customize-color.gif",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\images\\animat-customize-color.gif"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\images\\animat-diamond-color.gif",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\images\\animat-diamond-color.gif",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\images\\animat-diamond-color.gif"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\images\\animat-rocket-color.gif",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\images\\animat-rocket-color.gif",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\images\\animat-rocket-color.gif"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\images\\animat-search-color.gif",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\images\\animat-search-color.gif",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\images\\animat-search-color.gif"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\images\\app-draw-icon.png",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\images\\app-draw-icon.png",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\images\\app-draw-icon.png"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\images\\favicon.ico",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\images\\favicon.ico",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\images\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\images\\logo.png",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\images\\logo.png",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\images\\logo.png"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\images\\logoBig.jpg",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\images\\logoBig.jpg",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\images\\logoBig.jpg"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\images\\logoMiddle.png",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\images\\logoMiddle.png",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\images\\logoMiddle.png"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\images\\logoProPayBigWhite.png",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\images\\logoProPayBigWhite.png",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\images\\logoProPayBigWhite.png"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\images\\logoProPaySmallTarget.png",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\images\\logoProPaySmallTarget.png",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\images\\logoProPaySmallTarget.png"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\images\\logoProPayWhite.png",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\images\\logoProPayWhite.png",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\images\\logoProPayWhite.png"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\images\\logoSmall.png",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\images\\logoSmall.png",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\images\\logoSmall.png"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\images\\mailfooternew.jpg",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\images\\mailfooternew.jpg",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\images\\mailfooternew.jpg"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\images\\no-image.png",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\images\\no-image.png",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\images\\no-image.png"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\images\\no.png",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\images\\no.png",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\images\\no.png"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\images\\noicon.png",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\images\\noicon.png",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\images\\noicon.png"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\images\\noresult.png",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\images\\noresult.png",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\images\\noresult.png"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\images\\yes.png",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\images\\yes.png",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\images\\yes.png"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\images\\yesicon.png",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\images\\yesicon.png",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\images\\yesicon.png"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\init\\kanban.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\init\\kanban.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\init\\kanban.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\init\\notifications.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\init\\notifications.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\init\\notifications.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\js\\DatepickerSetter.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\js\\DatepickerSetter.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\js\\DatepickerSetter.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\js\\DropifySettings.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\js\\DropifySettings.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\js\\DropifySettings.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\js\\ImageTools.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\js\\ImageTools.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\js\\ImageTools.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\js\\Loginbootstrap.min.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\js\\Loginbootstrap.min.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\js\\Loginbootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\js\\Sortable.min.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\js\\Sortable.min.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\js\\Sortable.min.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\js\\YoutubePlayer.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\js\\YoutubePlayer.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\js\\YoutubePlayer.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\js\\custom.min.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\js\\custom.min.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\js\\custom.min.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\js\\detect.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\js\\detect.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\js\\detect.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\js\\fastclick.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\js\\fastclick.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\js\\fastclick.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\js\\fontawesome.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\js\\fontawesome.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\js\\fontawesome.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\js\\jquery-ui-modified.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\js\\jquery-ui-modified.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\js\\jquery-ui-modified.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\js\\jquery.app.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\js\\jquery.app.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\js\\jquery.app.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\js\\jquery.blockUI.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\js\\jquery.blockUI.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\js\\jquery.blockUI.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\js\\jquery.core.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\js\\jquery.core.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\js\\jquery.core.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\js\\jquery.min.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\js\\jquery.min.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\js\\jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\js\\jquery.scrollTo.min.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\js\\jquery.scrollTo.min.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\js\\jquery.scrollTo.min.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\js\\jquery.slimscroll.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\js\\jquery.slimscroll.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\js\\jquery.slimscroll.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\js\\modernizr.min.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\js\\modernizr.min.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\js\\modernizr.min.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\js\\popper.min.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\js\\popper.min.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\js\\popper.min.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\js\\sidebarmenu.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\js\\sidebarmenu.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\js\\sidebarmenu.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\js\\sorttable.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\js\\sorttable.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\js\\sorttable.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\js\\sparkline.min.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\js\\sparkline.min.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\js\\sparkline.min.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\js\\sticky-kit.min.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\js\\sticky-kit.min.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\js\\sticky-kit.min.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\js\\switcher.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\js\\switcher.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\js\\switcher.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\js\\waves.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\js\\waves.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\js\\waves.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\js\\wow.min.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\js\\wow.min.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\js\\wow.min.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\components.less",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\components.less",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\less\\components.less"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\core.less",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\core.less",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\less\\core.less"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\elements.less",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\elements.less",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\less\\elements.less"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons.less",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons.less",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\less\\icons.less"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\css\\material-design-iconic-font.css",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\css\\material-design-iconic-font.css",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\less\\icons\\css\\material-design-iconic-font.css"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\css\\materialdesignicons.css",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\css\\materialdesignicons.css",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\less\\icons\\css\\materialdesignicons.css"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\css\\themify-icons.css",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\css\\themify-icons.css",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\less\\icons\\css\\themify-icons.css"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\css\\typicons.css",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\css\\typicons.css",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\less\\icons\\css\\typicons.css"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\font-awesome\\css\\font-awesome.css",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\font-awesome\\css\\font-awesome.css",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\less\\icons\\font-awesome\\css\\font-awesome.css"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\font-awesome\\css\\mixins.css",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\font-awesome\\css\\mixins.css",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\less\\icons\\font-awesome\\css\\mixins.css"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\font-awesome\\css\\variables.css",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\font-awesome\\css\\variables.css",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\less\\icons\\font-awesome\\css\\variables.css"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\font-awesome\\fonts\\FontAwesome.otf",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\font-awesome\\fonts\\FontAwesome.otf",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\less\\icons\\font-awesome\\fonts\\FontAwesome.otf"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\font-awesome\\fonts\\fontawesome-webfont.eot",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\font-awesome\\fonts\\fontawesome-webfont.eot",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\less\\icons\\font-awesome\\fonts\\fontawesome-webfont.eot"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\font-awesome\\fonts\\fontawesome-webfont.svg",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\font-awesome\\fonts\\fontawesome-webfont.svg",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\less\\icons\\font-awesome\\fonts\\fontawesome-webfont.svg"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\font-awesome\\fonts\\fontawesome-webfont.ttf",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\font-awesome\\fonts\\fontawesome-webfont.ttf",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\less\\icons\\font-awesome\\fonts\\fontawesome-webfont.ttf"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\font-awesome\\fonts\\fontawesome-webfont.woff",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\font-awesome\\fonts\\fontawesome-webfont.woff",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\less\\icons\\font-awesome\\fonts\\fontawesome-webfont.woff"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\font-awesome\\fonts\\fontawesome-webfont.woff2",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\font-awesome\\fonts\\fontawesome-webfont.woff2",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\less\\icons\\font-awesome\\fonts\\fontawesome-webfont.woff2"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\font-awesome\\less\\animated.less",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\font-awesome\\less\\animated.less",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\less\\icons\\font-awesome\\less\\animated.less"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\font-awesome\\less\\bordered-pulled.less",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\font-awesome\\less\\bordered-pulled.less",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\less\\icons\\font-awesome\\less\\bordered-pulled.less"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\font-awesome\\less\\core.less",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\font-awesome\\less\\core.less",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\less\\icons\\font-awesome\\less\\core.less"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\font-awesome\\less\\fixed-width.less",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\font-awesome\\less\\fixed-width.less",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\less\\icons\\font-awesome\\less\\fixed-width.less"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\font-awesome\\less\\font-awesome.less",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\font-awesome\\less\\font-awesome.less",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\less\\icons\\font-awesome\\less\\font-awesome.less"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\font-awesome\\less\\icons.less",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\font-awesome\\less\\icons.less",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\less\\icons\\font-awesome\\less\\icons.less"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\font-awesome\\less\\larger.less",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\font-awesome\\less\\larger.less",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\less\\icons\\font-awesome\\less\\larger.less"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\font-awesome\\less\\list.less",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\font-awesome\\less\\list.less",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\less\\icons\\font-awesome\\less\\list.less"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\font-awesome\\less\\mixins.less",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\font-awesome\\less\\mixins.less",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\less\\icons\\font-awesome\\less\\mixins.less"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\font-awesome\\less\\path.less",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\font-awesome\\less\\path.less",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\less\\icons\\font-awesome\\less\\path.less"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\font-awesome\\less\\rotated-flipped.less",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\font-awesome\\less\\rotated-flipped.less",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\less\\icons\\font-awesome\\less\\rotated-flipped.less"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\font-awesome\\less\\screen-reader.less",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\font-awesome\\less\\screen-reader.less",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\less\\icons\\font-awesome\\less\\screen-reader.less"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\font-awesome\\less\\stacked.less",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\font-awesome\\less\\stacked.less",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\less\\icons\\font-awesome\\less\\stacked.less"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\font-awesome\\less\\variables.less",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\font-awesome\\less\\variables.less",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\less\\icons\\font-awesome\\less\\variables.less"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\ionicons\\css\\_ionicons-variables.css",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\ionicons\\css\\_ionicons-variables.css",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\less\\icons\\ionicons\\css\\_ionicons-variables.css"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\ionicons\\css\\ionicons.css",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\ionicons\\css\\ionicons.css",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\less\\icons\\ionicons\\css\\ionicons.css"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\ionicons\\fonts\\ionicons.eot",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\ionicons\\fonts\\ionicons.eot",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\less\\icons\\ionicons\\fonts\\ionicons.eot"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\ionicons\\fonts\\ionicons.svg",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\ionicons\\fonts\\ionicons.svg",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\less\\icons\\ionicons\\fonts\\ionicons.svg"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\ionicons\\fonts\\ionicons.ttf",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\ionicons\\fonts\\ionicons.ttf",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\less\\icons\\ionicons\\fonts\\ionicons.ttf"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\ionicons\\fonts\\ionicons.woff",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\ionicons\\fonts\\ionicons.woff",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\less\\icons\\ionicons\\fonts\\ionicons.woff"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\ionicons\\less\\_ionicons-animation.less",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\ionicons\\less\\_ionicons-animation.less",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\less\\icons\\ionicons\\less\\_ionicons-animation.less"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\ionicons\\less\\_ionicons-font.less",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\ionicons\\less\\_ionicons-font.less",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\less\\icons\\ionicons\\less\\_ionicons-font.less"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\ionicons\\less\\_ionicons-icons.less",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\ionicons\\less\\_ionicons-icons.less",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\less\\icons\\ionicons\\less\\_ionicons-icons.less"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\ionicons\\less\\_ionicons-variables.less",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\ionicons\\less\\_ionicons-variables.less",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\less\\icons\\ionicons\\less\\_ionicons-variables.less"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\ionicons\\less\\ionicons.less",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\ionicons\\less\\ionicons.less",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\less\\icons\\ionicons\\less\\ionicons.less"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\material-design\\css\\materialdesignicons.css",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\material-design\\css\\materialdesignicons.css",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\less\\icons\\material-design\\css\\materialdesignicons.css"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\material-design\\css\\materialdesignicons.css.map",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\material-design\\css\\materialdesignicons.css.map",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\less\\icons\\material-design\\css\\materialdesignicons.css.map"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\material-design\\css\\materialdesignicons.min.css",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\material-design\\css\\materialdesignicons.min.css",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\less\\icons\\material-design\\css\\materialdesignicons.min.css"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\material-design\\css\\materialdesignicons.min.css.map",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\material-design\\css\\materialdesignicons.min.css.map",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\less\\icons\\material-design\\css\\materialdesignicons.min.css.map"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\material-design\\fonts\\materialdesignicons-webfont.eot",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\material-design\\fonts\\materialdesignicons-webfont.eot",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\less\\icons\\material-design\\fonts\\materialdesignicons-webfont.eot"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\material-design\\fonts\\materialdesignicons-webfont.svg",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\material-design\\fonts\\materialdesignicons-webfont.svg",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\less\\icons\\material-design\\fonts\\materialdesignicons-webfont.svg"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\material-design\\fonts\\materialdesignicons-webfont.ttf",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\material-design\\fonts\\materialdesignicons-webfont.ttf",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\less\\icons\\material-design\\fonts\\materialdesignicons-webfont.ttf"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\material-design\\fonts\\materialdesignicons-webfont.woff",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\material-design\\fonts\\materialdesignicons-webfont.woff",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\less\\icons\\material-design\\fonts\\materialdesignicons-webfont.woff"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\material-design\\fonts\\materialdesignicons-webfont.woff2",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\material-design\\fonts\\materialdesignicons-webfont.woff2",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\less\\icons\\material-design\\fonts\\materialdesignicons-webfont.woff2"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\material-design\\materialdesignicons.less",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\material-design\\materialdesignicons.less",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\less\\icons\\material-design\\materialdesignicons.less"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\themify-icons\\fonts\\themify.eot",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\themify-icons\\fonts\\themify.eot",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\less\\icons\\themify-icons\\fonts\\themify.eot"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\themify-icons\\fonts\\themify.svg",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\themify-icons\\fonts\\themify.svg",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\less\\icons\\themify-icons\\fonts\\themify.svg"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\themify-icons\\fonts\\themify.ttf",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\themify-icons\\fonts\\themify.ttf",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\less\\icons\\themify-icons\\fonts\\themify.ttf"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\themify-icons\\fonts\\themify.woff",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\themify-icons\\fonts\\themify.woff",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\less\\icons\\themify-icons\\fonts\\themify.woff"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\themify-icons\\ie7\\ie7.css",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\themify-icons\\ie7\\ie7.css",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\less\\icons\\themify-icons\\ie7\\ie7.css"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\themify-icons\\ie7\\ie7.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\themify-icons\\ie7\\ie7.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\less\\icons\\themify-icons\\ie7\\ie7.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\themify-icons\\themify-icons.css",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\themify-icons\\themify-icons.css",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\less\\icons\\themify-icons\\themify-icons.css"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\themify-icons\\themify-icons.less",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\themify-icons\\themify-icons.less",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\less\\icons\\themify-icons\\themify-icons.less"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\typicons\\typicons.eot",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\typicons\\typicons.eot",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\less\\icons\\typicons\\typicons.eot"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\typicons\\typicons.less",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\typicons\\typicons.less",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\less\\icons\\typicons\\typicons.less"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\typicons\\typicons.min.css",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\typicons\\typicons.min.css",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\less\\icons\\typicons\\typicons.min.css"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\typicons\\typicons.svg",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\typicons\\typicons.svg",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\less\\icons\\typicons\\typicons.svg"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\typicons\\typicons.ttf",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\typicons\\typicons.ttf",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\less\\icons\\typicons\\typicons.ttf"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\typicons\\typicons.woff",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\icons\\typicons\\typicons.woff",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\less\\icons\\typicons\\typicons.woff"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\menu.less",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\menu.less",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\less\\menu.less"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\menu_sm.less",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\menu_sm.less",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\less\\menu_sm.less"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\pages.less",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\pages.less",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\less\\pages.less"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\responsive.less",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\responsive.less",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\less\\responsive.less"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\variables.less",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\less\\variables.less",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\less\\variables.less"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\pages\\jquery.autocomplete.init.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\pages\\jquery.autocomplete.init.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\pages\\jquery.autocomplete.init.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\pages\\jquery.blog-add.init.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\pages\\jquery.blog-add.init.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\pages\\jquery.blog-add.init.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\pages\\jquery.blog-dashboard.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\pages\\jquery.blog-dashboard.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\pages\\jquery.blog-dashboard.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\pages\\jquery.c3-chart.init.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\pages\\jquery.c3-chart.init.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\pages\\jquery.c3-chart.init.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\pages\\jquery.chartist.init.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\pages\\jquery.chartist.init.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\pages\\jquery.chartist.init.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\pages\\jquery.chartjs.init.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\pages\\jquery.chartjs.init.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\pages\\jquery.chartjs.init.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\pages\\jquery.charts-sparkline.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\pages\\jquery.charts-sparkline.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\pages\\jquery.charts-sparkline.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\pages\\jquery.chat.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\pages\\jquery.chat.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\pages\\jquery.chat.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\pages\\jquery.dashboard.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\pages\\jquery.dashboard.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\pages\\jquery.dashboard.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\pages\\jquery.dashboard_2.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\pages\\jquery.dashboard_2.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\pages\\jquery.dashboard_2.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\pages\\jquery.datatables.editable.init.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\pages\\jquery.datatables.editable.init.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\pages\\jquery.datatables.editable.init.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\pages\\jquery.datatables.init.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\pages\\jquery.datatables.init.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\pages\\jquery.datatables.init.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\pages\\jquery.fileuploads.init.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\pages\\jquery.fileuploads.init.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\pages\\jquery.fileuploads.init.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\pages\\jquery.flot.init.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\pages\\jquery.flot.init.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\pages\\jquery.flot.init.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\pages\\jquery.form-advanced.init.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\pages\\jquery.form-advanced.init.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\pages\\jquery.form-advanced.init.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\pages\\jquery.form-pickers.init.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\pages\\jquery.form-pickers.init.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\pages\\jquery.form-pickers.init.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\pages\\jquery.fullcalendar.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\pages\\jquery.fullcalendar.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\pages\\jquery.fullcalendar.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\pages\\jquery.gmaps.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\pages\\jquery.gmaps.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\pages\\jquery.gmaps.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\pages\\jquery.google-charts.init.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\pages\\jquery.google-charts.init.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\pages\\jquery.google-charts.init.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\pages\\jquery.icons.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\pages\\jquery.icons.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\pages\\jquery.icons.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\pages\\jquery.jvectormap.init.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\pages\\jquery.jvectormap.init.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\pages\\jquery.jvectormap.init.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\pages\\jquery.mapael-map.init.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\pages\\jquery.mapael-map.init.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\pages\\jquery.mapael-map.init.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\pages\\jquery.morris.init.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\pages\\jquery.morris.init.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\pages\\jquery.morris.init.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\pages\\jquery.nestable.init.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\pages\\jquery.nestable.init.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\pages\\jquery.nestable.init.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\pages\\jquery.property-add.init.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\pages\\jquery.property-add.init.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\pages\\jquery.property-add.init.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\pages\\jquery.range-sliders.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\pages\\jquery.range-sliders.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\pages\\jquery.range-sliders.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\pages\\jquery.rating.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\pages\\jquery.rating.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\pages\\jquery.rating.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\pages\\jquery.real-estate-dashboard.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\pages\\jquery.real-estate-dashboard.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\pages\\jquery.real-estate-dashboard.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\pages\\jquery.sweet-alert.init.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\pages\\jquery.sweet-alert.init.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\pages\\jquery.sweet-alert.init.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\pages\\jquery.toastr.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\pages\\jquery.toastr.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\pages\\jquery.toastr.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\pages\\jquery.todo.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\pages\\jquery.todo.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\pages\\jquery.todo.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\pages\\jquery.tooltipster.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\pages\\jquery.tooltipster.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\pages\\jquery.tooltipster.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\pages\\jquery.wizard-init.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\pages\\jquery.wizard-init.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\pages\\jquery.wizard-init.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\bootstrap-datepicker\\css\\bootstrap-datepicker.min.css",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\bootstrap-datepicker\\css\\bootstrap-datepicker.min.css",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\bootstrap-datepicker\\css\\bootstrap-datepicker.min.css"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\bootstrap-datepicker\\css\\bootstrap-datepicker3.css",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\bootstrap-datepicker\\css\\bootstrap-datepicker3.css",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\bootstrap-datepicker\\css\\bootstrap-datepicker3.css"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\bootstrap-datepicker\\js\\bootstrap-datepicker.min.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\bootstrap-datepicker\\js\\bootstrap-datepicker.min.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\bootstrap-datepicker\\js\\bootstrap-datepicker.min.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\bootstrap-datepicker\\js\\bootstrap-datepicker.tr.min.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\bootstrap-datepicker\\js\\bootstrap-datepicker.tr.min.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\bootstrap-datepicker\\js\\bootstrap-datepicker.tr.min.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\bootstrap-toggle\\bootstrap-toggle.min.css",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\bootstrap-toggle\\bootstrap-toggle.min.css",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\bootstrap-toggle\\bootstrap-toggle.min.css"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\bootstrap-toggle\\bootstrap-toggle.min.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\bootstrap-toggle\\bootstrap-toggle.min.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\bootstrap-toggle\\bootstrap-toggle.min.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\chartist\\css\\chartist.min.css",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\chartist\\css\\chartist.min.css",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\chartist\\css\\chartist.min.css"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\chartist\\js\\chartist-plugin-tooltip.min.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\chartist\\js\\chartist-plugin-tooltip.min.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\chartist\\js\\chartist-plugin-tooltip.min.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\chartist\\js\\chartist.min.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\chartist\\js\\chartist.min.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\chartist\\js\\chartist.min.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\count-down\\jquery.lwtCountdown-1.0.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\count-down\\jquery.lwtCountdown-1.0.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\count-down\\jquery.lwtCountdown-1.0.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\counterup\\jquery.counterup.min.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\counterup\\jquery.counterup.min.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\counterup\\jquery.counterup.min.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\currencyformatter\\jquery.number.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\currencyformatter\\jquery.number.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\currencyformatter\\jquery.number.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\currencyformatter\\jquery.number.min.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\currencyformatter\\jquery.number.min.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\currencyformatter\\jquery.number.min.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\currencyformatter\\jquery.number.min.js.map",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\currencyformatter\\jquery.number.min.js.map",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\currencyformatter\\jquery.number.min.js.map"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\currencyformatter\\numberhelper.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\currencyformatter\\numberhelper.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\currencyformatter\\numberhelper.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\dropify\\.gitignore",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\dropify\\.gitignore",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\dropify\\.gitignore"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\dropify\\LICENCE.md",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\dropify\\LICENCE.md",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\dropify\\LICENCE.md"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\dropify\\README.md",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\dropify\\README.md",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\dropify\\README.md"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\dropify\\bower.json",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\dropify\\bower.json",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\dropify\\bower.json"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\dropify\\dist\\css\\demo.css",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\dropify\\dist\\css\\demo.css",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\dropify\\dist\\css\\demo.css"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\dropify\\dist\\css\\dropify.css",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\dropify\\dist\\css\\dropify.css",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\dropify\\dist\\css\\dropify.css"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\dropify\\dist\\css\\dropify.min.css",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\dropify\\dist\\css\\dropify.min.css",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\dropify\\dist\\css\\dropify.min.css"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\dropify\\dist\\fonts\\dropify.eot",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\dropify\\dist\\fonts\\dropify.eot",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\dropify\\dist\\fonts\\dropify.eot"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\dropify\\dist\\fonts\\dropify.svg",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\dropify\\dist\\fonts\\dropify.svg",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\dropify\\dist\\fonts\\dropify.svg"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\dropify\\dist\\fonts\\dropify.ttf",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\dropify\\dist\\fonts\\dropify.ttf",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\dropify\\dist\\fonts\\dropify.ttf"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\dropify\\dist\\fonts\\dropify.woff",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\dropify\\dist\\fonts\\dropify.woff",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\dropify\\dist\\fonts\\dropify.woff"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\dropify\\dist\\js\\dropify.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\dropify\\dist\\js\\dropify.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\dropify\\dist\\js\\dropify.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\dropify\\dist\\js\\dropify.min.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\dropify\\dist\\js\\dropify.min.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\dropify\\dist\\js\\dropify.min.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\dropify\\gulpfile.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\dropify\\gulpfile.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\dropify\\gulpfile.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\dropify\\index.html",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\dropify\\index.html",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\dropify\\index.html"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\dropify\\package.json",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\dropify\\package.json",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\dropify\\package.json"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\dropify\\src\\fonts\\dropify.eot",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\dropify\\src\\fonts\\dropify.eot",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\dropify\\src\\fonts\\dropify.eot"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\dropify\\src\\fonts\\dropify.svg",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\dropify\\src\\fonts\\dropify.svg",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\dropify\\src\\fonts\\dropify.svg"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\dropify\\src\\fonts\\dropify.ttf",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\dropify\\src\\fonts\\dropify.ttf",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\dropify\\src\\fonts\\dropify.ttf"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\dropify\\src\\fonts\\dropify.woff",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\dropify\\src\\fonts\\dropify.woff",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\dropify\\src\\fonts\\dropify.woff"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\dropify\\src\\images\\cover.jpg",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\dropify\\src\\images\\cover.jpg",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\dropify\\src\\images\\cover.jpg"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\dropify\\src\\images\\test-image-1.jpg",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\dropify\\src\\images\\test-image-1.jpg",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\dropify\\src\\images\\test-image-1.jpg"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\dropify\\src\\images\\test-image-2.jpg",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\dropify\\src\\images\\test-image-2.jpg",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\dropify\\src\\images\\test-image-2.jpg"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\dropify\\src\\js\\dropify.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\dropify\\src\\js\\dropify.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\dropify\\src\\js\\dropify.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\dropify\\src\\sass\\_dropify-font.scss",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\dropify\\src\\sass\\_dropify-font.scss",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\dropify\\src\\sass\\_dropify-font.scss"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\dropify\\src\\sass\\demo.scss",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\dropify\\src\\sass\\demo.scss",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\dropify\\src\\sass\\demo.scss"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\dropify\\src\\sass\\demo\\_grid.scss",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\dropify\\src\\sass\\demo\\_grid.scss",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\dropify\\src\\sass\\demo\\_grid.scss"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\dropify\\src\\sass\\demo\\_normalize.scss",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\dropify\\src\\sass\\demo\\_normalize.scss",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\dropify\\src\\sass\\demo\\_normalize.scss"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\dropify\\src\\sass\\demo\\_reset.scss",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\dropify\\src\\sass\\demo\\_reset.scss",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\dropify\\src\\sass\\demo\\_reset.scss"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\dropify\\src\\sass\\demo\\_typo.scss",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\dropify\\src\\sass\\demo\\_typo.scss",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\dropify\\src\\sass\\demo\\_typo.scss"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\dropify\\src\\sass\\demo\\_variables.scss",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\dropify\\src\\sass\\demo\\_variables.scss",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\dropify\\src\\sass\\demo\\_variables.scss"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\dropify\\src\\sass\\demo\\helpers\\_grid.scss",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\dropify\\src\\sass\\demo\\helpers\\_grid.scss",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\dropify\\src\\sass\\demo\\helpers\\_grid.scss"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\dropify\\src\\sass\\demo\\helpers\\_mixins.scss",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\dropify\\src\\sass\\demo\\helpers\\_mixins.scss",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\dropify\\src\\sass\\demo\\helpers\\_mixins.scss"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\dropify\\src\\sass\\demo\\helpers\\_shortcuts.scss",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\dropify\\src\\sass\\demo\\helpers\\_shortcuts.scss",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\dropify\\src\\sass\\demo\\helpers\\_shortcuts.scss"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\dropify\\src\\sass\\dropify.scss",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\dropify\\src\\sass\\dropify.scss",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\dropify\\src\\sass\\dropify.scss"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\fullcalendar\\css\\fullcalendar.min.css",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\fullcalendar\\css\\fullcalendar.min.css",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\fullcalendar\\css\\fullcalendar.min.css"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\fullcalendar\\js\\fullcalendar.min.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\fullcalendar\\js\\fullcalendar.min.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\fullcalendar\\js\\fullcalendar.min.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\assets\\fonts\\jquery.filer-icons\\jquery-filer-preview.html",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\assets\\fonts\\jquery.filer-icons\\jquery-filer-preview.html",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\assets\\fonts\\jquery.filer-icons\\jquery-filer-preview.html"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\assets\\fonts\\jquery.filer-icons\\jquery-filer.css",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\assets\\fonts\\jquery.filer-icons\\jquery-filer.css",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\assets\\fonts\\jquery.filer-icons\\jquery-filer.css"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\assets\\fonts\\jquery.filer-icons\\jquery-filer.eot",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\assets\\fonts\\jquery.filer-icons\\jquery-filer.eot",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\assets\\fonts\\jquery.filer-icons\\jquery-filer.eot"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\assets\\fonts\\jquery.filer-icons\\jquery-filer.svg",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\assets\\fonts\\jquery.filer-icons\\jquery-filer.svg",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\assets\\fonts\\jquery.filer-icons\\jquery-filer.svg"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\assets\\fonts\\jquery.filer-icons\\jquery-filer.ttf",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\assets\\fonts\\jquery.filer-icons\\jquery-filer.ttf",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\assets\\fonts\\jquery.filer-icons\\jquery-filer.ttf"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\assets\\fonts\\jquery.filer-icons\\jquery-filer.woff",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\assets\\fonts\\jquery.filer-icons\\jquery-filer.woff",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\assets\\fonts\\jquery.filer-icons\\jquery-filer.woff"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\css\\jquery.filer.css",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\css\\jquery.filer.css",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\css\\jquery.filer.css"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\css\\themes\\jquery.filer-dragdropbox-theme.css",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\css\\themes\\jquery.filer-dragdropbox-theme.css",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\css\\themes\\jquery.filer-dragdropbox-theme.css"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\js\\custom.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\js\\custom.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\js\\custom.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\js\\jquery.filer.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\js\\jquery.filer.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\js\\jquery.filer.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\js\\jquery.filer.min.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\js\\jquery.filer.min.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\js\\jquery.filer.min.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\js\\jquery.fileuploads.init.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\js\\jquery.fileuploads.init.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\js\\jquery.fileuploads.init.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\1.jpg",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\1.jpg",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\1.jpg"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\2.jpg",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\2.jpg",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\2.jpg"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\3.jpg",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\3.jpg",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\3.jpg"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\5.jpg",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\5.jpg",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\5.jpg"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\6.jpg",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\6.jpg",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\6.jpg"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\7.jpg",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\7.jpg",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\7.jpg"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\8.jpg",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\8.jpg",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\8.jpg"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\AppleSansAdjectives..ttf",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\AppleSansAdjectives..ttf",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\AppleSansAdjectives..ttf"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\AppleSansAdjectives.eot",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\AppleSansAdjectives.eot",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\AppleSansAdjectives.eot"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\AppleSansAdjectives.woff",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\AppleSansAdjectives.woff",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\AppleSansAdjectives.woff"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\Copy_Screenshots.pdf",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\Copy_Screenshots.pdf",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\Copy_Screenshots.pdf"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\Designlazy-Macbook-iphone-mockup.png",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\Designlazy-Macbook-iphone-mockup.png",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\Designlazy-Macbook-iphone-mockup.png"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\Hardik_Pro.jpg",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\Hardik_Pro.jpg",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\Hardik_Pro.jpg"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\brandlistingpagecontentidea-revised.png",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\brandlistingpagecontentidea-revised.png",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\brandlistingpagecontentidea-revised.png"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\bus_ticket_invoice_1956703410.pdf",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\bus_ticket_invoice_1956703410.pdf",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\bus_ticket_invoice_1956703410.pdf"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\css_1.png",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\css_1.png",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\css_1.png"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\cubana_590.png",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\cubana_590.png",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\cubana_590.png"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\cubana_750.png",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\cubana_750.png",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\cubana_750.png"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\cubana_80.png",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\cubana_80.png",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\cubana_80.png"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\desktop_hd.png",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\desktop_hd.png",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\desktop_hd.png"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\favicon_1.png",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\favicon_1.png",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\favicon_1.png"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\features.png",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\features.png",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\features.png"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\flacto_WB.png",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\flacto_WB.png",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\flacto_WB.png"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\landing.jpg",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\landing.jpg",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\landing.jpg"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\preview.html",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\preview.html",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\preview.html"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\screenshot-themeforest.net 2016-09-18 20-05-16.png",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\screenshot-themeforest.net 2016-09-18 20-05-16.png",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\screenshot-themeforest.net 2016-09-18 20-05-16.png"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\styles.css",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\styles.css",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\jquery.filer\\uploads\\styles.css"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morris\\morris.css",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morris\\morris.css",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\morris\\morris.css"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morris\\morris.min.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morris\\morris.min.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\morris\\morris.min.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\.gitignore",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\.gitignore",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\morrischart\\.gitignore"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\.travis.yml",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\.travis.yml",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\morrischart\\.travis.yml"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\Gruntfile.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\Gruntfile.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\morrischart\\Gruntfile.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\README.md",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\README.md",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\morrischart\\README.md"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\bower.json",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\bower.json",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\morrischart\\bower.json"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\bower.travis.json",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\bower.travis.json",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\morrischart\\bower.travis.json"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\less\\morris.core.less",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\less\\morris.core.less",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\morrischart\\less\\morris.core.less"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\lib\\morris.area.coffee",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\lib\\morris.area.coffee",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\morrischart\\lib\\morris.area.coffee"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\lib\\morris.bar.coffee",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\lib\\morris.bar.coffee",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\morrischart\\lib\\morris.bar.coffee"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\lib\\morris.coffee",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\lib\\morris.coffee",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\morrischart\\lib\\morris.coffee"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\lib\\morris.donut.coffee",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\lib\\morris.donut.coffee",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\morrischart\\lib\\morris.donut.coffee"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\lib\\morris.grid.coffee",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\lib\\morris.grid.coffee",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\morrischart\\lib\\morris.grid.coffee"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\lib\\morris.hover.coffee",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\lib\\morris.hover.coffee",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\morrischart\\lib\\morris.hover.coffee"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\lib\\morris.line.coffee",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\lib\\morris.line.coffee",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\morrischart\\lib\\morris.line.coffee"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\morris.css",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\morris.css",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\morrischart\\morris.css"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\morris.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\morris.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\morrischart\\morris.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\morris.min.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\morris.min.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\morrischart\\morris.min.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\package.json",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\package.json",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\morrischart\\package.json"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\raphael-min.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\raphael-min.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\morrischart\\raphael-min.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\spec\\lib\\area\\area_spec.coffee",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\spec\\lib\\area\\area_spec.coffee",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\morrischart\\spec\\lib\\area\\area_spec.coffee"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\spec\\lib\\bar\\bar_spec.coffee",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\spec\\lib\\bar\\bar_spec.coffee",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\morrischart\\spec\\lib\\bar\\bar_spec.coffee"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\spec\\lib\\bar\\colours.coffee",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\spec\\lib\\bar\\colours.coffee",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\morrischart\\spec\\lib\\bar\\colours.coffee"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\spec\\lib\\commas_spec.coffee",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\spec\\lib\\commas_spec.coffee",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\morrischart\\spec\\lib\\commas_spec.coffee"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\spec\\lib\\donut\\donut_spec.coffee",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\spec\\lib\\donut\\donut_spec.coffee",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\morrischart\\spec\\lib\\donut\\donut_spec.coffee"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\spec\\lib\\grid\\auto_grid_lines_spec.coffee",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\spec\\lib\\grid\\auto_grid_lines_spec.coffee",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\morrischart\\spec\\lib\\grid\\auto_grid_lines_spec.coffee"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\spec\\lib\\grid\\set_data_spec.coffee",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\spec\\lib\\grid\\set_data_spec.coffee",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\morrischart\\spec\\lib\\grid\\set_data_spec.coffee"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\spec\\lib\\grid\\y_label_format_spec.coffee",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\spec\\lib\\grid\\y_label_format_spec.coffee",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\morrischart\\spec\\lib\\grid\\y_label_format_spec.coffee"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\spec\\lib\\hover_spec.coffee",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\spec\\lib\\hover_spec.coffee",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\morrischart\\spec\\lib\\hover_spec.coffee"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\spec\\lib\\label_series_spec.coffee",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\spec\\lib\\label_series_spec.coffee",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\morrischart\\spec\\lib\\label_series_spec.coffee"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\spec\\lib\\line\\line_spec.coffee",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\spec\\lib\\line\\line_spec.coffee",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\morrischart\\spec\\lib\\line\\line_spec.coffee"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\spec\\lib\\pad_spec.coffee",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\spec\\lib\\pad_spec.coffee",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\morrischart\\spec\\lib\\pad_spec.coffee"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\spec\\lib\\parse_time_spec.coffee",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\spec\\lib\\parse_time_spec.coffee",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\morrischart\\spec\\lib\\parse_time_spec.coffee"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\spec\\specs.html",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\spec\\specs.html",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\morrischart\\spec\\specs.html"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\spec\\support\\placeholder.coffee",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\spec\\support\\placeholder.coffee",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\morrischart\\spec\\support\\placeholder.coffee"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\spec\\viz\\examples.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\spec\\viz\\examples.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\morrischart\\spec\\viz\\examples.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\spec\\viz\\exemplary\\area0.png",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\spec\\viz\\exemplary\\area0.png",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\morrischart\\spec\\viz\\exemplary\\area0.png"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\spec\\viz\\exemplary\\bar0.png",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\spec\\viz\\exemplary\\bar0.png",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\morrischart\\spec\\viz\\exemplary\\bar0.png"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\spec\\viz\\exemplary\\line0.png",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\spec\\viz\\exemplary\\line0.png",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\morrischart\\spec\\viz\\exemplary\\line0.png"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\spec\\viz\\exemplary\\stacked_bar0.png",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\spec\\viz\\exemplary\\stacked_bar0.png",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\morrischart\\spec\\viz\\exemplary\\stacked_bar0.png"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\spec\\viz\\run.sh",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\spec\\viz\\run.sh",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\morrischart\\spec\\viz\\run.sh"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\spec\\viz\\test.html",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\spec\\viz\\test.html",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\morrischart\\spec\\viz\\test.html"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\spec\\viz\\visual_specs.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\morrischart\\spec\\viz\\visual_specs.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\morrischart\\spec\\viz\\visual_specs.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\.gitignore",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\.gitignore",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\.gitignore"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\.travis.yml",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\.travis.yml",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\.travis.yml"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\LICENSE",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\LICENSE",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\multifile-master"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\README.md",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\README.md",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\README.md"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\_config.yml",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\_config.yml",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\_config.yml"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\bower.json",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\bower.json",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\bower.json"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\docs\\CNAME",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\docs\\CNAME",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\docs"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\docs\\analytics.html",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\docs\\analytics.html",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\docs\\analytics.html"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\docs\\btn-oss.png",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\docs\\btn-oss.png",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\docs\\btn-oss.png"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\docs\\docs-core.html",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\docs\\docs-core.html",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\docs\\docs-core.html"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\docs\\docs.css",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\docs\\docs.css",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\docs\\docs.css"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\docs\\docs.jade",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\docs\\docs.jade",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\docs\\docs.jade"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\docs\\docs.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\docs\\docs.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\docs\\docs.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\docs\\docs.scss",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\docs\\docs.scss",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\docs\\docs.scss"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\docs\\inc\\footer.jade",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\docs\\inc\\footer.jade",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\docs\\inc\\footer.jade"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\docs\\inc\\header.jade",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\docs\\inc\\header.jade",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\docs\\inc\\header.jade"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\docs\\index.html",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\docs\\index.html",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\docs\\index.html"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\docs\\jquery.MetaData.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\docs\\jquery.MetaData.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\docs\\jquery.MetaData.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\docs\\jquery.MultiFile.min.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\docs\\jquery.MultiFile.min.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\docs\\jquery.MultiFile.min.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\docs\\jquery.form.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\docs\\jquery.form.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\docs\\jquery.form.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\docs\\layout.jade",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\docs\\layout.jade",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\docs\\layout.jade"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\gruntfile.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\gruntfile.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\gruntfile.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\jquery.MultiFile.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\jquery.MultiFile.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\jquery.MultiFile.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\jquery.MultiFile.min.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\jquery.MultiFile.min.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\jquery.MultiFile.min.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\jquery.MultiFile1.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\jquery.MultiFile1.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\jquery.MultiFile1.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\package-lock.json",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\package-lock.json",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\package-lock.json"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\package.json",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\package.json",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\package.json"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\test\\index.html",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\test\\index.html",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\test\\index.html"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\test\\maxfile.html",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\test\\maxfile.html",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\test\\maxfile.html"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\test\\maxsize.html",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\test\\maxsize.html",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\test\\maxsize.html"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\test\\nocomma.html",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\test\\nocomma.html",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\test\\nocomma.html"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\test\\preview.html",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\test\\preview.html",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\test\\preview.html"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\test\\test.php",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\test\\test.php",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\test\\test.php"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\test\\test1.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\test\\test1.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\test\\test1.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\test\\test2.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\test\\test2.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\multifile-master\\test\\test2.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\nestable\\jquery.nestable.css",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\nestable\\jquery.nestable.css",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\nestable\\jquery.nestable.css"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\nestable\\jquery.nestable.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\nestable\\jquery.nestable.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\nestable\\jquery.nestable.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\raphael\\raphael-min.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\raphael\\raphael-min.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\raphael\\raphael-min.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\css\\select2-bootstrap.css",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\css\\select2-bootstrap.css",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\select2\\css\\select2-bootstrap.css"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\css\\select2-bootstrap.min.css",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\css\\select2-bootstrap.min.css",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\select2\\css\\select2-bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\css\\select2.css",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\css\\select2.css",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\select2\\css\\select2.css"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\css\\select2.min.css",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\css\\select2.min.css",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\select2\\css\\select2.min.css"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\ar.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\ar.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\ar.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\az.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\az.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\az.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\bg.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\bg.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\bg.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\ca.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\ca.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\ca.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\cs.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\cs.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\cs.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\da.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\da.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\da.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\de.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\de.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\de.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\el.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\el.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\el.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\en.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\en.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\en.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\es.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\es.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\es.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\et.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\et.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\et.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\eu.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\eu.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\eu.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\fa.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\fa.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\fa.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\fi.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\fi.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\fi.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\fr.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\fr.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\fr.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\gl.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\gl.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\gl.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\he.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\he.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\he.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\hi.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\hi.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\hi.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\hr.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\hr.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\hr.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\hu.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\hu.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\hu.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\id.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\id.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\id.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\is.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\is.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\is.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\it.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\it.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\it.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\ja.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\ja.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\ja.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\km.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\km.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\km.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\ko.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\ko.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\ko.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\lt.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\lt.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\lt.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\lv.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\lv.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\lv.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\mk.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\mk.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\mk.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\ms.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\ms.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\ms.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\nb.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\nb.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\nb.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\nl.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\nl.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\nl.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\pl.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\pl.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\pl.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\pt-BR.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\pt-BR.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\pt-BR.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\pt.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\pt.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\pt.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\ro.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\ro.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\ro.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\ru.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\ru.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\ru.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\sk.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\sk.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\sk.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\sr-Cyrl.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\sr-Cyrl.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\sr-Cyrl.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\sr.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\sr.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\sr.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\sv.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\sv.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\sv.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\th.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\th.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\th.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\tr.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\tr.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\tr.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\uk.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\uk.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\uk.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\vi.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\vi.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\vi.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\zh-CN.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\zh-CN.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\zh-CN.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\zh-TW.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\zh-TW.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\i18n\\zh-TW.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\select2.full.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\select2.full.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\select2.full.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\select2.full.min.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\select2.full.min.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\select2.full.min.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\select2.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\select2.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\select2.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\select2.min.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\select2.min.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\select2\\js\\select2.min.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\switchery\\switchery.min.css",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\switchery\\switchery.min.css",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\switchery\\switchery.min.css"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\switchery\\switchery.min.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\switchery\\switchery.min.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\switchery\\switchery.min.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\timepicker\\bootstrap-timepicker.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\timepicker\\bootstrap-timepicker.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\timepicker\\bootstrap-timepicker.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\timepicker\\bootstrap-timepicker.min.css",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\timepicker\\bootstrap-timepicker.min.css",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\timepicker\\bootstrap-timepicker.min.css"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\waypoints\\jquery.waypoints.min.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\plugins\\waypoints\\jquery.waypoints.min.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\assets\\plugins\\waypoints\\jquery.waypoints.min.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\details\\jquery-3.4.1.min.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\details\\jquery-3.4.1.min.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\details\\jquery-3.4.1.min.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\details\\slick-theme.css",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\details\\slick-theme.css",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\details\\slick-theme.css"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\details\\slick.css",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\details\\slick.css",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\details\\slick.css"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\details\\slick.min.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\details\\slick.min.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\details\\slick.min.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\jquery\\jquery-1.12.4.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\jquery\\jquery-1.12.4.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\jquery\\jquery-1.12.4.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\jquery\\jquery-ui.css",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\jquery\\jquery-ui.css",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\jquery\\jquery-ui.css"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\jquery\\jquery-ui.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\jquery\\jquery-ui.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\jquery\\jquery-ui.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\share\\all.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\share\\all.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\share\\all.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\share\\jquery.min.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\share\\jquery.min.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\share\\jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\share\\lightslider.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\share\\lightslider.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\share\\lightslider.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\share\\lightslider.min.css",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\share\\lightslider.min.css",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\share\\lightslider.min.css"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\share\\owl.carousel.css",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\share\\owl.carousel.css",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\share\\owl.carousel.css"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\share\\owl.carousel.js",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\share\\owl.carousel.js",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\share\\owl.carousel.js"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\video\\back1.mp4",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\video\\back1.mp4",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\video\\back1.mp4"
     },
     {
-      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\video\\back2.mp4",
+      "Id": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\video\\back2.mp4",
       "PackagePath": "staticwebassets\\UIFramework\\Admin\\video\\back2.mp4"
     },
     {

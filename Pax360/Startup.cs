@@ -87,6 +87,7 @@ namespace Pax360
             services.AddTransient<IMikroHelper, MikroHelper>();
             services.AddTransient<ICryptographyHelper, CryptographyHelper>();
             services.AddTransient<IOrderService, OrderService>();
+            services.AddTransient<IOfferService, OfferService>();
             services.AddTransient<ICounterHelper, CounterHelper>();
 
             services.AddSingleton<ContextDapper>();
