@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Pax360.props" />
+</Project>

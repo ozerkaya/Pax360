@@ -1,0 +1,38 @@
+﻿.hover-overlay-container {
+    position: relative;
+}
+
+    .hover-overlay-container:hover .overlay-image {
+        opacity: 0.3;
+    }
+
+    .hover-overlay-container:hover .overlay-btn-container {
+        opacity: 1;
+    }
+
+    .hover-overlay-container .overlay-image {
+        display: block;
+        width: 100%;
+        height: auto;
+        opacity: 1;
+        transition: .5s ease;
+        backface-visibility: hidden;
+    }
+
+    .hover-overlay-container .overlay-btn-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        opacity: 0;
+        transition: .5s ease;
+        text-align: center;
+        transform: translate(-50%, -50%);
+    }
+
+        .hover-overlay-container .overlay-btn-container .overlay-btn {
+            color: #fff;
+            font-size: 16px;
+            padding: 10px 16px;
+            background-color: cornflowerblue;
+            text-decoration: none;
+        }

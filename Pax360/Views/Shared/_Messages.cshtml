@@ -1,0 +1,52 @@
+﻿@model Dictionary<string, string>
+@{
+    string ErrorMessage = Model.FirstOrDefault(ok => ok.Key == "ErrorMessage").Value;
+    string SuccessMessage = Model.FirstOrDefault(ok => ok.Key == "SuccessMessage").Value;
+    Layout = null;
+}
+
+@if (ErrorMessage != null)
+{
+    @*string[] errorList = ErrorMessage.Split(new string[] { ". " }, StringSplitOptions.None);
+    foreach (var item in errorList.ToList())
+    {
+        @if (!string.IsNullOrWhiteSpace(item))
+        {
+            <div class="row" style="margin-left: 0px; margin-right: 0px;margin-bottom:5px;">
+                <div class="col-lg-12">
+                    <div class="card-box" style="border:none;background-color:#e7e7e7;margin-bottom:0px;">
+                        <img src="~/UIFramework/Admin/assets/images/Error-icon.png"
+                        alt = "Logo"
+                        style="display:inline;" />
+                     <span style="display: inline;">@item</span>
+                    </div>
+                </div>
+            </div>
+        }
+    }*@
+
+
+    <div class="row" style="margin-left: 0px; margin-right: 0px;margin-bottom:5px;">
+        <div class="col-lg-12">
+            <div class="card-box" style="border:none;background-color:#e7e7e7;margin-bottom:0px;">
+                <img src="~/UIFramework/Admin/assets/images/Error-icon.png"
+                     alt="Logo"
+                     style="display:inline;" />
+                <span style="display:inline;">@ErrorMessage</span>
+            </div>
+        </div>
+    </div>
+
+}
+@if (SuccessMessage != null)
+{
+    <div class="row" style="margin-left: 0px; margin-right: 0px;margin-bottom:5px;">
+        <div class="col-lg-12">
+            <div class="card-box" style="border:none;background-color:#e7e7e7;margin-bottom:0px;">
+                <img src="~/UIFramework/Admin/assets/images/Success-icon.png"
+                     alt="Success Icon" style="display:inline;" />
+                <span style="display:inline;">@SuccessMessage</span>
+            </div>
+        </div>
+    </div>
+}

@@ -1,0 +1,135 @@
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.Extensions.Options;
+using Pax360.Extensions;
+using Pax360.Interfaces;
+using Pax360.Models;
+
+namespace Pax360.Controllers
+{
+
+    [Authorize]
+    public class JSController : Controller
+    {
+        private readonly IHttpContextAccessor _httpContextAccessor;
+        private readonly ICounterHelper _counterService;
+        private readonly IOptions<ExternalDBSettings> _externalConfig;
+
+        public JSController(IHttpContextAccessor httpContextAccessor,
+            ICounterHelper counterService,
+            IOptions<ExternalDBSettings> externalConfig)
+        {
+            _httpContextAccessor = httpContextAccessor;
+            _counterService = counterService;
+            _externalConfig = externalConfig;
+        }
+
+        [HttpPost]
+        public ActionResult DistrictList([FromBody] string sehir)
+        {
+            var sehirler = SehirIlce.List.Where(ok => ok.Sehir == sehir).ToList();
+            List<SelectListItem> list = new List<SelectListItem>();
+            foreach (var item in sehirler)
+            {
+                list.Add(new SelectListItem
+                {
+                    Text = item.Ilce,
+                    Value = item.Ilce
+                });
+            }
+            return Json(list);
+        }
+
+        [HttpPost]
+        public ActionResult SetOrder([FromBody] OrderInputModel dataModel)
+        {
+            List<OrderInputModel> list = _httpContextAccessor.HttpContext.Session.GetObject<List<OrderInputModel>>("ORDERINPUT") ?? new List<OrderInputModel>();
+
+            if (string.IsNullOrWhiteSpace(dataModel.cihazmodeli))
+            {
+                return BadRequest("Model zorunlu!");
+            }
+            else if (dataModel.miktar == 0)
+            {
+                return BadRequest("Adet zorunlu!");
+            }
+            else if (list.Any(ok => ok.cihazmodeli == dataModel.cihazmodeli))
+            {
+                return BadRequest(string.Format("{0} Daha Önce Eklenmiş!", dataModel.cihazmodeli));
+            }
+
+            decimal fiyat = 0;
+
+            if (_externalConfig.Value.UseExternalDB == "0")
+            {
+                dataModel.birimfiyat = 54;
+                dataModel.birimfiyattl = 54;
+            }
+            else
+            {
+                fiyat = _counterService.GetPrice("PAX360", dataModel.cihazmodeli);
+
+                if (fiyat == 0)
+                {
+                    return BadRequest(dataModel.cihazmodeli + " Fiyatı Bulunamadı!");
+                }
+                else
+                {
+                    dataModel.birimfiyat = fiyat;
+                    dataModel.birimfiyattl = fiyat;
+                }
+            }
+
+            dataModel.sira = list.Count + 1;
+            dataModel.kdv = "10";
+            dataModel.iskonto = "0";
+            dataModel.toplamtutar = Convert.ToDecimal(dataModel.birimfiyattl * dataModel.miktar).ToString();
+            list.Add(dataModel);
+            _httpContextAccessor.HttpContext.Session.SetObject("ORDERINPUT", list);
+
+
+            return Json(list.OrderByDescending(ok => ok.sira).ToList());
+        }
+
+        [HttpPost]
+        public ActionResult GetOrders()
+        {
+            List<OrderInputModel> list = _httpContextAccessor.HttpContext.Session.GetObject<List<OrderInputModel>>("ORDERINPUT") ?? new List<OrderInputModel>();
+            return Json(list.OrderByDescending(ok => ok.sira).ToList());
+        }
+
+        [HttpPost]
+        public ActionResult RemoveOrder([FromBody] string sira)
+        {
+            List<OrderInputModel> list = _httpContextAccessor.HttpContext.Session.GetObject<List<OrderInputModel>>("ORDERINPUT") ?? new List<OrderInputModel>();
+
+            if (list != null)
+            {
+                list.RemoveAll(Ok => Ok.sira == Convert.ToInt32(sira));
+                List<OrderInputModel> newList = new List<OrderInputModel>();
+                int i = 1;
+                foreach (var item in list)
+                {
+                    OrderInputModel newItem = item;
+                    newItem.sira = i;
+
+                    newList.Add(newItem);
+                    i++;
+                }
+                _httpContextAccessor.HttpContext.Session.SetObject("ORDERINPUT", list);
+            }
+
+            return Json(list.OrderByDescending(ok => ok.sira).ToList());
+        }
+
+        [HttpPost]
+        public ActionResult RemoveAllOrder()
+        {
+            _httpContextAccessor.HttpContext.Session.SetObject("ORDERINPUT", new List<OrderInputModel>());
+            List<OrderInputModel> list = _httpContextAccessor.HttpContext.Session.GetObject<List<OrderInputModel>>("ORDERINPUT") ?? new List<OrderInputModel>();
+
+            return Json(list.OrderByDescending(ok => ok.sira).ToList());
+        }
+    }
+}

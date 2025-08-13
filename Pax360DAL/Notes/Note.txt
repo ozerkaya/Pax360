@@ -1,0 +1,184 @@
+﻿Generate Script
+Script-Migration -From ver246 -To ver247
+
+---------------------------------------------------------------------------------------
+Viewde yapılan değişiklik trayıcıda görünsün
+nuget yükle -> Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation
+startup ekle -> services.AddControllersWithViews().AddRazorRuntimeCompilation();
+---------------------------------------------------------------------------------------
+
+
+Sunucunuzun IP adresi: 89.19.26.50
+Administrator Kullanıcı adı : Administrator yada root
+Administrator Şifresi: Yr0Or0Yl1
+
+
+Buda Mail Admin bilgilerin
+http://madmin.app-propay.com/
+k.adı : webmaster@app-propay.com
+şifre : `8J1xG
+
+
+
+mail.app-propay.com
+k.adı : webmaster@app-propay.com
+şifre : `8J1xG
+
+
+https://cargopay-testbackend.hepsijet.com/rest/api/v1.0/auth/login
+
+ 
+ 
+ 
+ 
+ 
+ 
+ --SET cihazSeriNo=REPLACE(REPLACE(cihazSeriNo, CHAR(13),''), CHAR(10),'');
+ --SET sicilno=LTRIM(RTRIM(sicilno))
+
+
+
+
+
+UPDATE [dbo].[Orders]
+   SET 
+      adres = [mukellefUiyAdresi],
+      ilce = [mukellefUiyIlcesi],
+      il = [mukellefUiyIli] 
+      
+ WHERE hizmetYeriFarkli ='H' OR hizmetYeriFarkli is NULL
+
+
+
+ UPDATE [dbo].[Orders]
+   SET 
+      adres = [hizmetYeriUiyAdresi],
+      ilce = [hizmetYeriUiyIlcesi],
+      il = [hizmetYeriUiyIli] 
+      
+ WHERE hizmetYeriFarkli ='E'
+
+
+
+ ----------------------------------------------------------------------------------------------------------------------------------
+
+
+
+USE [interOp]
+GO
+
+UPDATE [dbo].[Orders] SET Bolge = '1' WHERE mukellefUiyIli ='TEKİRDAĞ' 
+UPDATE [dbo].[Orders] SET Bolge = '2' WHERE mukellefUiyIli ='KOCAELİ' 
+UPDATE [dbo].[Orders] SET Bolge = '3' WHERE mukellefUiyIli ='ANKARA' OR mukellefUiyIli ='ESKİŞEHİR' 
+UPDATE [dbo].[Orders] SET Bolge = '4' WHERE mukellefUiyIli ='İZMİR' OR mukellefUiyIli ='BURSA' 
+UPDATE [dbo].[Orders] SET Bolge = '5' WHERE mukellefUiyIli ='ANTALYA' OR mukellefUiyIli ='SAMSUN' OR mukellefUiyIli ='ADANA' 
+
+
+UPDATE [dbo].[Orders] SET Bolge = '1' WHERE mukellefUiyIli ='İSTANBUL' AND 
+(mukellefUiyIlcesi='ARNAVUTKÖY' OR 
+mukellefUiyIlcesi='AVCILAR' OR
+mukellefUiyIlcesi='BAĞCILAR' OR
+mukellefUiyIlcesi='BAHÇELİEVLER' OR
+mukellefUiyIlcesi='BAKIRKÖY' OR
+mukellefUiyIlcesi='BAŞAKŞEHİR' OR
+mukellefUiyIlcesi='BEŞİKTAŞ' OR
+mukellefUiyIlcesi='BEYLİKDÜZÜ' OR
+mukellefUiyIlcesi='BEYOĞLU' OR
+mukellefUiyIlcesi='ÇATALCA' OR
+mukellefUiyIlcesi='ESENLER' OR
+mukellefUiyIlcesi='ESENYURT' OR
+mukellefUiyIlcesi='BÜYÜKÇEKMECE' OR
+mukellefUiyIlcesi='EYÜP' OR
+mukellefUiyIlcesi='EYÜPSULTAN' OR
+mukellefUiyIlcesi='FATİH' OR
+mukellefUiyIlcesi='GAZİOSMANPAŞA' OR
+mukellefUiyIlcesi='GÜNGÖREN' OR
+mukellefUiyIlcesi='KAĞITHANE' OR
+mukellefUiyIlcesi='KÜÇÜKÇEKMECE' OR
+mukellefUiyIlcesi='SARIYER' OR
+mukellefUiyIlcesi='SİLİVRİ' OR
+mukellefUiyIlcesi='ŞİŞLİ' OR
+mukellefUiyIlcesi='SULTANGAZİ' OR
+mukellefUiyIlcesi='ZEYTİNBURNU') 
+
+
+
+UPDATE [dbo].[Orders] SET Bolge = '2' WHERE mukellefUiyIli ='İSTANBUL' AND 
+(mukellefUiyIlcesi='ADALAR' OR 
+mukellefUiyIlcesi='ATAŞEHİR' OR 
+mukellefUiyIlcesi='BAYRAMPAŞA' OR
+mukellefUiyIlcesi='BEYKOZ' OR
+mukellefUiyIlcesi='ÇEKMEKÖY' OR
+mukellefUiyIlcesi='KADIKÖY' OR
+mukellefUiyIlcesi='KARTAL' OR
+mukellefUiyIlcesi='MALTEPE' OR
+mukellefUiyIlcesi='PENDİK' OR
+mukellefUiyIlcesi='SANCAKTEPE' OR
+mukellefUiyIlcesi='ŞİLE' OR
+mukellefUiyIlcesi='TUZLA' OR
+mukellefUiyIlcesi='GAZİOSMANPAŞA' OR
+mukellefUiyIlcesi='SULTANBEYLİ' OR
+mukellefUiyIlcesi='ÜMRANİYE' OR
+mukellefUiyIlcesi='ÜSKÜDAR' ) 
+
+
+--------------------------------------------------------------------------------------------------------------------
+
+
+USE [interOp]
+GO
+
+UPDATE [dbo].[Orders] SET Bolge = '1' WHERE il ='TEKİRDAĞ' 
+UPDATE [dbo].[Orders] SET Bolge = '2' WHERE il ='KOCAELİ' 
+UPDATE [dbo].[Orders] SET Bolge = '3' WHERE il ='ANKARA' OR il ='ESKİŞEHİR' 
+UPDATE [dbo].[Orders] SET Bolge = '4' WHERE il ='İZMİR' OR il ='BURSA' 
+UPDATE [dbo].[Orders] SET Bolge = '5' WHERE il ='ANTALYA' OR il ='SAMSUN' OR il ='ADANA' 
+
+
+UPDATE [dbo].[Orders] SET Bolge = '1' WHERE il ='İSTANBUL' AND 
+(ilce='ARNAVUTKÖY' OR 
+ilce='AVCILAR' OR
+ilce='BAĞCILAR' OR
+ilce='BAHÇELİEVLER' OR
+ilce='BAKIRKÖY' OR
+ilce='BAŞAKŞEHİR' OR
+ilce='BEŞİKTAŞ' OR
+ilce='BEYLİKDÜZÜ' OR
+ilce='BEYOĞLU' OR
+ilce='ÇATALCA' OR
+ilce='ESENLER' OR
+ilce='ESENYURT' OR
+ilce='BÜYÜKÇEKMECE' OR
+ilce='EYÜP' OR
+ilce='EYÜPSULTAN' OR
+ilce='FATİH' OR
+ilce='GAZİOSMANPAŞA' OR
+ilce='GÜNGÖREN' OR
+ilce='KAĞITHANE' OR
+ilce='KÜÇÜKÇEKMECE' OR
+ilce='SARIYER' OR
+ilce='SİLİVRİ' OR
+ilce='ŞİŞLİ' OR
+ilce='SULTANGAZİ' OR
+ilce='ZEYTİNBURNU') 
+
+
+
+UPDATE [dbo].[Orders] SET Bolge = '2' WHERE il ='İSTANBUL' AND 
+(ilce='ADALAR' OR 
+ilce='ATAŞEHİR' OR 
+ilce='BAYRAMPAŞA' OR
+ilce='BEYKOZ' OR
+ilce='ÇEKMEKÖY' OR
+ilce='KADIKÖY' OR
+ilce='KARTAL' OR
+ilce='MALTEPE' OR
+ilce='PENDİK' OR
+ilce='SANCAKTEPE' OR
+ilce='ŞİLE' OR
+ilce='TUZLA' OR
+ilce='GAZİOSMANPAŞA' OR
+ilce='SULTANBEYLİ' OR
+ilce='ÜMRANİYE' OR
+ilce='ÜSKÜDAR' ) 
+

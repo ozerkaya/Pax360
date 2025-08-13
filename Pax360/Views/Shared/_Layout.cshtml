@@ -1,0 +1,218 @@
+﻿@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pax TSM">
+    <meta name="author" content="Özer KAYA">
+    <link rel="shortcut icon" href="~/UIFramework/Admin/assets/images/favicon.ico">
+    <title>PAX Turkey</title>
+
+    <link href="~/UIFramework/Admin/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/UIFramework/Admin/assets/css/core.css" rel="stylesheet" type="text/css" />
+    <link href="~/UIFramework/Admin/assets/css/components.css" rel="stylesheet" type="text/css" />
+    <link href="~/UIFramework/Admin/assets/css/icons.css" rel="stylesheet" type="text/css" />
+    <link href="~/UIFramework/Admin/assets/css/pages.css" rel="stylesheet" type="text/css" />
+    <link href="~/UIFramework/Admin/assets/css/menu.css" rel="stylesheet" type="text/css" />
+    <link href="~/UIFramework/Admin/assets/css/responsive.css" rel="stylesheet" type="text/css" />
+    <link href="~/UIFramework/Admin/assets/css/card2.css" rel="stylesheet" type="text/css" />
+    <link href="~/UIFramework/Admin/assets/plugins/switchery/switchery.min.css">
+    <link href="~/UIFramework/Admin/assets/plugins/select2/css/select2.min.css" rel="stylesheet" />
+    <link href="~/UIFramework/Admin/assets/plugins/timepicker/bootstrap-timepicker.min.css" rel="stylesheet" />
+    <link href="~/UIFramework/Admin/assets/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.css" rel="stylesheet" type="text/css" />
+    <link href="~/UIFramework/Admin/assets/plugins/bootstrap-toggle/bootstrap-toggle.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/UIFramework/Admin/assets/css/buttonimage.css" rel="stylesheet" />
+    <link href="~/UIFramework/Admin/assets/plugins/morris/morris.css" rel="stylesheet">
+    <link href="~/UIFramework/Admin/assets/css/MobileTable.css" rel="stylesheet" />
+    <script src="~/UIFramework/Admin/jquery/jquery-1.12.4.js" type="text/javascript"></script>
+   
+    <script src="~/UIFramework/Admin/assets/js/fontawesome.js"></script>
+    <script src="~/UIFramework/admin/assets/angular/angular.min.js"></script>
+    <script src="~/UIFramework/admin/assets/angular/angular-sanitize.min.js"></script>
+</head>
+
+<body class="fixed-left" style="background-color: #f8f8f8 !important;">
+    <div id="preloader">
+        <div id="status">
+            <div class="spinner">
+                <div class="spinner-wrapper">
+                    <div class="rotator">
+                        <div class="inner-spin"></div>
+                        <div class="inner-spin"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Begin page -->
+    @*<div id="wrapper" class="forced ">*@
+    <div id="wrapper" class="enlarged forced">
+        <div class="topbar">
+            <div class="topbar-left">
+                <a href="/" class="logo">
+                    <span>
+                        <img src="~/UIFramework/Admin/assets/images/logoMiddle.png"
+                             alt="Company Logo"
+                             style="width: 75%;" />
+                    </span>
+                    <i>
+                        <img src="~/UIFramework/Admin/assets/images/logoSmall.png"
+                             alt="Company Logo"
+                             style="width:50px;height:50px;">
+                    </i>
+                </a>
+            </div>
+
+            <div class="navbar navbar-default" role="navigation" style="background-color:#fff !important;">
+                <div class="container">
+
+                    <!-- Navbar-left -->
+                    <ul class="nav navbar-nav navbar-left">
+                        <li>
+                            <button class="button-menu-mobile open-left waves-effect">
+                                <i class="mdi mdi-menu"></i>
+                            </button>
+                        </li>
+                        <li class="hidden-xs">
+                            <form role="search" class="app-search">
+                                <input type="text" placeholder="Search..."
+                                       class="form-control">
+                                <a href=""><i class="fa fa-search"></i></a>
+                            </form>
+                        </li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown user-box">
+                            <a href="#" class="right-menu-item dropdown-toggle" data-toggle="dropdown" title="Account">
+                                <i class="fas fa-user"></i>
+                            </a>
+
+                            <ul class="dropdown-menu dropdown-menu-right arrow-dropdown-menu arrow-menu-right user-list notify-list">
+                                <li>
+                                    <h5>@User.Identity.Name</h5>
+                                </li>
+                                <li><a href="/Account/Logoff"><i class="ti-power-off m-r-5"></i> Exit</a></li>
+                                @* <li><a href="/User/ChangePassword"><i class="ti-lock m-r-5"></i> Change Password</a></li> *@
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        <div class="left side-menu">
+            <div class="sidebar-inner slimscrollleft">
+                <div id="sidebar-menu">
+                    <ul>
+                        <li class="menu-title">Main Menu</li>
+                        @if (HttpContextAccessor.HttpContext.Session.GetString("Module_Order")?.ToString() == "True")
+                        {
+                            <li class="has_sub">
+                                <a href="#" class="waves-effect"><i class="fas fa-list"></i><span> Siparişler </span> </a>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="/Order/SelectCompany">Sipariş Ekle</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Order/OrderList">Sipariş Listesi</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        }
+                        @if (HttpContextAccessor.HttpContext.Session.GetString("Module_Users")?.ToString() == "True")
+                        {
+                            <li class="has_sub">
+                                <a href="/Admin/Users" class="waves-effect"><i class="fas fa-user-plus"></i><span> Kullanıcılar </span> </a>
+                            </li>
+                        }
+
+                        @if (HttpContextAccessor.HttpContext.Session.GetString("Module_Role")?.ToString() == "True" ||
+                        HttpContextAccessor.HttpContext.Session.GetString("Module_Role_Users")?.ToString() == "True")
+                        {
+                            <li class="has_sub">
+                                <a href="/Admin/Roles" class="waves-effect"><i class="fas fa-user-secret"></i><span> Roller </span> </a>
+                            </li>
+                        }
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <div class="content-page" style="padding-top: 80px;">
+            @RenderBody()
+            <footer class="footer text-right">
+                2021 © PAX 360 - Version 1.1.7
+            </footer>
+        </div>
+    </div>
+    <script>
+        var resizefunc = [];
+
+        $(document).ready(function () {
+
+            $(".select2").select2({
+                tags: false,
+                placeholder: "Seçiniz",
+                allowClear: true,
+                language: {
+                    "noResults": function () {
+                        return "Sonuç bulunamadı!";
+                    }
+                },
+            });
+
+            //sleep = milliseconds => new Promise(resolve => setTimeout(resolve, milliseconds));
+            ConfirmationsCount();
+        });
+    </script>
+    <!-- jQuery  -->
+    @*<script src="~/UIFramework/Admin/assets/js/jquery.min.js"></script>*@
+    <script src="~/UIFramework/Admin/assets/js/bootstrap.min.js"></script>
+    <script src="~/UIFramework/Admin/assets/js/detect.js"></script>
+    <script src="~/UIFramework/Admin/assets/js/fastclick.js"></script>
+    <script src="~/UIFramework/Admin/assets/js/jquery.blockUI.js"></script>
+    <script src="~/UIFramework/Admin/assets/js/waves.js"></script>
+    <script src="~/UIFramework/Admin/assets/js/jquery.slimscroll.js"></script>
+    <script src="~/UIFramework/Admin/assets/js/jquery.scrollTo.min.js"></script>
+    <script src="~/UIFramework/Admin/assets/plugins/switchery/switchery.min.js"></script>
+
+    <!-- App js -->
+    <script src="~/UIFramework/Admin/assets/js/jquery.core.js"></script>
+    <script src="~/UIFramework/Admin/assets/js/jquery.app.js"></script>
+    <!-- DatePicker -->
+    <script src="~/UIFramework/Admin/assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+    <script src="~/UIFramework/Admin/assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.tr.min.js"></script>
+
+    <!-- Toogle -->
+    <script src="~/UIFramework/Admin/assets/plugins/bootstrap-toggle/bootstrap-toggle.min.js"></script>
+
+    <!-- Select2 -->
+    <script src="~/UIFramework/Admin/assets/plugins/select2/js/select2.min.js"></script>
+
+    <!-- TimePicker -->
+    <script src="~/UIFramework/Admin/assets/plugins/timepicker/bootstrap-timepicker.js"></script>
+
+    @*<script src="~/UIFramework/Admin/assets/plugins/currencyformatter/jquery.number.min.js"></script>*@
+    @*<script src="~/UIFramework/Admin/assets/plugins/currencyformatter/numberhelper.js"></script>*@
+
+    @*<script src="~/UIFramework/Admin/assets/js/jquery-ui-modified.js"></script>*@
+    @*<script src="~/UIFramework/Admin/assets/init/kanban.js"></script>*@
+
+    @*<script src="~/UIFramework/Admin/assets/plugins/jquery.filer/js/jquery.filer.js"></script>*@
+    @*<script src="~/UIFramework/Admin/assets/plugins/jquery.filer/js/jquery.fileuploads.init.js"></script>*@
+    @*<script src="~/JSFramework/Binders.js"></script>*@
+
+    <script src="~/UIFramework/Admin/assets/plugins/jquery.filer/js/jquery.filer.js"></script>
+    <script src="~/UIFramework/Admin/assets/plugins/jquery.filer/js/jquery.fileuploads.init.js"></script>
+
+    <script src="~/UIFramework/Admin/assets/js/ImageTools.js"></script>
+    <script src="~/UIFramework/Admin/assets/plugins/dropify/dist/js/dropify.js"></script>
+    <script src="~/UIFramework/Admin/assets/js/DropifySettings.js"></script>
+
+</body>
+</html>

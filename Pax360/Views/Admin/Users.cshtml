@@ -1,0 +1,379 @@
+﻿@model Pax360.Models.UserDetailsModel
+@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+
+@{
+    ViewData["Title"] = "Users";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<script>
+    $(document).ready(function () {
+        $(".select2").select2({
+            tags: false,
+            theme: "classic"
+        });
+    });
+</script>
+
+@{
+    var YesNo = new List<SelectListItem>()
+{
+             new SelectListItem { Text = "Seçiniz", Value = "" },
+             new SelectListItem { Text = "Evet", Value = "true" },
+             new SelectListItem { Text = "Hayır", Value = "false" },
+    };
+
+    var Teams = new List<SelectListItem>();
+    Teams.Add(new SelectListItem { Text = "Seçiniz", Value = "" });
+
+    foreach (var item in Model.TeamList)
+    {
+        if (Model.TeamName != null && Model.TeamName == item)
+        {
+            Teams.Add(new SelectListItem { Text = item, Value = item, Selected = true });
+        }
+        else
+        {
+            Teams.Add(new SelectListItem { Text = item, Value = item });
+        }
+    }
+}
+
+
+@using (Html.BeginForm("Users", "Admin", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <button name="operation" type="submit" id="btnSearch" value="Search" style="width: 0px;position: absolute;z-index: -1;margin-top: -10px;visibility:hidden;"></button>
+    @Html.HiddenFor(ok => ok.ID)
+    <div class="content">
+        @await Html.PartialAsync("_Messages", new Dictionary<string, string> { { "ErrorMessage", Model.ErrorMessage }, { "SuccessMessage", Model.SuccessMessage } })
+        <div class="container">
+            @await Html.PartialAsync("_PageHeader", new Dictionary<string, string> { { "UserName", @HttpContextAccessor.HttpContext.Session.GetString("NAMESURNAME") }, { "Page", "Kullanıcılar" } })
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-color panel-info">
+                        <div class="panel-heading" style="padding:8px 10px;">
+                            <a href="#"><h3 class="panel-title">KULLANICI İŞLEMLERİ</h3></a>
+                        </div>
+                        <div class="card-box" style="padding: 18px !important;border:none;margin-bottom:0px;">
+                            <div class="row">
+                                <div class="col-lg-2">
+                                    <div class="form-group">
+                                        @Html.Label("Ad Soyad")
+                                        @Html.TextBoxFor(Ok => Ok.NameSurname, new { @class = "form-control", autocomplete = "off" })
+                                    </div>
+                                </div>
+                                <div class="col-lg-2">
+                                    <div class="form-group">
+                                        @Html.Label("E-Mail")
+                                        @Html.TextBoxFor(Ok => Ok.UserMail, new { @class = "form-control", autocomplete = "off" })
+                                    </div>
+                                </div>
+                                <div class="col-lg-2">
+                                    <div class="form-group">
+                                        @Html.Label("Şifre")
+                                        @Html.TextBoxFor(Ok => Ok.UserPass, new { @class = "form-control", autocomplete = "off", style = "-webkit-text-security: square;" })
+                                    </div>
+                                </div>
+                                <div class="col-lg-2">
+                                    <div class="form-group">
+                                        @Html.Label("Rol")
+                                        @Html.DropDownListFor(ok => ok.Role, new SelectList(Model.RoleList, "Value", "Text"), new { @class = "form-control select2", onchange = "SetRole();" })
+                                    </div>
+                                </div>
+                                <div class="col-lg-2">
+                                    <div class="form-group" style="margin-top: -3px;">
+                                        <a href="#"
+                                           data-toggle="modal"
+                                           data-target="#addTeam"
+                                           aria-label="Takım Ekle"
+                                           title="Takım Ekle">
+                                            <i class="mdi mdi-plus-box"
+                                               title="Takım Ekle"
+                                               style="color:#f5707a;font-size: 20px;"
+                                               aria-hidden="true">
+                                            </i>
+                                            <span class="sr-only">Takım Ekle</span>
+                                        </a>
+                                        @Html.Label("Team")
+                                        @Html.DropDownListFor(ok => ok.TeamName, new SelectList(Teams, "Value", "Text"), new { @class = "form-control select2" })
+                                    </div>
+                                </div>
+                                <div class="col-lg-2">
+                                    <div class="form-group">
+                                        @Html.Label("Telefon")
+                                        @Html.TextBoxFor(Ok => Ok.PhoneNumber, new { @class = "form-control", autocomplete = "off" })
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-2">
+                                    <div class="form-group">
+                                        @Html.Label("TCKN")
+                                        @Html.TextBoxFor(Ok => Ok.TCKN, new { @class = "form-control", autocomplete = "off" })
+                                    </div>
+                                </div>
+                                <div class="col-lg-2">
+                                    <div class="form-group">
+                                        @Html.Label("Aktif")
+                                        @Html.DropDownListFor(ok => ok.IsEnable, new SelectList(YesNo, "Value", "Text"), new { @class = "form-control select2" })
+                                    </div>
+                                </div>
+                                <div class="col-lg-2">
+                                    <div class="form-group">
+                                        @Html.Label("Bağlı Olacağı Firma")
+                                        @Html.DropDownListFor(ok => ok.MikroCompanyID, new SelectList(Model.MikroCompanyList, "Value", "Text"), new { @class = "form-control select2" })
+                                    </div>
+                                </div>
+                                <div class="col-lg-2">
+                                    <div class="form-group">
+                                        @Html.Label("Müşteri Temsilcisi")
+                                        @Html.DropDownListFor(ok => ok.AuthPersonID, new SelectList(Model.AuthPersonList, "Value", "Text"), new { @class = "form-control select2" })
+                                    </div>
+                                </div>
+                                <div class="col-lg-2">
+                                    <div class="form-group">
+                                        @Html.Label("Sip Satıcı Kodu")
+                                        @Html.TextBoxFor(Ok => Ok.SipSaticiKodu, new { @class = "form-control", autocomplete = "off" })
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+
+                                    @if (Model.ID == 0)
+                                    {
+                                        <button name="operation" type="submit" class="btn btn-facebook width-md waves-effect" value="Save" style="margin-top:18px;padding:7px;min-width: 70px;">Kaydet</button>
+                                    }
+                                    else
+                                    {
+                                        <button name="operation" type="submit" class="btn btn-facebook width-md waves-effect" value="Update" style="margin-top:18px;padding:7px;min-width: 70px;">Güncelle</button>
+                                    }
+                                    <button name="operation" type="submit" class="btn btn-facebook width-md waves-effect" value="Search" style="margin-top:18px;padding:7px;min-width: 70px;">Ara</button>
+                                    @if (Model.ID != 0)
+                                    {
+                                        <a href="#" class="btn btn-danger width-md waves-effect" data-toggle="modal" data-target="#removeModal" style="margin-top:18px;padding:7px;min-width: 70px;">Sil</a>
+                                        <button id="btnRemoveUsers" name="operation" type="submit" class="btn btn-facebook width-md waves-effect" value="Remove" style="width:0px;padding:0px;position:absolute;visibility:hidden;"></button>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-color panel-info">
+                        <div class="panel-heading" style="border: none !important; padding: 15px 20px; border-radius:4px 4px 0 0;background-color: #387ec3;color: #fff;">
+                            <a href="#"><h3 class="panel-title" style="color:#fff;"><a href="/Admin/Users" style="padding-right: 10px;"><i class="fas fa-refresh"></i></a> KULLANICI LİSTESİ (@Model.List.Count() DE @Model.List.Count() RECORD)</h3></a>
+                        </div>
+                        <div class="panel-body" style="padding:0px !important">
+                            <div id="no-more-tables">
+                                <table class="table m-0 col-sm-12 table-colored-bordered table-striped table-condensed table-bordered-info cf sortable">
+                                    <thead class="cf">
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Ad Soyad</th>
+                                            <th>E-Mail</th>
+                                            <th>Rol</th>
+                                            <th>Takım</th>
+                                            <th>Telefon</th>
+                                            <th>Firma</th>
+                                            <th>Müşteri Temsilcisi</th>
+                                            <th>Sip Satıcı Kodu</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @{
+                                            int i = 1;
+                                            @foreach (var item in Model.List.OrderByDescending(ok => ok.ID))
+                                            {
+                                                <tr style="margin-top: 10px;">
+                                                    <td data-title="ID">
+                                                        @i.ToString()
+                                                    </td>
+                                                    <td data-title="Ad Soyad">
+                                                        @item.NameSurname
+                                                    </td>
+                                                    <td data-title="Email">
+                                                        @item.Email
+                                                    </td>
+                                                    <td data-title="Rol">
+                                                        @item.Role
+                                                    </td>
+                                                    <td data-title="Takım">
+                                                        @if (string.IsNullOrWhiteSpace(item.TeamName))
+                                                        {
+                                                            <br />
+                                                        }
+                                                        else
+                                                        {
+                                                            @item.TeamName
+                                                        }
+                                                    </td>
+                                                    <td data-title="Telefon">
+                                                        @item.PhoneNumber
+                                                    </td>
+                                                    <td data-title="Firma">
+                                                        @item.Company
+                                                    </td>
+                                                    <td data-title="Müşteri Temsilcisi">
+                                                        @item.AuthPerson
+                                                    </td>
+                                                    <td data-title="Sip Satıcı Kodu">
+                                                        @item.SipSaticiKodu
+                                                    </td>
+                                                    <td data-title="İşlemler" style="width:20px;">
+                                                        <div class="btn-group">
+                                                            <a href="/Admin/Users?id=@item.ID" class="btn btn-facebook dropdown-toggle waves-effect" style="background-color: transparent;"><i class="fas fa-search" style="color: #fff;"></i></a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                i++;
+                                            }
+                                        }
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="addTeam" class="modal fade" tabindex="-1" role="dialog" style="padding-right: 16px;" aria-modal="true">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content p-0 b-0">
+                <div class="card mb-0" style="border: 1px solid #e7eaed; border-radius: .25rem;">
+                    <div class="card-header bg-primary" style="padding: .75rem 1.5rem;">
+                        <h5 class="modal-title font-18 text-white float-left mt-0">Takım ekle.</h5>
+                        <button id="closeaddTeam" type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin-top: -22px;">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <div style="margin-left: 15px; margin-right: 15px; margin-top: 5px; margin-bottom: 5px;">
+                            <div class="row">
+                                <div class="col-lg-8">
+                                    <div class="form-group">
+                                        @Html.Label("Takım adı")
+                                        @Html.TextBox("AddTeamTxt", "", new { @class = "form-control", autocomplete = "off", id = "AddTeamTxt" })
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="form-group">
+                                        <button name="operation"
+                                                onclick="saveTeam();"
+                                                class="btn btn-danger btn-lg btn-block waves-effect waves-light"
+                                                style="margin-top:18px;">
+                                            Save
+                                        </button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <input type="file" name="ProfileImg_Container" id="ProfileImg_Container" multiple style="width: 100%;visibility:hidden;" />
+}
+
+<script>
+    function imageButtonClick() {
+        document.getElementById("ProfileImg_Container").click();
+    }
+
+    function readURL(input) {
+
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#Hizmet_Resim').attr('src', e.target.result);
+            }
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+    $("#ProfileImg_Container").change(function () {
+        readURL(this);
+    });
+
+    function saveTeam() {
+        var teamTxt = document.getElementById("AddTeamTxt").value;
+        $.ajax({
+            type: 'POST',
+            url: '/Admin/SaveTeam/',
+            data: JSON.stringify(teamTxt),
+            contentType: 'application/json; charset=utf-8',
+            success: function () {
+                $('#TeamName').append('<option value="' + teamTxt + '">' + teamTxt + '</option>');
+                document.getElementById("closeaddTeam").click();
+            },
+            error: function () {
+                alert("Error");
+            }
+        });
+    }
+</script>
+
+<script>
+    function clickSearch() {
+        document.getElementById("btnSearch").click();
+    }
+</script>
+
+@await Html.PartialAsync("_RemoveModal")
+
+<script>
+    function clickRemove() {
+        document.getElementById("btnRemoveUsers").click();
+    }
+</script>
+
+<script>
+    function handleKeyPress(event) {
+        if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault();
+            imageButtonClick();
+        }
+    }
+
+    function handleKeyDown(event) {
+        if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault();
+        }
+    }
+
+    function handleKeyUp(event) {
+        if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault();
+            imageButtonClick();
+        }
+    }
+</script>
+
+<script>
+    function handleCheckboxKeyPress(event, id) {
+        if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault();
+            bindSelected(id);
+        }
+    }
+
+    function handleCheckboxKeyDown(event) {
+        if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault();
+        }
+    }
+</script>

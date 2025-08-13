@@ -1,0 +1,169 @@
+﻿@model Pax360.Models.RoleDetailsModel
+@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+
+@{
+    ViewData["Title"] = "Roles";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using (Html.BeginForm())
+{
+    @Html.HiddenFor(ok => ok.ID)
+    @Html.HiddenFor(ok => ok.AuthID)
+    <div class="content">
+        @await Html.PartialAsync("_Messages", new Dictionary<string, string> { { "ErrorMessage", Model.ErrorMessage }, { "SuccessMessage", Model.SuccessMessage } })
+        <div class="container">
+            @await Html.PartialAsync("_PageHeader", new Dictionary<string, string> { { "UserName", @HttpContextAccessor.HttpContext.Session.GetString("NAMESURNAME") }, { "Page", "Roller" } })
+
+            <div class="row">
+                <div class="col-lg-12">
+                    @if (Model.NewRole == 0)
+                    {
+                        <div class="panel panel-color panel-info">
+                            <div class="panel-heading" style="padding:8px 10px;">
+                                <a href="#"><h3 class="panel-title">ROLE OPTIONS</h3></a>
+                            </div>
+                            <div class="card-box" style="padding: 20px !important;border:none;margin-bottom:0px;">
+                                <div class="row">
+                                    @if (HttpContextAccessor.HttpContext.Session.GetString("Module_Role")?.ToString() == "True")
+                                    {
+                                        <div class="col-lg-2">
+                                            <div class="form-group">
+                                                @Html.Label("Roles")
+                                                @Html.DropDownListFor(ok => ok.Role, new SelectList(Model.RoleList, "Value", "Text"), new { @class = "form-control", onchange = "clickRole(this);" })
+                                            </div>
+                                        </div>
+                                    }
+                                    @if (HttpContextAccessor.HttpContext.Session.GetString("Module_Role_Users")?.ToString() == "True")
+                                    {
+                                        <div class="col-lg-2">
+                                            <div class="form-group">
+                                                @Html.Label("Users")
+                                                @Html.DropDownListFor(ok => ok.User, new SelectList(Model.UserList, "Value", "Text"), new { @class = "form-control", onchange = "clickUser(this);" })
+                                            </div>
+                                        </div>
+                                    }
+                                    <div class="col-md-1 col-xs-4">
+                                        @if (Model.ID == 0 && Model.AuthID == 0)
+                                        {
+                                            @if (HttpContextAccessor.HttpContext.Session.GetString("Module_Role")?.ToString() == "True")
+                                            {
+                                                <a href="/Admin/Roles?newRole=1" name="operation" type="submit" class="btn btn-facebook width-md waves-effect" value="Save" style="padding:7px;min-width: 70px;margin-top: 20px;width:100%;"><i class="mdi mdi-plus"></i> Yeni Rol</a>
+                                            }
+                                        }
+                                        else
+                                        {
+                                            <button name="operation" type="submit" class="btn btn-facebook width-md waves-effect" value="Update" style="padding:7px;min-width: 70px;margin-top: 20px;width:100%;">Güncelle</button>
+                                        }
+                                    </div>
+                                    <div class="col-md-1 col-xs-4">
+                                        @if (Model.ID != 0)
+                                        {
+                                            <a href="#" class="btn btn-facebook width-md waves-effect" data-toggle="modal" data-target="#removeModal" style="padding:7px;min-width: 70px;margin-top: 20px;width:100%;">Sil</a>
+                                            <button id="btnRemoveRoles" name="operation" type="submit" class="btn btn-facebook width-md waves-effect" value="Remove" style="width:0px;padding:0px;position:absolute;visibility:hidden;"></button>
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="panel panel-color panel-info">
+                            <div class="panel-heading" style="padding:8px 10px;">
+                                <a href="#"><h3 class="panel-title">ADD NEW ROLE</h3></a>
+                            </div>
+                            <div class="card-box" style="padding: 20px !important;border:none;margin-bottom:0px;">
+                                <div class="row">
+                                    <div class="col-lg-2">
+                                        <div class="form-group">
+                                            @Html.Label("Role Name")
+                                            @Html.TextBoxFor(Ok => Ok.RoleName, new { @class = "form-control" })
+                                        </div>
+                                    </div>
+                                    <div class="col-md-1 col-xs-4">
+                                        <button name="operation" type="submit" class="btn btn-facebook width-md waves-effect" value="Save" style="margin-top:18px;padding:7px;min-width: 70px;width:100%;">Save</button>
+                                    </div>
+                                    <div class="col-md-1 col-xs-4">
+                                        <a href="/Admin/Roles" name="operation" type="submit" class="btn btn-facebook width-md waves-effect" value="Save" style="margin-top:18px;padding:7px;min-width: 70px;width:100%;">Cancel</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    }
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-color panel-info">
+                        <div class="panel-heading" style="padding:8px 10px;">
+                            <a href="#"><h3 class="panel-title">MODULES</h3></a>
+                        </div>
+                        <div class="card-box" style="padding: 20px !important;border:none;margin-bottom:0px;">
+                            <div class="row">
+                                <div class="col-lg-2">
+                                    <div class="form-group">
+                                        <div class="checkbox checkbox-success checkbox-circle">
+                                            @Html.CheckBoxFor(ok => ok.Module_Users)
+                                            <label for="Module_Users" style="font-size: 15px;">
+                                                Users
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2">
+                                    <div class="form-group">
+                                        <div class="checkbox checkbox-success checkbox-circle">
+                                            @Html.CheckBoxFor(ok => ok.Module_Role)
+                                            <label for="Module_Role" style="font-size: 15px;">
+                                                Roles
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2">
+                                    <div class="form-group">
+                                        <div class="checkbox checkbox-success checkbox-circle">
+                                            @Html.CheckBoxFor(ok => ok.Module_Order)
+                                            <label for="Module_Order" style="font-size: 15px;">
+                                                Siparişler
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+}
+
+<script>
+    function clickRole(id) {
+        var e = document.getElementById("Role");
+        var selectedValue = e.options[id.selectedIndex].value;
+        window.location.assign(window.location.protocol + "//" + window.location.host + "/Admin/Roles?role=" + selectedValue);
+    }
+
+    function clickUser(id) {
+        var e = document.getElementById("User");
+        var selectedValue = e.options[id.selectedIndex].value;
+        window.location.assign(window.location.protocol + "//" + window.location.host + "/Admin/Roles?id=" + selectedValue);
+    }
+
+</script>
+
+@await Html.PartialAsync("_RemoveModal")
+
+<script>
+    function clickRemove() {
+        document.getElementById("btnRemoveRoles").click();
+    }
+</script>

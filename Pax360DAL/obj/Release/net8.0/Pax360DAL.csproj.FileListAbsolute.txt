@@ -1,0 +1,14 @@
+C:\Users\ozer.kaya\source\repos\Pax360\Pax360DAL\bin\Release\net8.0\Pax360DAL.deps.json
+C:\Users\ozer.kaya\source\repos\Pax360\Pax360DAL\bin\Release\net8.0\Pax360DAL.runtimeconfig.json
+C:\Users\ozer.kaya\source\repos\Pax360\Pax360DAL\bin\Release\net8.0\Pax360DAL.dll
+C:\Users\ozer.kaya\source\repos\Pax360\Pax360DAL\bin\Release\net8.0\Pax360DAL.pdb
+C:\Users\ozer.kaya\source\repos\Pax360\Pax360DAL\obj\Release\net8.0\Pax360DAL.csproj.AssemblyReference.cache
+C:\Users\ozer.kaya\source\repos\Pax360\Pax360DAL\obj\Release\net8.0\Pax360DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ozer.kaya\source\repos\Pax360\Pax360DAL\obj\Release\net8.0\Pax360DAL.AssemblyInfoInputs.cache
+C:\Users\ozer.kaya\source\repos\Pax360\Pax360DAL\obj\Release\net8.0\Pax360DAL.AssemblyInfo.cs
+C:\Users\ozer.kaya\source\repos\Pax360\Pax360DAL\obj\Release\net8.0\Pax360DAL.csproj.CoreCompileInputs.cache
+C:\Users\ozer.kaya\source\repos\Pax360\Pax360DAL\obj\Release\net8.0\Pax360DAL.dll
+C:\Users\ozer.kaya\source\repos\Pax360\Pax360DAL\obj\Release\net8.0\refint\Pax360DAL.dll
+C:\Users\ozer.kaya\source\repos\Pax360\Pax360DAL\obj\Release\net8.0\Pax360DAL.pdb
+C:\Users\ozer.kaya\source\repos\Pax360\Pax360DAL\obj\Release\net8.0\Pax360DAL.genruntimeconfig.cache
+C:\Users\ozer.kaya\source\repos\Pax360\Pax360DAL\obj\Release\net8.0\ref\Pax360DAL.dll

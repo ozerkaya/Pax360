@@ -1,0 +1,283 @@
+﻿.XCard {
+    float: left;
+    position: relative;
+    background-color: #2f3e47;
+    width: calc( (100% / 3) - 20px );
+    margin-right: 17px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border: 4px solid #253138
+}
+
+.XCard:hover {
+    border: 4px solid #35b8e0;
+}
+
+.XCardIn {
+    float: left;
+    position: relative;
+    width: 100%;
+}
+
+.XCardContentPictureArea {
+    float: left;
+    position: relative;
+    width: calc( 100% - 70px );
+    height: 240px;
+    background-color: #66CCCC;
+    z-index: 11;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+
+
+.XCardContentPictureClickArea {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 11;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    cursor: pointer;
+}
+
+
+.XCardContentTextArea {
+    float: left;
+    width: 100%;
+    height: 140px
+}
+
+
+.XCardContentButtonArea {
+    position: relative;
+    top: 0px;
+    right: 25px;
+    bottom: 0px;
+    min-width: 70px;
+    width: 100%;
+    z-index: 11;
+    color: #F00;
+}
+
+
+.XCardContentButtonAreaButton1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 67%;
+    width: 100%;
+    border-radius: 0px !important;
+}
+
+.XCardContentButtonAreaButton2 {
+    position: absolute;
+    top: 33%;
+    left: 0px;
+    right: 0px;
+    bottom: 33%;
+    width: 100%;
+    border-radius: 0px !important;
+}
+
+
+
+.XCardContentButtonAreaButton3 {
+    position: absolute;
+    top: 67%;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 100%;
+    border-radius: 0px !important;
+}
+
+
+
+
+
+
+
+
+.XCard_ProjectName {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    color: #FFF;
+    background-color: rgba(0,0,0,.70);
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.XCard_MinMaxPriceBar {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 20px;
+    z-index: 12;
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+    color: #6F0
+}
+
+.btn-block2 {
+    font-size: 11px !important;
+    padding: 2px !important;
+    margin: 0px !important;
+}
+
+
+@media only screen and (max-width: 1400px) {
+    .XCard {
+        width: calc( (100% / 3) - 30px );
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .XCard {
+        width: calc( (100% / 2) - 30px );
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .XCard {
+        width: calc( (100% / 1) - 0px );
+    }
+}
+
+.absolute {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+.XCard_MinMaxPriceBarLeft {
+    text-align: left;
+    padding-left: 10px;
+}
+
+.XCard_MinMaxPriceBarRight {
+    text-align: right;
+    padding-right: 10px;
+}
+
+
+
+
+.MiniSelect {
+    font-size: 12px !important;
+    padding: 6px !important;
+    height: auto !important;
+    border-radius: 0px;
+}
+
+.form-group label {
+    color: #333;
+    font-size: 12px;
+    padding: 0px;
+    height: auto;
+    line-height: none;
+    margin: 0px
+}
+
+
+.XLeft {
+    position: fixed;
+    left: 20px;
+    width: 320px;
+}
+
+.XRight {
+    position: fixed;
+    right: 0px;
+    left: 340px;
+    bottom: 20px;
+    top: 175px;
+}
+
+.ResultData {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    top: 0px;
+}
+
+.XCounter {
+    position: fixed;
+    right: 30px;
+    left: 342px;
+    top: 145px;
+    height: 25px;
+    border-bottom: 1px solid #333;
+    font-weight: bold;
+    color: #333;
+    padding-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 8px !important;
+}
+
+
+.XCardTextLocation {
+    border-right: 1px solid #666;
+    text-align: left
+}
+
+.XCardTextLocation, .XCardTextDeliveryDate {
+    float: left;
+    background-color: #FFF;
+    width: 50%;
+    color: #333;
+    font-size: 14px;
+    height: 40px;
+    overflow: hidden;
+    line-height: 40px;
+    padding: 0px 0px 0px 4px;
+}
+
+.XCardTextLivingSpace {
+    float: left;
+    padding: 0px 0px 0px 20px;
+    text-align: left;
+    background-color: #005C7E;
+    height: 40px;
+    overflow: hidden;
+    line-height: 40px;
+    color: #FFF;
+    font-size: 16px;
+}
+
+.XCardTextPriceRange {
+    float: left;
+    padding: 0px 20px 0px 0px;
+    text-align: left;
+    background-color: #01A71F;
+    height: 60px;
+    overflow: hidden;
+    color: #FFF;
+}
+
+.XCardTextPriceRangePrices {
+    float: left;
+    width: calc(100% - 70px);
+    line-height: 22px;
+    padding-top: 8px;
+    overflow: hidden;
+    font-size: 12px;
+    letter-spacing: 0px
+}
+
