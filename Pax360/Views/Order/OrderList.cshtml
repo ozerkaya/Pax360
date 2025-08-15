@@ -32,14 +32,14 @@
                 <div class="col-lg-12">
                     <div class="panel panel-color panel-info">
                         <div class="panel-heading" style="padding:8px 10px;">
-                            <a href="#"><h3 class="panel-title">KULLANICI İŞLEMLERİ</h3></a>
+                            <a href="#"><h3 class="panel-title">SİPARİŞ İŞLEMLERİ</h3></a>
                         </div>
                         <div class="card-box" style="padding: 18px !important;border:none;margin-bottom:0px;">
                             <div class="row">
                                 <div class="col-lg-2">
                                     <div class="form-group">
-                                        @Html.Label("Sipariş Numarası")
-                                        @Html.TextBoxFor(Ok => Ok.SiparisNumarasi, new { @class = "form-control", autocomplete = "off" })
+                                        @Html.Label("Müşteri Ünvanı")
+                                        @Html.DropDownListFor(ok => ok.SelectedCari, new SelectList(Model.MikroCompanyList, "Value", "Text"), new { @class = "form-control select2" })
                                     </div>
                                 </div>
                                 <div class="col-lg-2">
@@ -51,6 +51,70 @@
                 </div>
 
             </div>
+
+            @if (Model.OrderList.FirstOrDefault() != null && Model.OrderList.FirstOrDefault().OrderItems != null)
+            {
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="panel panel-color panel-info">
+                            <div class="panel-heading" style="border: none !important; padding: 15px 20px; border-radius:4px 4px 0 0;background-color: #387ec3;color: #fff;">
+                                <a href="#"><h3 class="panel-title" style="color:#fff;"><a href="/Order/OrderList" style="padding-right: 10px;"><i class="fas fa-refresh"></i></a> SİPARİŞ KALEM LİSTESİ </h3></a>
+                            </div>
+                            <div class="panel-body" style="padding:0px !important">
+                                <div id="no-more-tables">
+                                    <table class="table m-0 col-sm-12 table-colored-bordered table-striped table-condensed table-bordered-info cf sortable">
+                                        <thead class="cf">
+                                            <tr>
+                                                <th>ID</th>
+                                                <th>Ürün Adı</th>
+                                                <th>Miktar</th>
+                                                <th>BirimFiyat</th>
+                                                <th>BirimFiyatTL</th>
+                                                <th>Kdv</th>
+                                                <th>Iskonto</th>
+                                                <th>ToplamTutar</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @foreach (var item in Model.OrderList.FirstOrDefault().OrderItems)
+                                            {
+                                                <tr style="margin-top: 10px;">
+                                                    <td data-title="ID">
+                                                        @item.ID
+                                                    </td>
+                                                    <td data-title="Ürün Adı">
+                                                        @item.CihazModeli
+                                                    </td>
+                                                    <td data-title="Miktar">
+                                                        @item.Miktar
+                                                    </td>
+                                                    <td data-title="Birim Fiyat">
+                                                        @item.BirimFiyat
+                                                    </td>
+                                                    <td data-title="Birim Fiyat TL">
+                                                        @item.BirimFiyatTL
+                                                    </td>
+
+                                                    <td data-title="Kdv">
+                                                        @item.Kdv
+                                                    </td>
+                                                    <td data-title="İskonto">
+                                                        @item.Iskonto
+                                                    </td>
+                                                    <td data-title="Toplam Tutar">
+                                                        @item.ToplamTutar
+                                                    </td>
+                                                </tr>
+                                            }
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
 
             <div class="row">
                 <div class="col-lg-12">
@@ -67,20 +131,21 @@
                                             <th>Müşteri</th>
                                             <th>Sipariş Tarihi</th>
                                             <th>Sipariş Durumu</th>
+                                            <th>Ekleyen</th>
                                             <th></th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         @{
                                             int i = 1;
-                                            @foreach (var item in Model.OrderList.OrderByDescending(ok => ok.SiparisTarihi))
+                                            @foreach (var item in Model.OrderList)
                                             {
                                                 <tr style="margin-top: 10px;">
                                                     <td data-title="Sipariş No">
                                                         @item.SiparisNumarasi
                                                     </td>
                                                     <td data-title="Müşteri">
-                                                        @item.Company
+                                                        @item.MusteriAdi
                                                     </td>
                                                     <td data-title="Sipariş Tarihi">
                                                         @item.SiparisTarihi
@@ -88,13 +153,22 @@
                                                     <td data-title="Sipariş Durumu">
                                                         @item.SiparisDurumu
                                                     </td>
+                                                     <td data-title="Ekleyen">
+                                                        @item.UserName
+                                                    </td>
                                                     <td data-title="İşlemler" style="width:20px;">
                                                         <div class="btn-group">
                                                             <button type="button" class="btn btn-facebook width-md waves-effect" data-toggle="dropdown" aria-expanded="false"><i class="fas fa-cog" style="color: #fff;"></i></button>
                                                             <ul class="dropdown-menu dropdown-menu-right" style="padding:5px;">
                                                                 <li>
-                                                                    <a class="btn btn-default btn-block" data-toggle="modal" data-target="#durumModal" onclick="appID('@item.SiparisNumarasi')" style="background-color: transparent;margin-top:3px;">Durum Güncelle</a>
-                                                                </li>                                                                
+                                                                    <a class="btn btn-default btn-block" href="/Order/OrderList?DetailID=@item.ID" style="background-color: transparent;margin-top:3px;">İncele</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="btn btn-default btn-block" href="/Order/Order?orderID=@item.ID" style="background-color: transparent;margin-top:3px;">Sipariş Güncelle</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="btn btn-default btn-block" data-toggle="modal" data-target="#durumModal" onclick="appID('@item.ID')" style="background-color: transparent;margin-top:3px;">Durum Güncelle</a>
+                                                                </li>
                                                             </ul>
                                                         </div>
                                                     </td>
@@ -111,7 +185,7 @@
                         <div class="text-right">
                             <center>
                                 <ul class="pagination pagination-split m-t-0">
-                                    @Html.PagedListPager(new StaticPagedList<Pax360.Models.OrderListItemModel>(Model.OrderList, Model.PagingMetaData), page => Url.Action("OrderList", new
+                                    @Html.PagedListPager(new StaticPagedList<Pax360DAL.Models.Orders>(Model.OrderList, Model.PagingMetaData), page => Url.Action("OrderList", new
                                         {
                                             page,
                                         }), PagedListRenderOptions.ClassicPlusFirstAndLast)

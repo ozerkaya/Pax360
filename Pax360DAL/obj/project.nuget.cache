@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qSEAz44qmTg=",
+  "dgSpecHash": "yXxmSDIiIuQ=",
   "success": true,
-  "projectFilePath": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\pax360\\Pax360DAL\\Pax360DAL.csproj",
+  "projectFilePath": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\Pax360\\Pax360DAL\\Pax360DAL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ozer.kaya\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\ozer.kaya\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

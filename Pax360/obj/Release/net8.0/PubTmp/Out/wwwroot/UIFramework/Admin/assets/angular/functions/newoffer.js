@@ -1,22 +1,23 @@
-﻿var app = angular.module("orderinputapp", ['ngSanitize']);
-app.controller("orderinputController", ['$scope', '$http', '$window', function ($scope, $http, $window) {
+﻿var app = angular.module("offerinputapp", ['ngSanitize']);
+app.controller("offerinputController", ['$scope', '$http', '$window', function ($scope, $http, $window) {
 
-    $scope.SetOrderInput = function () {
+    $scope.SetOfferInput = function () {
 
-        let cihazmodeli = document.getElementById("CihazModeli").value;
-        let miktar = document.getElementById("Adet").value;
+        let adi = document.getElementById("UrunAdi").value;
+        let fiyat = document.getElementById("Fiyat").value;
+        let adet = document.getElementById("Adet").value;
 
         $http({
             method: "POST",
-            url: "/JS/SetOrder",
+            url: "/JS/SetOffer",
             dataType: 'json',
-            data: JSON.stringify({ cihazmodeli, miktar }),
+            data: JSON.stringify({ adi, fiyat, adet }),
             headers: { "Content-Type": "application/json" }
         }).then(Success, Error);
 
         function Success(response) {
 
-            $scope.orderlist = response.data;
+            $scope.offerlist = response.data;
             $('#saveAllModal').modal('hide');
             document.getElementById('lblSuccessPopup').textContent = "Kalem Eklendi...";
             $('#successModal').modal('show');
@@ -27,18 +28,18 @@ app.controller("orderinputController", ['$scope', '$http', '$window', function (
         }
     }
 
-    $scope.GetOrders = function () {
+    $scope.GetOffers = function () {
 
         $http({
             method: "POST",
-            url: "/JS/GetOrders",
+            url: "/JS/GetOffers",
             dataType: 'json',
             headers: { "Content-Type": "application/json" }
         }).then(Success, Error);
 
         function Success(response) {
 
-            $scope.orderlist = response.data;
+            $scope.offerlist = response.data;
 
         }
         function Error(error) {
@@ -51,11 +52,11 @@ app.controller("orderinputController", ['$scope', '$http', '$window', function (
         document.getElementById("ID").value = id;
     }
 
-    $scope.RemoveOrder = function () {
+    $scope.RemoveOffer = function () {
         let sira = document.getElementById("ID").value;
         $http({
             method: "POST",
-            url: "/JS/RemoveOrder",
+            url: "/JS/RemoveOffer",
             dataType: 'json',
             data: JSON.stringify(sira),
             headers: { "Content-Type": "application/json" }
@@ -63,7 +64,7 @@ app.controller("orderinputController", ['$scope', '$http', '$window', function (
 
         function Success(response) {
 
-            $scope.orderlist = response.data;
+            $scope.offerlist = response.data;
             $('#removeModal').modal('hide');
 
         }
@@ -74,17 +75,17 @@ app.controller("orderinputController", ['$scope', '$http', '$window', function (
         }
     }
 
-    $scope.RemoveAllOrder = function () {
+    $scope.RemoveAllOffer = function () {
         $http({
             method: "POST",
-            url: "/JS/RemoveAllOrder",
+            url: "/JS/RemoveAllOffer",
             dataType: 'json',
             headers: { "Content-Type": "application/json" }
         }).then(Success, Error);
 
         function Success(response) {
 
-            $scope.orderlist = response.data;
+            $scope.offerlist = response.data;
             $('#removeAllModal').modal('hide');
 
         }
@@ -95,17 +96,17 @@ app.controller("orderinputController", ['$scope', '$http', '$window', function (
         }
     }
 
-    $scope.SaveAllOrder = function () {
+    $scope.SaveAllOffer = function () {
         $http({
             method: "POST",
-            url: "/JS/SaveAllOrder",
+            url: "/JS/SaveAllOffer",
             dataType: 'json',
             headers: { "Content-Type": "application/json" }
         }).then(Success, Error);
 
         function Success(response) {
 
-            $scope.orderlist = response.data;
+            $scope.offerlist = response.data;
             $('#saveAllModal').modal('hide');
             document.getElementById('lblSuccessPopup').textContent = "İşlem başarılı...";
             $('#successModal').modal('show');

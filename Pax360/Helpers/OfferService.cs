@@ -15,7 +15,6 @@ namespace Pax360.Helpers
         private readonly IHttpContextAccessor _httpContextAccessor;
         private readonly IMikroHelper _mikroService;
         private readonly int userID;
-        private readonly string userRole;
         private readonly string nameSurname;
 
 
@@ -24,6 +23,9 @@ namespace Pax360.Helpers
             _db = db;
             _httpContextAccessor = httpContextAccessor;
             _mikroService = mikroService;
+
+            userID = Convert.ToInt32(_httpContextAccessor.HttpContext.Session.GetString("USERID"));
+            nameSurname = _httpContextAccessor.HttpContext.Session.GetString("NAMESURNAME");
         }
 
         public async Task<string> SaveOffer(OfferDetailsModel dataModel)
@@ -37,6 +39,9 @@ namespace Pax360.Helpers
                     cari_kod = dataModel.cari_kod,
                     cari_Guid = dataModel.cari_Guid,
                     MusteriAdi = dataModel.MusteriAdi,
+                    TeklifTarihi = DateTime.Now,
+                    UserID = userID,
+                    UserName = nameSurname,
                     OfferItems = new List<OffersItem>()
                 };
 

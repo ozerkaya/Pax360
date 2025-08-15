@@ -54,6 +54,10 @@ namespace Pax360.Controllers
             {
                 return BadRequest("Adet zorunlu!");
             }
+            else if (dataModel.birimfiyat == 0)
+            {
+                return BadRequest("Fiyat zorunlu!");
+            }
             else if (list.Any(ok => ok.cihazmodeli == dataModel.cihazmodeli))
             {
                 return BadRequest(string.Format("{0} Daha Önce Eklenmiş!", dataModel.cihazmodeli));
@@ -68,7 +72,7 @@ namespace Pax360.Controllers
             }
             else
             {
-                fiyat = _counterService.GetPrice("PAX360", dataModel.cihazmodeli);
+                fiyat = dataModel.birimfiyat; /*_counterService.GetPrice("PAX360", dataModel.cihazmodeli);*/
 
                 if (fiyat == 0)
                 {

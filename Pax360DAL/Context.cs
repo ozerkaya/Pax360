@@ -20,13 +20,19 @@ namespace Pax360DAL
         public DbSet<Authorizations> Authorizations { get; set; }
         public DbSet<Offers> Offers { get; set; }
         public DbSet<OffersItem> OffersItem { get; set; }
-
+        public DbSet<Orders> Orders { get; set; }
+        public DbSet<OrdersItem> OrdersItem { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Offers>()
               .HasMany(c => c.OfferItems)
               .WithOne(e => e.Offer)
               .HasForeignKey(s => s.OfferID);
+
+            modelBuilder.Entity<Orders>()
+             .HasMany(c => c.OrderItems)
+             .WithOne(e => e.Order)
+             .HasForeignKey(s => s.OrderID);
         }
     }
 }

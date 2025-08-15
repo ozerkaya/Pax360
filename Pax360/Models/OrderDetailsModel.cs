@@ -6,6 +6,12 @@ namespace Pax360.Models
 {
     public class OrderDetailsModel : IMessage
     {
+        public OrderDetailsModel()
+        {
+            CityList = new List<SelectListItem>();
+            MikroCompanyList = new List<SelectListItem>();
+            MikroProductList = new List<SelectListItem>();
+        }
         public int ID { get; set; }
         public string SuccessMessage { get; set; }
         public string ErrorMessage { get; set; }
@@ -31,6 +37,7 @@ namespace Pax360.Models
         public string SahaFirmasi { get; set; }
         public List<SelectListItem> CityList { get; set; }
         public List<SelectListItem> MikroCompanyList { get; set; }
+        public List<SelectListItem> MikroProductList { get; set; }
         public string CihazModeli { get; set; }
         public int Adet { get; set; }
         public string BankaOrtami { get; set; }
@@ -39,5 +46,9 @@ namespace Pax360.Models
         public string YuklenecekBanka { get; set; }
         public string YuklenecekUygulama { get; set; }
         public string Not { get; set; }
+        public decimal Fiyat { get; set; }
+        public bool IsModify { get; set; }
+        public int selectedID { get; set; }
+
     }
 }

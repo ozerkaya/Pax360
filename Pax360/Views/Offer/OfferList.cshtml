@@ -27,12 +27,12 @@
     <div class="content">
         @await Html.PartialAsync("_Messages", new Dictionary<string, string> { { "ErrorMessage", Model.ErrorMessage }, { "SuccessMessage", Model.SuccessMessage } })
         <div class="container">
-            @await Html.PartialAsync("_PageHeader", new Dictionary<string, string> { { "UserName", @HttpContextAccessor.HttpContext.Session.GetString("NAMESURNAME") }, { "Page", "Sipariş Listesi" } })
+            @await Html.PartialAsync("_PageHeader", new Dictionary<string, string> { { "UserName", @HttpContextAccessor.HttpContext.Session.GetString("NAMESURNAME") }, { "Page", "Teklif Listesi" } })
             <div class="row">
                 <div class="col-lg-12">
                     <div class="panel panel-color panel-info">
                         <div class="panel-heading" style="padding:8px 10px;">
-                            <a href="#"><h3 class="panel-title">SİPARİŞ İŞLEMLERİ</h3></a>
+                            <a href="#"><h3 class="panel-title">TEKLİF İŞLEMLERİ</h3></a>
                         </div>
                         <div class="card-box" style="padding: 18px !important;border:none;margin-bottom:0px;">
                             <div class="row">
@@ -111,7 +111,7 @@
                 <div class="col-lg-12">
                     <div class="panel panel-color panel-info">
                         <div class="panel-heading" style="border: none !important; padding: 15px 20px; border-radius:4px 4px 0 0;background-color: #387ec3;color: #fff;">
-                            <a href="#"><h3 class="panel-title" style="color:#fff;"><a href="/Offer/OfferList" style="padding-right: 10px;"><i class="fas fa-refresh"></i></a> SİPARİŞ LİSTESİ </h3></a>
+                            <a href="#"><h3 class="panel-title" style="color:#fff;"><a href="/Offer/OfferList" style="padding-right: 10px;"><i class="fas fa-refresh"></i></a> TEKLİF LİSTESİ </h3></a>
                         </div>
 
                         <div class="panel-body" style="padding:0px !important">
@@ -122,7 +122,9 @@
                                             <th>ID</th>
                                             <th>Müşteri Ünvanı</th>
                                             <th>Cari Kod</th>
+                                            <th>Teklif Tarihi</th>
                                             <th>Teklif Statüsü</th>
+                                            <th>Ekleyen</th>
                                             <th></th>
                                         </tr>
                                     </thead>
@@ -141,8 +143,14 @@
                                                     <td data-title="Cari Kod">
                                                         @item.cari_kod
                                                     </td>
+                                                    <td data-title="Teklif Tarihi">
+                                                        @item.TeklifTarihi
+                                                    </td>
                                                     <td data-title="Teklif Statüsü">
                                                         @item.TeklifStatus
+                                                    </td>
+                                                      <td data-title="Ekleyen">
+                                                        @item.UserName
                                                     </td>
                                                     <td data-title="İşlemler" style="width:20px;">
                                                         <div class="btn-group">

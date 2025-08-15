@@ -2,7 +2,7 @@
 @using Microsoft.AspNetCore.Http
 @inject IHttpContextAccessor HttpContextAccessor
 
-<script src="~/UIFramework/admin/assets/angular/functions/neworder.js"></script>
+<script src="~/UIFramework/admin/assets/angular/functions/neworder1.js"></script>
 
 @{
     ViewData["Title"] = "Users";
@@ -160,8 +160,8 @@
 
                                                     ilcelist5.Add(new SelectListItem
                     {
-                        Text = Model.TeslimatIl,
-                        Value = Model.TeslimatIl
+                        Text = Model.TeslimatIlce,
+                        Value = Model.TeslimatIlce
                     });
                                                 }
                                                 else
@@ -275,7 +275,14 @@
                             <div class="panel-heading" style="border: none !important; padding: 15px 20px; border-radius:4px 4px 0 0;background-color: #387ec3;color: #fff;">
                                 <a href="#"><h3 class="panel-title" style="color:#fff;"><a href="/Order/Order" style="padding-right: 10px;"><i class="fas fa-refresh"></i></a> SİPARİŞ KALEMLERİ</h3></a>
                                 <div class="btn-group" style="float:right;margin-top: -24px;">
-                                    <buton class="btn btn-danger width-md waves-effect" style="margin-right: 10px;" data-toggle="modal" data-target="#saveAllModal" ng-click="SetID(item.sira)">Kaydet</buton>
+                                    @if(Model.IsModify)
+                                    {
+                                      <buton class="btn btn-danger width-md waves-effect" style="margin-right: 10px;" data-toggle="modal" data-target="#updateAllModal">Güncelle</buton>
+                                    }
+                                    else
+                                    {
+                                      <buton class="btn btn-danger width-md waves-effect" style="margin-right: 10px;" data-toggle="modal" data-target="#saveAllModal" ng-click="SetID(item.sira)">Kaydet</buton>
+                                    }
                                     <buton class="btn btn-danger width-md waves-effect" style="margin-right: -14px;" data-toggle="modal" data-target="#kalemEkleModal" ng-click="SetID(item.sira)"><i class="fas fa-plus" style="color: #fff;" aria-hidden="true"></i></buton>
                                 </div>
                             </div>
@@ -374,6 +381,37 @@
             </div>
         </div>
 
+        <div id="updateAllModal" class="modal fade" tabindex="-1" role="dialog" style="padding-right: 16px;" aria-modal="true">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content p-0 b-0">
+                    <div class="card mb-0" style="border: 1px solid #e7eaed; border-radius: .25rem;">
+                        <div class="card-header bg-primary" style="padding: .75rem 1.5rem;">
+                            <h5 class="modal-title font-18 text-white float-left mt-0">Güncellemek istediğinize emin misiniz?</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin-top: -22px;">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <div class="row" style="margin-left: -5px; margin-right: -3px; margin-top: 5px; margin-bottom: 5px;">
+                                <div class="col-md-6">
+                                    <a class="btn btn-default btn-lg btn-block waves-effect waves-light" onclick="clickUpdateAll();">
+                                        <i class="fas fa-check-circle" style="font-size: 60px; color: #666 !important"></i><br />
+                                        KAYDET
+                                    </a>
+                                </div>
+                                <div class="col-md-6">
+                                    <a name="operation" class="btn btn-default btn-lg btn-block waves-effect waves-light" data-dismiss="modal">
+                                        <i class="fas fa-times-circle" style="font-size: 60px; color: #666 !important"></i><br />
+                                        İPTAL
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div id="saveAllModal" class="modal fade" tabindex="-1" role="dialog" style="padding-right: 16px;" aria-modal="true">
             <div class="modal-dialog modal-sm">
                 <div class="modal-content p-0 b-0">
@@ -420,10 +458,20 @@
                                 <div class="col-lg-12">
                                     <div class="form-group">
                                         @Html.Label("Cihaz Modeli")
-                                        @Html.DropDownListFor(ok => ok.CihazModeli, new SelectList(CihazList, "Value", "Text"), new { @class = "form-control select2" })
+                                        @Html.DropDownListFor(ok => ok.CihazModeli, new SelectList(@Model.MikroProductList, "Value", "Text"), new { @class = "form-control select2" })
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="row">
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    @Html.Label("Ürün Fiyat")
+                                    @Html.TextBoxFor(Ok => Ok.Fiyat, new { @class = "form-control", autocomplete = "off", type = "number" })
+                                </div>
+                            </div>
+                        </div>
+
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="form-group">
@@ -445,9 +493,13 @@
         @await Html.PartialAsync("_SuccessPopup")
         @await Html.PartialAsync("_RemoveModal")
         @Html.HiddenFor(ok => ok.ID)
+        @Html.HiddenFor(ok => ok.selectedID)
         @Html.HiddenFor(ok => ok.cari_kod)
+        @Html.HiddenFor(ok => ok.cari_Guid)
+        @Html.HiddenFor(ok => ok.IsModify)
 
         <button id="operation" name="operation" type="submit" class="btn btn-facebook width-md waves-effect" value="Save" style="margin-top:18px;padding:7px;min-width: 70px;visibility:hidden;">Kaydet</button>
+        <button id="operationUpdate" name="operation" type="submit" class="btn btn-facebook width-md waves-effect" value="Update" style="margin-top:18px;padding:7px;min-width: 70px;visibility:hidden;">Update</button>
 
 
     </div>
@@ -494,6 +546,7 @@
 
         let cihazmodeli = document.getElementById("CihazModeli").value;
         let miktar = document.getElementById("Adet").value;
+        let fiyat = document.getElementById("Fiyat").value;
 
         if (cihazmodeli == "") {
             document.getElementById('lblErrorPopup').textContent = "Model Boş Olamaz!"
@@ -501,6 +554,10 @@
         }
         else if (miktar == "" || miktar == "0") {
             document.getElementById('lblErrorPopup').textContent = "Adet Boş yada Sıfır Olamaz!"
+            $('#errorModal').modal('show');
+        }
+        else if (fiyat == "" || fiyat == "0") {
+            document.getElementById('lblErrorPopup').textContent = "Fiyat Boş yada Sıfır Olamaz!"
             $('#errorModal').modal('show');
         }
         else {
@@ -511,32 +568,6 @@
 
             document.getElementById("CihazModeli").value = "";
             document.getElementById("Adet").value = "";
-        }
-    }
-
-
-    function clickSave() {
-        let partner = document.getElementById("PartnerID").value;
-        let model = document.getElementById("Model").value;
-        let stocktype = document.getElementById("StokType").value;
-        let ikinciel = document.getElementById("IkinciEl").value;
-        let barcode = document.getElementById("Barcode").value;
-
-        if (partner == "" || model == "" || stocktype == "" || ikinciel == "") {
-            document.getElementById('lblErrorPopup').textContent = "Lütfen Tüm Alanları Seçiniz!"
-            $('#errorModal').modal('show');
-            document.getElementById("Barcode").value = "";
-        }
-        else if (barcode == "") {
-            document.getElementById('lblErrorPopup').textContent = "Barkod Boş Olamaz!"
-            $('#errorModal').modal('show');
-        }
-        else {
-
-            var scope = angular.element(document.getElementById("orderinputapp")).scope();
-            scope.$apply(function () {
-                scope.SetStoksendorder();
-            });
         }
     }
 
@@ -556,5 +587,9 @@
 
     function clickSaveAll() {
         document.getElementById("operation").click();
+    }
+
+    function clickUpdateAll() {
+        document.getElementById("operationUpdate").click();
     }
 </script>

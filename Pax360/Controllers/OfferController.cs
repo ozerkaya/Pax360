@@ -23,9 +23,9 @@ namespace Pax360.Controllers
         private readonly IHttpContextAccessor _httpContextAccessor;
         private readonly IMikroHelper _mikroService;
         private readonly IOfferService _offerService;
-        private readonly Context _db;
+        private readonly Context db;
 
-        public OfferController(Context db,
+        public OfferController(Context _db,
             IHttpContextAccessor httpContextAccessor,
             IMikroHelper mikroService,
             IOfferService offerService)
@@ -33,7 +33,7 @@ namespace Pax360.Controllers
             _httpContextAccessor = httpContextAccessor;
             _mikroService = mikroService;
             _offerService = offerService;
-            _db = db;
+            db = _db;
         }
 
         [HttpGet]
@@ -247,24 +247,9 @@ namespace Pax360.Controllers
             return result;
         }
 
-        private string DurumUpdateRequired(OfferListModel dataModel)
-        {
-            string result = string.Empty;
-            if (dataModel.ID == 0)
-            {
-                result += "Sipariş Numarası Boş Olamaz!,";
-            }
-            if (string.IsNullOrWhiteSpace(dataModel.SelectedDurum))
-            {
-                result += "Durum Boş Olamaz!,";
-            }
-
-            return result;
-        }
-
         private IQueryable<Offers> OfferQuery(OfferListModel dataModel)
         {
-            IQueryable<Offers> query = _db.Offers;
+            IQueryable<Offers> query = db.Offers;
 
             if (!string.IsNullOrWhiteSpace(dataModel.SelectedCari))
             {
@@ -274,7 +259,7 @@ namespace Pax360.Controllers
 
             if (dataModel.DetailID > 0)
             {
-                query = _db.Offers.Include(ok => ok.OfferItems);
+                query = db.Offers.Include(ok => ok.OfferItems);
                 query = query.Where(ok => ok.ID == dataModel.DetailID);
             }
 

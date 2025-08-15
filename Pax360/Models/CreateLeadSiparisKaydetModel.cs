@@ -30,6 +30,7 @@
 
     public class Satir
     {
+        public string sip_Guid { get; set; }
         public string sip_tarih { get; set; }
         public string sip_tip { get; set; }
         public string sip_cins { get; set; }

@@ -83,6 +83,67 @@ namespace Pax360.Helpers
             }
         }
 
+        public Tuple<string, List<SelectListItem>> GetMikroProducts()
+        {
+            List<SelectListItem> returnList = new List<SelectListItem>();
+
+            returnList.Add(new SelectListItem
+            {
+                Text = "Seçiniz",
+                Value = "",
+            });
+
+            try
+            {
+                if (_externalConfig.Value.UseExternalDB == "0")
+                {
+                    returnList.Add(new SelectListItem
+                    {
+                        Text = "A920 MAX",
+                        Value = "A920-3AW-RD5-25EU#A920",
+                    });
+                    return Tuple.Create(string.Empty, returnList);
+                }
+                else
+                {
+                    using (SqlConnection connection = new SqlConnection(_externalConfig.Value.MicroConnectionString))
+                    {
+                        connection.Open();
+                        try
+                        {
+                            string query = @"SELECT [sto_kod],[sto_isim] FROM [STOKLAR]";
+                            SqlCommand command = new SqlCommand(query, connection);
+                            SqlDataReader reader = command.ExecuteReader();
+
+                            while (reader.Read())
+                            {
+
+                                if (reader[0] != null)
+                                {
+                                    returnList.Add(new SelectListItem
+                                    {
+                                        Text = reader["sto_isim"]?.ToString(),
+                                        Value = string.Format("{0}#{1}", reader["sto_kod"]?.ToString(), reader["sto_isim"]?.ToString()),
+                                    });
+                                }
+                            }
+
+                            return Tuple.Create(string.Empty, returnList);
+
+                        }
+                        catch (Exception ex)
+                        {
+                            return Tuple.Create(ex.Message, returnList);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                return Tuple.Create(ex.Message, returnList);
+            }
+        }
+
         public Tuple<string, OrderDetailsModel> GetMikroCompanyDetails(Guid cari_Guid)
         {
             OrderDetailsModel model = new OrderDetailsModel();
@@ -462,6 +523,151 @@ WHERE  sip_eticaret_kanal_kodu = 'PAX360SATIS'";
 
         }
 
+        public async Task<Tuple<bool, string, string>> SiparisDuzeltV2(ReqCreateLeadV2 Req, string cariNo, string sip_Guid)
+        {
+            var root = new CreateLeadSiparisKaydetModel
+            {
+                Mikro = new MikroSiparis
+                {
+                    FirmaKodu = _mikroConfig.Value.FirmaKodu,
+                    CalismaYili = Convert.ToInt32(_mikroConfig.Value.CalismaYili),
+                    ApiKey = _mikroConfig.Value.ApiKey,
+                    KullaniciKodu = _mikroConfig.Value.KullaniciKodu,
+                    Sifre = _cryptographyHelper.CreateMD5(string.Format("{0} {1}", DateTime.Now.ToString("yyyy-MM-dd"), _mikroConfig.Value.Sifre)),
+                    FirmaNo = Convert.ToInt32(_mikroConfig.Value.FirmaNo),
+                    SubeNo = Convert.ToInt32(_mikroConfig.Value.SubeNo),
+                    evraklar = new List<Evrak>
+                    {
+                        new Evrak
+                        {
+                            evrak_aciklamalari = new List<EvrakAciklama>
+                            {
+                                new EvrakAciklama { aciklama = "Interpay Online Satış (Evrak Açıklama)" },
+                                new EvrakAciklama { aciklama = "" },
+                                new EvrakAciklama { aciklama = "" },
+                                new EvrakAciklama { aciklama = "" },
+                                new EvrakAciklama { aciklama = "" },
+                                new EvrakAciklama { aciklama = Req.FiscalID },
+
+                            },
+                            satirlar = new List<Satir>(),
+                        }
+                    }
+                }
+            };
+
+            foreach (var item in Req.Items)
+            {
+                int vergiPntr = 5;
+
+                if (item.vergi_orani == 20)
+                {
+                    vergiPntr = 6;
+                }
+                else if (item.vergi_orani == 10)
+                {
+                    vergiPntr = 5;
+                }
+                else if (item.vergi_orani == 1)
+                {
+                    vergiPntr = 5;
+                }
+
+                int depoNo = 1;
+                if (!string.IsNullOrWhiteSpace(item.serialNumbers))
+                {
+                    if (Req.Banka == "QNB")
+                    {
+                        depoNo = 9;
+                    }
+                    else if (Req.Banka == "Denizbank")
+                    {
+                        depoNo = 10;
+                    }
+                    else/* if (Req.Bank == "Ziraat Bankası")*/
+                    {
+                        depoNo = 7;
+                    }
+                }
+
+                string guid = string.Empty;
+                var guidResult = GetMikroSipGuid(sip_Guid);
+
+                if (string.IsNullOrWhiteSpace(guidResult.Item1))
+                {
+                    guid = guidResult.Item2;
+                }
+                else
+                {
+                    return Tuple.Create(false, guidResult.Item1, string.Empty);
+                }
+
+                root.Mikro.evraklar.FirstOrDefault().satirlar.Add(new Satir
+                {
+                    sip_Guid = guid,
+                    sip_tarih = DateTime.Now.ToString("dd.MM.yyyy"),
+                    sip_tip = "0",
+                    sip_cins = "0",
+                    sip_evrakno_seri = "T",
+                    sip_musteri_kod = cariNo,
+                    sip_stok_kod = item.ProductCode,
+                    sip_belgeno = Req.FiscalID,
+                    sip_b_fiyat = item.PaymentAmount / item.LeadQuantity,
+                    sip_miktar = item.LeadQuantity,
+                    sip_birim_pntr = item.LeadQuantity,
+                    sip_tutar = Req.PaymentAmount,
+                    sip_vergi_pntr = vergiPntr,
+                    sip_depono = depoNo,
+                    sip_vergisiz_fl = false,
+                    sip_stok_sormerk = string.IsNullOrWhiteSpace(Req.QRCode) ? "" : "INT-PAYSER GELİRLERİ",
+                    seriler = item.serialNumbers,
+                    sip_harekettipi = item.HareketTipi,
+                    sip_special1 = Req.Banka,
+                    sip_special3 = Req.QRCode,
+                    sip_eticaret_kanal_kodu = item.sip_eticaret_kanal_kodu,
+                    sip_HareketGrupKodu1 = string.Format("{0} {1}", Req.FirstName, Req.LastName),
+                    sip_HareketGrupKodu2 = Req.CellularPhone,
+                    sip_satici_kod = Req.sip_satici_kod, /////// ONLİNE ÖDEMESİ ALINMIŞ SİPARİŞLERDE GÖRİLECEK HAVAEDE GÖNDEİRLMEYECEK. WL DE YAZACAK
+                    sip_ExternalProgramId = string.Format("{0},{1},", item.CampaignType ?? "", item.HurdaSeriNo ?? ""),
+                    user_tablo = new List<UserTablo>
+                                    {
+                                        new UserTablo { aciklama = "Pax 360 Satış" }
+                                    },
+                });
+            }
+
+            var json = JsonSerializer.Serialize(root);
+
+            var data = new StringContent(json, Encoding.UTF8, "application/json");
+
+            using var client = new HttpClient();
+
+            var response = await client.PostAsync("http://localhost:8094/api/APIMethods/SiparisDuzeltV2", data);
+
+            string result = response.Content.ReadAsStringAsync().Result;
+            var resultModel = JsonSerializer.Deserialize<SiparisKaydetResult>(result);
+
+            //ServisObjeleriniLogla(root, "SiparisKaydetV2");
+            //ServisObjeleriniLogla(resultModel, "SiparisKaydetV2");
+
+            if (resultModel != null && resultModel.result != null && resultModel.result.FirstOrDefault() != null)
+            {
+                if (!resultModel.result.FirstOrDefault().IsError)
+                {
+                    return Tuple.Create(true, string.Empty, string.Empty);
+                    // mikro güncellemesi sonrası hata oluştuğu için kapatıldı cariharguid dönmüyor return Tuple.Create(true, string.Empty, resultModel.result.FirstOrDefault().Data.list.FirstOrDefault().cariHarGuid.ToString());
+                }
+                else
+                {
+                    return Tuple.Create(false, resultModel.result.FirstOrDefault().ErrorMessage + " " + _cryptographyHelper.CreateMD5(string.Format("{0} {1}", DateTime.Now.ToString("yyyy-MM-dd"), _mikroConfig.Value.Sifre)), string.Empty);
+                }
+            }
+            else
+            {
+                return Tuple.Create(false, "Result is null", string.Empty);
+            }
+
+        }
         public string UpdateMikroOrderDurum(OrderListModel dataModel)
         {
             using (SqlConnection connection = new SqlConnection(_externalConfig.Value.MicroConnectionString))
@@ -480,6 +686,48 @@ WHERE  sip_eticaret_kanal_kodu = 'PAX360SATIS'";
                 {
                     return ex.Message;
                 }
+            }
+        }
+
+        public Tuple<string, string> GetMikroSipGuid(string sip_Belge_no)
+        {
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(_externalConfig.Value.MicroConnectionString))
+                {
+                    connection.Open();
+                    try
+                    {
+                        string query = @"SELECT TOP (1) [sip_Guid] FROM [SIPARISLER] where sip_belgeno=@SIPBELGENO";
+                        SqlCommand command = new SqlCommand(query, connection);
+                        command.Parameters.AddWithValue("@SIPBELGENO", sip_Belge_no);
+                        SqlDataReader reader = command.ExecuteReader();
+                        string sip_guid = string.Empty;
+                        while (reader.Read())
+                        {
+
+                            if (reader[0] != null)
+                            {
+                                sip_guid = reader["sip_Guid"]?.ToString();
+                            }
+                            else
+                            {
+                                return Tuple.Create("Sipariş Belge No Bulunamadı", string.Empty);
+                            }
+                        }
+
+                        return Tuple.Create(string.Empty, sip_guid);
+
+                    }
+                    catch (Exception ex)
+                    {
+                        return Tuple.Create(ex.Message, string.Empty);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                return Tuple.Create(ex.Message, string.Empty);
             }
         }
     }
