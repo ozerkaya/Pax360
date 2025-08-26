@@ -39,6 +39,7 @@
         public string Banka { get; set; }
         public string QRCode { get; set; }
         public string sip_satici_kod { get; set; }
+        public string sip_evrakno_seri { get; set; }
         public List<CreateLeadV2Item> Items { get; set; }
     }
 
@@ -51,6 +52,7 @@
         public string serialNumbers { get; set; }
         public int HareketTipi { get; set; }
         public int vergi_orani { get; set; }
+        public int sip_doviz_cinsi { get; set; }
         public string CampaignType { get; set; }
         public string HurdaSeriNo { get; set; }
     }

@@ -89,6 +89,7 @@ namespace Pax360
             services.AddTransient<IOrderService, OrderService>();
             services.AddTransient<IOfferService, OfferService>();
             services.AddTransient<ICounterHelper, CounterHelper>();
+            services.AddTransient<ICustomerService, CustomerService>();
 
             services.AddSingleton<ContextDapper>();
 

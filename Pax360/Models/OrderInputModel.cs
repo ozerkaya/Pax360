@@ -10,7 +10,8 @@ namespace Pax360.Models
         public decimal birimfiyat { get; set; }
         public decimal birimfiyattl { get; set; }
         public string kdv { get; set; }
-        public string iskonto { get; set; }
         public string toplamtutar { get; set; }
+        public string toplamtutarkdvdahil { get; set; }
+        public string doviz { get; set; }
     }
 }

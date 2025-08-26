@@ -7,10 +7,10 @@
     <meta charset="utf-8">
     <meta name="robots" content="noindex, nofollow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Pax TSM">
+    <meta name="description" content="PAX 360">
     <meta name="author" content="Özer KAYA">
     <link rel="shortcut icon" href="~/UIFramework/Admin/assets/images/favicon.ico">
-    <title>PAX Turkey</title>
+    <title>PAX 360</title>
 
     <link href="~/UIFramework/Admin/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="~/UIFramework/Admin/assets/css/core.css" rel="stylesheet" type="text/css" />
@@ -138,6 +138,22 @@
                                 </ul>
                             </li>
                         }
+
+                        @if (HttpContextAccessor.HttpContext.Session.GetString("Module_Customers")?.ToString() == "True")
+                        {
+                            <li class="has_sub">
+                                <a href="#" class="waves-effect"><i class="fas fa-users"></i><span> Müşteriler </span> </a>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="/Customers/Customer">Müşteri Özet</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Customers/CustomerList">Müşteri Listesi</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        }
+
                         @if (HttpContextAccessor.HttpContext.Session.GetString("Module_Users")?.ToString() == "True")
                         {
                             <li class="has_sub">

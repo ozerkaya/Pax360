@@ -6,6 +6,7 @@ namespace Pax360.Interfaces
     public interface IOfferService
     {
         public Task<string> SaveOffer(OfferDetailsModel dataModel);
-
+        public Task<Tuple<string, OfferDetailsModel>> GetOffer(int offerID);
+        public Task<string> UpdateOffer(OfferDetailsModel dataModel);
     }
 }

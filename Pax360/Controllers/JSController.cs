@@ -41,6 +41,12 @@ namespace Pax360.Controllers
             return Json(list);
         }
 
+
+
+
+
+
+
         [HttpPost]
         public ActionResult SetOrder([FromBody] OrderInputModel dataModel)
         {
@@ -49,6 +55,10 @@ namespace Pax360.Controllers
             if (string.IsNullOrWhiteSpace(dataModel.cihazmodeli))
             {
                 return BadRequest("Model zorunlu!");
+            }
+            else if (string.IsNullOrWhiteSpace(dataModel.doviz))
+            {
+                return BadRequest("Döviz Cinsi zorunlu!");
             }
             else if (dataModel.miktar == 0)
             {
@@ -65,30 +75,23 @@ namespace Pax360.Controllers
 
             decimal fiyat = 0;
 
-            if (_externalConfig.Value.UseExternalDB == "0")
+            fiyat = dataModel.birimfiyat; /*_counterService.GetPrice("PAX360", dataModel.cihazmodeli);*/
+
+            if (fiyat == 0)
             {
-                dataModel.birimfiyat = 54;
-                dataModel.birimfiyattl = 54;
+                return BadRequest(dataModel.cihazmodeli + " Fiyatı Bulunamadı!");
             }
             else
             {
-                fiyat = dataModel.birimfiyat; /*_counterService.GetPrice("PAX360", dataModel.cihazmodeli);*/
-
-                if (fiyat == 0)
-                {
-                    return BadRequest(dataModel.cihazmodeli + " Fiyatı Bulunamadı!");
-                }
-                else
-                {
-                    dataModel.birimfiyat = fiyat;
-                    dataModel.birimfiyattl = fiyat;
-                }
+                dataModel.birimfiyat = fiyat;
             }
 
+            decimal toplamTutar = fiyat * (decimal)dataModel.miktar;
+
             dataModel.sira = list.Count + 1;
-            dataModel.kdv = "10";
-            dataModel.iskonto = "0";
-            dataModel.toplamtutar = Convert.ToDecimal(dataModel.birimfiyattl * dataModel.miktar).ToString();
+            dataModel.kdv = dataModel.cihazmodeli.Split('#')[2];
+            dataModel.toplamtutar = toplamTutar.ToString();
+            dataModel.toplamtutarkdvdahil = (toplamTutar +  (decimal)((toplamTutar/100)*Convert.ToInt32(dataModel.kdv))).ToString().Replace(",",".");
             list.Add(dataModel);
             _httpContextAccessor.HttpContext.Session.SetObject("ORDERINPUT", list);
 

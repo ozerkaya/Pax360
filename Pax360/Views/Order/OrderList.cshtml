@@ -13,11 +13,10 @@
     var durumList = new List<SelectListItem>()
 {
              new SelectListItem { Text = "Seçiniz", Value = "" },
-             new SelectListItem { Text = "Yolda", Value = "Yolda" },
-             new SelectListItem { Text = "Depoda", Value = "Depoda" },
-             new SelectListItem { Text = "Antrepoda", Value = "Antrepoda" },
+             new SelectListItem { Text = "Sipariş Oluşturuldu", Value = "Sipariş Oluşturuldu" },
+             new SelectListItem { Text = "Kurulum Aşamasında", Value = "Kurulum Aşamasında" },
+             new SelectListItem { Text = "Kargoya Verildi", Value = "Kargoya Verildi" },
              new SelectListItem { Text = "Teslim Edildi", Value = "Teslim Edildi" },
-             new SelectListItem { Text = "Kurulumda", Value = "Kurulumda" },
     };
 }
 
@@ -71,7 +70,6 @@
                                                 <th>BirimFiyat</th>
                                                 <th>BirimFiyatTL</th>
                                                 <th>Kdv</th>
-                                                <th>Iskonto</th>
                                                 <th>ToplamTutar</th>
                                             </tr>
                                         </thead>
@@ -97,9 +95,6 @@
 
                                                     <td data-title="Kdv">
                                                         @item.Kdv
-                                                    </td>
-                                                    <td data-title="İskonto">
-                                                        @item.Iskonto
                                                     </td>
                                                     <td data-title="Toplam Tutar">
                                                         @item.ToplamTutar

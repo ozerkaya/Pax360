@@ -1,4 +1,14 @@
 ﻿var app = angular.module("orderinputapp", ['ngSanitize']);
+
+app.filter('turkishNumber', function () {
+    return function (input) {
+        if (!input) return "";
+        return parseFloat(input)
+            .toFixed(2)                // 2 ondalık hane
+            .replace('.', ',')         // ondalık için virgül
+            .replace(/\B(?=(\d{3})+(?!\d))/g, '.'); // binlik için nokta
+    };
+});
 app.controller("orderinputController", ['$scope', '$http', '$window', function ($scope, $http, $window) {
 
     $scope.SetOrderInput = function () {
@@ -6,12 +16,13 @@ app.controller("orderinputController", ['$scope', '$http', '$window', function (
         let cihazmodeli = document.getElementById("CihazModeli").value;
         let miktar = document.getElementById("Adet").value;
         let birimfiyat = document.getElementById("Fiyat").value;
+        let doviz = document.getElementById("DovizCinsi").value;
 
         $http({
             method: "POST",
             url: "/JS/SetOrder",
             dataType: 'json',
-            data: JSON.stringify({ cihazmodeli, miktar, birimfiyat }),
+            data: JSON.stringify({ cihazmodeli, miktar, birimfiyat,doviz }),
             headers: { "Content-Type": "application/json" }
         }).then(Success, Error);
 

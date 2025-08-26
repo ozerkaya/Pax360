@@ -150,6 +150,31 @@ namespace Pax360.Helpers
             return list;
         }
 
+        public List<SelectListItem> AuthPersonsWithID()
+        {
+            List<SelectListItem> list = new List<SelectListItem>();
+            IQueryable<Users> query = db.Users.Where(ok => ok.Role == "Müşteri Temsilcisi");
+
+            var users = query.ToList();
+
+            list.Add(new SelectListItem
+            {
+                Text = "Select",
+                Value = ""
+            });
+
+
+            foreach (var item in users)
+            {
+                list.Add(new SelectListItem
+                {
+                    Text = item.NameSurname,
+                    Value = item.ID.ToString(),
+                });
+            }
+
+            return list;
+        }
         public List<SelectListItem> GetAllUsers()
         {
             List<SelectListItem> list = new List<SelectListItem>();

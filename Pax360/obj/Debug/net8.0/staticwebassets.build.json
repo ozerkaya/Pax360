@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "tWlR7QD+OcSkGndphtVgHthp7nwstrL+09iAqjeS7gg=",
+  "Hash": "DylnLNR3j78orvM6bnwl9Qq+RiJMCgdBzlDpMWbkNTg=",
   "Source": "Pax360",
   "BasePath": "_content/Pax360",
   "Mode": "Default",
@@ -112,12 +112,12 @@
       "OriginalItemSpec": "wwwroot\\UIFramework\\Admin\\assets\\angular\\functions\\newoffer.js"
     },
     {
-      "Identity": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\angular\\functions\\neworder1.js",
+      "Identity": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\angular\\functions\\neworder3.js",
       "SourceId": "Pax360",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\Pax360\\Pax360\\wwwroot\\",
       "BasePath": "_content/Pax360",
-      "RelativePath": "UIFramework/Admin/assets/angular/functions/neworder1.js",
+      "RelativePath": "UIFramework/Admin/assets/angular/functions/neworder3.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -128,7 +128,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\UIFramework\\Admin\\assets\\angular\\functions\\neworder1.js"
+      "OriginalItemSpec": "wwwroot\\UIFramework\\Admin\\assets\\angular\\functions\\neworder3.js"
     },
     {
       "Identity": "C:\\Users\\ozer.kaya\\source\\repos\\ozerkaya\\pax360\\Pax360\\Pax360\\wwwroot\\UIFramework\\Admin\\assets\\css\\blink.css",

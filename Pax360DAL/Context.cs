@@ -22,6 +22,11 @@ namespace Pax360DAL
         public DbSet<OffersItem> OffersItem { get; set; }
         public DbSet<Orders> Orders { get; set; }
         public DbSet<OrdersItem> OrdersItem { get; set; }
+
+        public DbSet<Customers> Customers { get; set; }
+        public DbSet<CustomerBanks> CustomerBanks { get; set; }
+        public DbSet<CustomerCases> CustomerCases { get; set; }
+        public DbSet<CustomerDocuments> CustomerDocuments { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Offers>()
@@ -33,6 +38,21 @@ namespace Pax360DAL
              .HasMany(c => c.OrderItems)
              .WithOne(e => e.Order)
              .HasForeignKey(s => s.OrderID);
+
+            modelBuilder.Entity<Customers>()
+            .HasMany(c => c.MusteriBankalari)
+            .WithOne(e => e.Customer)
+            .HasForeignKey(s => s.CustomerID);
+
+            modelBuilder.Entity<Customers>()
+            .HasMany(c => c.KasaFirmasi)
+            .WithOne(e => e.Customer)
+            .HasForeignKey(s => s.CustomerID);
+
+            modelBuilder.Entity<Customers>()
+            .HasMany(c => c.Dokumanlar)
+            .WithOne(e => e.Customer)
+            .HasForeignKey(s => s.CustomerID);
         }
     }
 }

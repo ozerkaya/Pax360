@@ -6,21 +6,22 @@ using Pax360DAL;
 using System.Net;
 using System.Text.Json;
 using Pax360.Extensions;
+using System;
 
 namespace Pax360.Helpers
 {
     public class OfferService : IOfferService
     {
-        private readonly Context _db;
+        private readonly Context db;
         private readonly IHttpContextAccessor _httpContextAccessor;
         private readonly IMikroHelper _mikroService;
         private readonly int userID;
         private readonly string nameSurname;
 
 
-        public OfferService(Context db, IHttpContextAccessor httpContextAccessor, IMikroHelper mikroService)
+        public OfferService(Context _db, IHttpContextAccessor httpContextAccessor, IMikroHelper mikroService)
         {
-            _db = db;
+            db = _db;
             _httpContextAccessor = httpContextAccessor;
             _mikroService = mikroService;
 
@@ -58,8 +59,8 @@ namespace Pax360.Helpers
                     });
                 }
 
-                _db.Offers.Add(offer);
-                await _db.SaveChangesAsync();
+                db.Offers.Add(offer);
+                await db.SaveChangesAsync();
 
                 _httpContextAccessor.HttpContext.Session.SetObject("OFFERINPUT", new List<OfferInputModel>());
                 List<OfferInputModel> list = _httpContextAccessor.HttpContext.Session.GetObject<List<OfferInputModel>>("OFFERINPUT") ?? new List<OfferInputModel>();
@@ -71,6 +72,98 @@ namespace Pax360.Helpers
             {
                 return ex.ToString();
             }
+        }
+
+        public async Task<Tuple<string, OfferDetailsModel>> GetOffer(int orderID)
+        {
+            try
+            {
+                var offer = await db.Offers.Include(ok => ok.OfferItems).FirstOrDefaultAsync(ok => ok.ID == orderID);
+
+                if (offer != null)
+                {
+                    OfferDetailsModel model = new OfferDetailsModel()
+                    {
+                        TeklifSartlari = offer.TeklifSartlari,
+                        TeklifStatus = offer.TeklifStatus,
+                        cari_kod = offer.cari_kod,
+                        cari_Guid = offer.cari_Guid,
+                        MusteriAdi = offer.MusteriAdi,
+                    };
+
+                    List<OfferInputModel> kalemList = new List<OfferInputModel>();
+                    int i = 1;
+                    foreach (var item in offer.OfferItems)
+                    {
+                        kalemList.Add(new OfferInputModel
+                        {
+                            sira = i,
+                            adet = item.Adet,
+                            adi = item.UrunAdi,
+                            fiyat = item.Fiyat,
+                        });
+
+                        i++;
+                    }
+
+                    _httpContextAccessor.HttpContext.Session.SetObject("OFFERINPUT", kalemList);
+
+                    return Tuple.Create(string.Empty, model);
+                }
+                else
+                {
+                    return Tuple.Create("Sipariş Bulunamadı!", new OfferDetailsModel());
+                }
+
+            }
+            catch (Exception ex)
+            {
+                return Tuple.Create(ex.Message, new OfferDetailsModel());
+            }
+        }
+
+        public async Task<string> UpdateOffer(OfferDetailsModel dataModel)
+        {
+            try
+            {
+                List<OfferDetailsModel> kalemler = _httpContextAccessor.HttpContext.Session.GetObject<List<OfferDetailsModel>>("OFFERINPUT") ?? new List<OfferDetailsModel>();
+                decimal total = 0;
+
+                var offer = db.Offers.FirstOrDefault(ok => ok.ID == dataModel.selectedID);
+
+                if (offer == null)
+                {
+                    return "Teklif Bulunamadı! ID:" + dataModel.selectedID;
+                }
+
+                offer.TeklifSartlari = dataModel.TeklifSartlari;
+                offer.TeklifStatus = dataModel.TeklifStatus;
+                offer.cari_kod = dataModel.cari_kod;
+                offer.cari_Guid = dataModel.cari_Guid;
+                offer.MusteriAdi = dataModel.MusteriAdi;
+
+                offer.OfferItems = new List<OffersItem>();
+
+                foreach (var item in kalemler)
+                {
+                    offer.OfferItems.Add(new OffersItem
+                    {
+                        Adet = item.Adet,
+                        UrunAdi = item.UrunAdi,
+                        Fiyat = item.Fiyat,
+                    });
+                }
+
+                db.Offers.Attach(offer);
+                db.Entry(offer).State = EntityState.Modified;
+                db.SaveChanges();
+                return string.Empty;
+            }
+            catch (Exception ex)
+            {
+                return ex.ToString();
+            }
+
         }
     }
 }

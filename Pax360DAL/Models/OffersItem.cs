@@ -12,8 +12,8 @@ namespace Pax360DAL.Models
     public class OffersItem    
     {
         public int ID { get; set; }
-        public string UrunAdi { get; set; }
-        public string UrunKodu { get; set; }
+        public string? UrunAdi { get; set; }
+        public string? UrunKodu { get; set; }
         public int Adet { get; set; }
         public decimal Fiyat { get; set; }
         public Offers Offer { get; set; }

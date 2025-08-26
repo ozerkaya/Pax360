@@ -16,6 +16,6 @@ namespace Pax360DAL.Models
         public bool Module_Role { get; set; }
         public bool Module_Order { get; set; }
         public bool Module_Offer { get; set; }
-
+        public bool Module_Customers { get; set; }
     }
 }

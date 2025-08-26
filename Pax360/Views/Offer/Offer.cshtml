@@ -32,7 +32,7 @@
                 @await Html.PartialAsync("_PageHeader", new Dictionary<string, string> { { "UserName", @HttpContextAccessor.HttpContext.Session.GetString("NAMESURNAME") }, { "Page", "Teklif Ekle" } })
 
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-12">
                         <div class="panel panel-color panel-info">
                             <div class="panel-heading" style="border: none !important; padding: 15px 20px; border-radius:4px 4px 0 0;background-color: #737a84;color: #fff;">
                                 <h3 class="panel-title" style="color:#fff;">TEKLİF BİLGİLERİ</h3>
@@ -40,26 +40,26 @@
 
                             <div class="card-box" style="padding: 18px !important;border:none;margin-bottom:0px;">
                                 <div class="row">
-                                     <div class="col-lg-12">
+                                    <div class="col-lg-4">
                                         <div class="form-group">
                                             @Html.Label("Müşteri Ünvanı")
                                             @Html.TextBoxFor(Ok => Ok.MusteriAdi, new { @class = "form-control", autocomplete = "off", @readonly = "readonly" })
                                         </div>
                                     </div>
-                                     <div class="col-lg-12">
-                                        <div class="form-group">
-                                            @Html.Label("Müşteri Cari Kod")
-                                            @Html.TextBoxFor(Ok => Ok.cari_kod, new { @class = "form-control", autocomplete = "off", @readonly = "readonly" })
-                                        </div>
-                                    </div>
-                                     <div class="col-lg-12">
+                                    <div class="col-lg-4">
                                         <div class="form-group">
                                             @Html.Label("Müşteri Cari Guid")
                                             @Html.TextBoxFor(Ok => Ok.cari_Guid, new { @class = "form-control", autocomplete = "off", @readonly = "readonly" })
                                         </div>
                                     </div>
+                                    <div class="col-lg-2">
+                                        <div class="form-group">
+                                            @Html.Label("Müşteri Cari Kod")
+                                            @Html.TextBoxFor(Ok => Ok.cari_kod, new { @class = "form-control", autocomplete = "off", @readonly = "readonly" })
+                                        </div>
+                                    </div>                                   
 
-                                    <div class="col-lg-12">
+                                    <div class="col-lg-2">
                                         <div class="form-group">
                                             @Html.Label("Teklif Statüsü")
                                             @Html.DropDownListFor(ok => ok.TeklifStatus, new SelectList(@statuList, "Value", "Text"), new { @class = "form-control select2" })
@@ -83,7 +83,14 @@
                             <div class="panel-heading" style="border: none !important; padding: 15px 20px; border-radius:4px 4px 0 0;background-color: #387ec3;color: #fff;">
                                 <a href="#"><h3 class="panel-title" style="color:#fff;"><a href="/Order/Order" style="padding-right: 10px;"><i class="fas fa-refresh"></i></a> SİPARİŞ KALEMLERİ</h3></a>
                                 <div class="btn-group" style="float:right;margin-top: -24px;">
-                                    <buton class="btn btn-danger width-md waves-effect" style="margin-right: 10px;" data-toggle="modal" data-target="#saveAllModal" ng-click="SetID(item.sira)">Kaydet</buton>
+                                    @if (Model.IsModify)
+                                    {
+                                        <buton class="btn btn-danger width-md waves-effect" style="margin-right: 10px;" data-toggle="modal" data-target="#updateAllModal">Güncelle</buton>
+                                    }
+                                    else
+                                    {
+                                        <buton class="btn btn-danger width-md waves-effect" style="margin-right: 10px;" data-toggle="modal" data-target="#saveAllModal" ng-click="SetID(item.sira)">Kaydet</buton>
+                                    }
                                     <buton class="btn btn-danger width-md waves-effect" style="margin-right: -14px;" data-toggle="modal" data-target="#kalemEkleModal" ng-click="SetID(item.sira)"><i class="fas fa-plus" style="color: #fff;" aria-hidden="true"></i></buton>
                                 </div>
                             </div>
@@ -162,6 +169,37 @@
             </div>
         </div>
     </div>
+
+     <div id="updateAllModal" class="modal fade" tabindex="-1" role="dialog" style="padding-right: 16px;" aria-modal="true">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content p-0 b-0">
+                    <div class="card mb-0" style="border: 1px solid #e7eaed; border-radius: .25rem;">
+                        <div class="card-header bg-primary" style="padding: .75rem 1.5rem;">
+                            <h5 class="modal-title font-18 text-white float-left mt-0">Güncellemek istediğinize emin misiniz?</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin-top: -22px;">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <div class="row" style="margin-left: -5px; margin-right: -3px; margin-top: 5px; margin-bottom: 5px;">
+                                <div class="col-md-6">
+                                    <a class="btn btn-default btn-lg btn-block waves-effect waves-light" onclick="clickUpdateAll();">
+                                        <i class="fas fa-check-circle" style="font-size: 60px; color: #666 !important"></i><br />
+                                        KAYDET
+                                    </a>
+                                </div>
+                                <div class="col-md-6">
+                                    <a name="operation" class="btn btn-default btn-lg btn-block waves-effect waves-light" data-dismiss="modal">
+                                        <i class="fas fa-times-circle" style="font-size: 60px; color: #666 !important"></i><br />
+                                        İPTAL
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     <div id="saveAllModal" class="modal fade" tabindex="-1" role="dialog" style="padding-right: 16px;" aria-modal="true">
         <div class="modal-dialog modal-sm">
@@ -242,9 +280,13 @@
     @await Html.PartialAsync("_SuccessPopup")
     @await Html.PartialAsync("_RemoveModal")
     @Html.HiddenFor(ok => ok.ID)
-   
+
+    @Html.HiddenFor(ok => ok.selectedID)
+    @Html.HiddenFor(ok => ok.IsModify)
+
 
     <button id="operation" name="operation" type="submit" class="btn btn-facebook width-md waves-effect" value="Save" style="margin-top:18px;padding:7px;min-width: 70px;visibility:hidden;">Kaydet</button>
+    <button id="operationUpdate" name="operation" type="submit" class="btn btn-facebook width-md waves-effect" value="Update" style="margin-top:18px;padding:7px;min-width: 70px;visibility:hidden;">Update</button>
 
 }
 
@@ -332,5 +374,9 @@
 
     function clickSaveAll() {
         document.getElementById("operation").click();
+    }
+
+    function clickUpdateAll() {
+        document.getElementById("operationUpdate").click();
     }
 </script>

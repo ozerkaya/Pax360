@@ -96,7 +96,7 @@ namespace Pax360.Controllers
         }
 
         [HttpGet]
-        public IActionResult Offer(Guid id)
+        public async Task<IActionResult> Offer(Guid id, int offerID = 0)
         {
             if (_httpContextAccessor.HttpContext.Session.GetString("Module_Offer") == null || _httpContextAccessor.HttpContext.Session.GetString("Module_Offer").ToString() == "False")
             {
@@ -105,17 +105,36 @@ namespace Pax360.Controllers
 
             OfferDetailsModel model = new OfferDetailsModel();
 
-            var companyResult = _mikroService.GetMikroCompanyDetails(id);
-
-            if (string.IsNullOrWhiteSpace(companyResult.Item1))
+            if (offerID > 0)
             {
-                model.MusteriAdi = companyResult.Item2.MusteriAdi;
-                model.cari_kod = companyResult.Item2.cari_kod;
-                model.cari_Guid = id;
+                var getResult = await _offerService.GetOffer(offerID);
+
+                if (!string.IsNullOrWhiteSpace(getResult.Item1))
+                {
+                    model.ErrorMessage = getResult.Item1;
+                }
+                else
+                {
+                    model = getResult.Item2;
+                    model.IsModify = true;
+                    id = model.cari_Guid;
+                    model.selectedID = offerID;
+                }
             }
             else
             {
-                model.ErrorMessage = companyResult.Item1;
+                var companyResult = _mikroService.GetMikroCompanyDetails(id);
+
+                if (string.IsNullOrWhiteSpace(companyResult.Item1))
+                {
+                    model.MusteriAdi = companyResult.Item2.MusteriAdi;
+                    model.cari_kod = companyResult.Item2.cari_kod;
+                    model.cari_Guid = id;
+                }
+                else
+                {
+                    model.ErrorMessage = companyResult.Item1;
+                }
             }
 
             return View(model);
@@ -151,6 +170,27 @@ namespace Pax360.Controllers
                         else
                         {
                             errorMessage = "Kaydeme başarısız! " + resultSave;
+                        }
+                    }
+                    break;
+                case "Update":
+                    string checkUpdate = OfferRequiredCheck(dataModel);
+                    if (!string.IsNullOrWhiteSpace(checkUpdate))
+                    {
+                        errorMessage = checkUpdate;
+                    }
+                    else
+                    {
+                        string resultSave = await _offerService.UpdateOffer(dataModel);
+                        if (string.IsNullOrWhiteSpace(resultSave))
+                        {
+                            successMessage = "Güncelleme başarılı.";
+                            ModelState.Clear();
+                        }
+                        else
+                        {
+                            errorMessage = "Güncelleme başarısız! " + resultSave;
+
                         }
                     }
                     break;

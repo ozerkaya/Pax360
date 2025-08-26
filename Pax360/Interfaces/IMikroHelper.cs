@@ -8,6 +8,8 @@ namespace Pax360.Interfaces
 {
     public interface IMikroHelper
     {
+        public Tuple<string, List<CustomerListItemModel>> GetMikroCompaniesWithPax360(CustomerListModel dataModel,int skip,int take);
+        public Tuple<string, int> GetMikroCompaniesWithPax360Count();
         public Tuple<string, List<SelectListItem>> GetMikroCompanies();
         public Tuple<string, List<SelectListItem>> GetMikroProducts();
         public Tuple<string, OrderDetailsModel> GetMikroCompanyDetails(Guid cari_Guid);

@@ -30,6 +30,9 @@ namespace Pax360DAL.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
 
+                    b.Property<bool>("Module_Customers")
+                        .HasColumnType("bit");
+
                     b.Property<bool>("Module_Offer")
                         .HasColumnType("bit");
 
@@ -47,7 +50,133 @@ namespace Pax360DAL.Migrations
 
                     b.HasKey("ID");
 
-                    b.ToTable("Authorizations");
+                    b.ToTable("Authorizations", (string)null);
+                });
+
+            modelBuilder.Entity("Pax360DAL.Models.CustomerBanks", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
+
+                    b.Property<string>("BankName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("CustomerID")
+                        .HasColumnType("int");
+
+                    b.HasKey("ID");
+
+                    b.HasIndex("CustomerID");
+
+                    b.ToTable("CustomerBanks", (string)null);
+                });
+
+            modelBuilder.Entity("Pax360DAL.Models.CustomerCases", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
+
+                    b.Property<string>("CaseCompany")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("CustomerID")
+                        .HasColumnType("int");
+
+                    b.HasKey("ID");
+
+                    b.HasIndex("CustomerID");
+
+                    b.ToTable("CustomerCases", (string)null);
+                });
+
+            modelBuilder.Entity("Pax360DAL.Models.CustomerDocuments", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
+
+                    b.Property<int>("CustomerID")
+                        .HasColumnType("int");
+
+                    b.Property<string>("DocumentName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("ID");
+
+                    b.HasIndex("CustomerID");
+
+                    b.ToTable("CustomerDocuments", (string)null);
+                });
+
+            modelBuilder.Entity("Pax360DAL.Models.Customers", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
+
+                    b.Property<string>("AccountManager")
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<int>("AccountManagerID")
+                        .HasColumnType("int");
+
+                    b.Property<Guid>("Cari_Guid_Mikro")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("KasaSayisi")
+                        .HasColumnType("int");
+
+                    b.Property<int>("MagazaSayisi")
+                        .HasColumnType("int");
+
+                    b.Property<string>("MusteriSegmenti")
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<string>("MusteriSektoru")
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<string>("SahaFirmasi")
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<string>("SatisKanali")
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<string>("SonAktiviteNumarasi")
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<string>("SonAktiviteOzeti")
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<DateTime>("SonAktiviteTarihi")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("SonAktiviteTipi")
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.HasKey("ID");
+
+                    b.ToTable("Customers", (string)null);
                 });
 
             modelBuilder.Entity("Pax360DAL.Models.Offers", b =>
@@ -89,7 +218,7 @@ namespace Pax360DAL.Migrations
 
                     b.HasKey("ID");
 
-                    b.ToTable("Offers");
+                    b.ToTable("Offers", (string)null);
                 });
 
             modelBuilder.Entity("Pax360DAL.Models.OffersItem", b =>
@@ -110,18 +239,16 @@ namespace Pax360DAL.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("UrunAdi")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("UrunKodu")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("ID");
 
                     b.HasIndex("OfferID");
 
-                    b.ToTable("OffersItem");
+                    b.ToTable("OffersItem", (string)null);
                 });
 
             modelBuilder.Entity("Pax360DAL.Models.Orders", b =>
@@ -184,12 +311,24 @@ namespace Pax360DAL.Migrations
                         .HasMaxLength(500)
                         .HasColumnType("nvarchar(500)");
 
+                    b.Property<string>("SiparisMusterisi")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<Guid>("SiparisMusterisi_cari_Guid")
+                        .HasColumnType("uniqueidentifier");
+
                     b.Property<string>("SiparisNumarasi")
                         .HasMaxLength(500)
                         .HasColumnType("nvarchar(500)");
 
                     b.Property<DateTime>("SiparisTarihi")
                         .HasColumnType("datetime2");
+
+                    b.Property<string>("SiparisTipi")
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
 
                     b.Property<string>("Telefon")
                         .HasMaxLength(500)
@@ -226,15 +365,11 @@ namespace Pax360DAL.Migrations
                         .HasMaxLength(500)
                         .HasColumnType("nvarchar(500)");
 
-                    b.Property<string>("VadeTarihi")
+                    b.Property<int>("VadeTarihi")
                         .HasMaxLength(500)
-                        .HasColumnType("nvarchar(500)");
+                        .HasColumnType("int");
 
                     b.Property<string>("YuklenecekBanka")
-                        .HasMaxLength(500)
-                        .HasColumnType("nvarchar(500)");
-
-                    b.Property<string>("YuklenecekUygulama")
                         .HasMaxLength(500)
                         .HasColumnType("nvarchar(500)");
 
@@ -247,7 +382,7 @@ namespace Pax360DAL.Migrations
 
                     b.HasKey("ID");
 
-                    b.ToTable("Orders");
+                    b.ToTable("Orders", (string)null);
                 });
 
             modelBuilder.Entity("Pax360DAL.Models.OrdersItem", b =>
@@ -265,15 +400,12 @@ namespace Pax360DAL.Migrations
                         .HasColumnType("decimal(18,2)");
 
                     b.Property<string>("CihazModeli")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Iskonto")
-                        .IsRequired()
+                    b.Property<string>("DovizCinsi")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Kdv")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Miktar")
@@ -289,7 +421,7 @@ namespace Pax360DAL.Migrations
 
                     b.HasIndex("OrderID");
 
-                    b.ToTable("OrdersItem");
+                    b.ToTable("OrdersItem", (string)null);
                 });
 
             modelBuilder.Entity("Pax360DAL.Models.RoleTypes", b =>
@@ -299,6 +431,9 @@ namespace Pax360DAL.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
+
+                    b.Property<bool>("Module_Customers")
+                        .HasColumnType("bit");
 
                     b.Property<bool>("Module_Offer")
                         .HasColumnType("bit");
@@ -318,7 +453,7 @@ namespace Pax360DAL.Migrations
 
                     b.HasKey("ID");
 
-                    b.ToTable("RoleTypes");
+                    b.ToTable("RoleTypes", (string)null);
                 });
 
             modelBuilder.Entity("Pax360DAL.Models.Teams", b =>
@@ -335,7 +470,7 @@ namespace Pax360DAL.Migrations
 
                     b.HasKey("ID");
 
-                    b.ToTable("Teams");
+                    b.ToTable("Teams", (string)null);
                 });
 
             modelBuilder.Entity("Pax360DAL.Models.Users", b =>
@@ -395,7 +530,40 @@ namespace Pax360DAL.Migrations
 
                     b.HasKey("ID");
 
-                    b.ToTable("Users");
+                    b.ToTable("Users", (string)null);
+                });
+
+            modelBuilder.Entity("Pax360DAL.Models.CustomerBanks", b =>
+                {
+                    b.HasOne("Pax360DAL.Models.Customers", "Customer")
+                        .WithMany("MusteriBankalari")
+                        .HasForeignKey("CustomerID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Customer");
+                });
+
+            modelBuilder.Entity("Pax360DAL.Models.CustomerCases", b =>
+                {
+                    b.HasOne("Pax360DAL.Models.Customers", "Customer")
+                        .WithMany("KasaFirmasi")
+                        .HasForeignKey("CustomerID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Customer");
+                });
+
+            modelBuilder.Entity("Pax360DAL.Models.CustomerDocuments", b =>
+                {
+                    b.HasOne("Pax360DAL.Models.Customers", "Customer")
+                        .WithMany("Dokumanlar")
+                        .HasForeignKey("CustomerID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Customer");
                 });
 
             modelBuilder.Entity("Pax360DAL.Models.OffersItem", b =>
@@ -418,6 +586,15 @@ namespace Pax360DAL.Migrations
                         .IsRequired();
 
                     b.Navigation("Order");
+                });
+
+            modelBuilder.Entity("Pax360DAL.Models.Customers", b =>
+                {
+                    b.Navigation("Dokumanlar");
+
+                    b.Navigation("KasaFirmasi");
+
+                    b.Navigation("MusteriBankalari");
                 });
 
             modelBuilder.Entity("Pax360DAL.Models.Offers", b =>

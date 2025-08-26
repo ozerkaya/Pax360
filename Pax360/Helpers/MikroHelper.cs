@@ -7,6 +7,7 @@ using System.Text;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 using System.Text.Json;
 using Microsoft.EntityFrameworkCore.Scaffolding.Metadata;
+using System.Xml.Serialization;
 
 namespace Pax360.Helpers
 {
@@ -100,7 +101,7 @@ namespace Pax360.Helpers
                     returnList.Add(new SelectListItem
                     {
                         Text = "A920 MAX",
-                        Value = "A920-3AW-RD5-25EU#A920",
+                        Value = "A920-3AW-RD5-25EU#A920#5",
                     });
                     return Tuple.Create(string.Empty, returnList);
                 }
@@ -111,7 +112,7 @@ namespace Pax360.Helpers
                         connection.Open();
                         try
                         {
-                            string query = @"SELECT [sto_kod],[sto_isim] FROM [STOKLAR]";
+                            string query = @"SELECT [sto_kod],[sto_isim],[sto_toptan_vergi] FROM [STOKLAR] where [sto_sezon_kodu]='PAX360'";
                             SqlCommand command = new SqlCommand(query, connection);
                             SqlDataReader reader = command.ExecuteReader();
 
@@ -120,10 +121,21 @@ namespace Pax360.Helpers
 
                                 if (reader[0] != null)
                                 {
+                                    string vergi = "20";
+
+                                    if (reader["sto_isim"]?.ToString() == "6")
+                                    {
+                                        vergi = "20";
+                                    }
+                                    else if (reader["sto_isim"]?.ToString() == "5")
+                                    {
+                                        vergi = "10";
+                                    }
+
                                     returnList.Add(new SelectListItem
                                     {
-                                        Text = reader["sto_isim"]?.ToString(),
-                                        Value = string.Format("{0}#{1}", reader["sto_kod"]?.ToString(), reader["sto_isim"]?.ToString()),
+                                        Text = reader["sto_kod"]?.ToString() + " - " + reader["sto_isim"]?.ToString(),
+                                        Value = string.Format("{0}#{1}#{2}", reader["sto_kod"]?.ToString(), reader["sto_isim"]?.ToString(), vergi),
                                     });
                                 }
                             }
@@ -186,6 +198,7 @@ namespace Pax360.Helpers
            CARI_HESAPLAR.[cari_EMail],
            CARI_HESAPLAR.[cari_CepTel],
            CARI_HESAPLAR.[cari_kod],
+           CARI_HESAPLAR.[cari_odemeplan_no],
            CARI_HESAP_ADRESLERI.[adr_cadde],
            CARI_HESAP_ADRESLERI.[adr_mahalle],
            CARI_HESAP_ADRESLERI.[adr_sokak],
@@ -229,7 +242,7 @@ WHERE RowNum = 1;";
                                 {
                                     model.AdSoyad = reader["mye_isim"]?.ToString() + " " + reader["mye_soyisim"]?.ToString();
                                     model.VKNTCKN = reader["cari_vdaire_no"]?.ToString();
-                                    model.Telefon = reader["adr_tel_no1"]?.ToString();
+                                    model.Telefon = reader["cari_CepTel"]?.ToString();
                                     model.Eposta = reader["cari_EMail"]?.ToString();
                                     model.FaturaAdresi = reader["adr_cadde"]?.ToString() + " " +
                                                          reader["adr_sokak"]?.ToString() + " ";
@@ -239,6 +252,7 @@ WHERE RowNum = 1;";
                                     model.SiparisNumarasi = Guid.NewGuid().ToString();
                                     model.cari_kod = reader["cari_kod"]?.ToString();
                                     model.cari_Guid = cari_Guid;
+                                    model.VadeTarihi = Convert.ToInt32(reader["cari_odemeplan_no"]?.ToString());
                                 }
                             }
 
@@ -403,6 +417,7 @@ WHERE  sip_eticaret_kanal_kodu = 'PAX360SATIS'";
                     Sifre = _cryptographyHelper.CreateMD5(string.Format("{0} {1}", DateTime.Now.ToString("yyyy-MM-dd"), _mikroConfig.Value.Sifre)),
                     FirmaNo = Convert.ToInt32(_mikroConfig.Value.FirmaNo),
                     SubeNo = Convert.ToInt32(_mikroConfig.Value.SubeNo),
+
                     evraklar = new List<Evrak>
                     {
                         new Evrak
@@ -462,6 +477,8 @@ WHERE  sip_eticaret_kanal_kodu = 'PAX360SATIS'";
                     sip_tarih = DateTime.Now.ToString("dd.MM.yyyy"),
                     sip_tip = "0",
                     sip_cins = "0",
+                    sip_doviz_cinsi = item.sip_doviz_cinsi,
+                    sip_satis_fiyat_doviz_kuru = item.sip_doviz_cinsi,
                     sip_evrakno_seri = "T",
                     sip_musteri_kod = cariNo,
                     sip_stok_kod = item.ProductCode,
@@ -481,7 +498,7 @@ WHERE  sip_eticaret_kanal_kodu = 'PAX360SATIS'";
                     sip_eticaret_kanal_kodu = item.sip_eticaret_kanal_kodu,
                     sip_HareketGrupKodu1 = string.Format("{0} {1}", Req.FirstName, Req.LastName),
                     sip_HareketGrupKodu2 = Req.CellularPhone,
-                    sip_satici_kod = Req.sip_satici_kod, /////// ONLİNE ÖDEMESİ ALINMIŞ SİPARİŞLERDE GÖRİLECEK HAVAEDE GÖNDEİRLMEYECEK. WL DE YAZACAK
+                    sip_satici_kod = Req.sip_satici_kod,
                     sip_ExternalProgramId = string.Format("{0},{1},", item.CampaignType ?? "", item.HurdaSeriNo ?? ""),
                     user_tablo = new List<UserTablo>
                                     {
@@ -501,8 +518,8 @@ WHERE  sip_eticaret_kanal_kodu = 'PAX360SATIS'";
             string result = response.Content.ReadAsStringAsync().Result;
             var resultModel = JsonSerializer.Deserialize<SiparisKaydetResult>(result);
 
-            //ServisObjeleriniLogla(root, "SiparisKaydetV2");
-            //ServisObjeleriniLogla(resultModel, "SiparisKaydetV2");
+            ServisObjeleriniLogla(root, "SiparisKaydetV2");
+            ServisObjeleriniLogla(resultModel, "SiparisKaydetV2");
 
             if (resultModel != null && resultModel.result != null && resultModel.result.FirstOrDefault() != null)
             {
@@ -608,6 +625,8 @@ WHERE  sip_eticaret_kanal_kodu = 'PAX360SATIS'";
                     sip_tarih = DateTime.Now.ToString("dd.MM.yyyy"),
                     sip_tip = "0",
                     sip_cins = "0",
+                    sip_doviz_cinsi = item.sip_doviz_cinsi,
+                    sip_satis_fiyat_doviz_kuru = item.sip_doviz_cinsi,
                     sip_evrakno_seri = "T",
                     sip_musteri_kod = cariNo,
                     sip_stok_kod = item.ProductCode,
@@ -647,8 +666,8 @@ WHERE  sip_eticaret_kanal_kodu = 'PAX360SATIS'";
             string result = response.Content.ReadAsStringAsync().Result;
             var resultModel = JsonSerializer.Deserialize<SiparisKaydetResult>(result);
 
-            //ServisObjeleriniLogla(root, "SiparisKaydetV2");
-            //ServisObjeleriniLogla(resultModel, "SiparisKaydetV2");
+            ServisObjeleriniLogla(root, "SiparisDuzeltV2");
+            ServisObjeleriniLogla(resultModel, "SiparisDuzeltV2");
 
             if (resultModel != null && resultModel.result != null && resultModel.result.FirstOrDefault() != null)
             {
@@ -728,6 +747,137 @@ WHERE  sip_eticaret_kanal_kodu = 'PAX360SATIS'";
             catch (Exception ex)
             {
                 return Tuple.Create(ex.Message, string.Empty);
+            }
+        }
+
+        private static void ServisObjeleriniLogla(object Obj, string fileName)
+        {
+            try
+            {
+                MemoryStream stream = new MemoryStream();
+                XmlSerializer ser = new XmlSerializer(Obj.GetType());
+                ser.Serialize(stream, Obj);
+                stream.Position = 0;
+
+                StringBuilder str = new StringBuilder();
+                str.AppendLine("-----------------------------------------------------------------------------");
+                str.AppendLine(string.Format("{0}:{1}", "Zaman", DateTime.Now.ToString()));
+                str.AppendLine(Encoding.UTF8.GetString(stream.ToArray()));
+                str.AppendLine("-----------------------------------------------------------------------------");
+                DateTime date = DateTime.Now;
+                string path = string.Format("{0}\\{1}\\{2}\\{3}\\{4}", "wwwroot", "LogFilesMikro", date.Year, date.Month, date.Day);
+
+                if (!Directory.Exists(path))
+                {
+                    Directory.CreateDirectory(path);
+                }
+
+                using (FileStream fs = File.Open(path + string.Format("{0}{1}{2}", "\\", fileName, ".txt"), FileMode.Append, FileAccess.Write, FileShare.None))
+                using (StreamWriter sw = new StreamWriter(fs)) sw.WriteLine(str);
+
+            }
+            catch
+            {
+            }
+        }
+
+        public Tuple<string, List<CustomerListItemModel>> GetMikroCompaniesWithPax360(CustomerListModel dataModel, int skip, int take)
+        {
+            List<CustomerListItemModel> returnList = new List<CustomerListItemModel>();
+
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(_externalConfig.Value.MicroConnectionString))
+                {
+                    connection.Open();
+                    try
+                    {
+                        string query = @"SELECT [cari_Guid],[cari_unvan1],[cari_vdaire_no] FROM [CARI_HESAPLAR] 
+                        WHERE [cari_unvan1]!=''";
+
+                        if (!string.IsNullOrWhiteSpace(dataModel.MusteriAdi))
+                        {
+                            query += " AND [cari_unvan1] like @CARIUNVAN";
+                        }
+
+                        query += @" ORDER BY [cari_Guid]
+                        OFFSET @SKIP ROWS
+                        FETCH NEXT @TAKE ROWS ONLY;";
+
+                        SqlCommand command = new SqlCommand(query, connection);
+                        command.Parameters.AddWithValue("@SKIP", skip);
+                        command.Parameters.AddWithValue("@TAKE", take);
+
+                        if (!string.IsNullOrWhiteSpace(dataModel.MusteriAdi))
+                        {
+                            command.Parameters.AddWithValue("@CARIUNVAN", "%" + dataModel.MusteriAdi + "%");
+                        }
+
+                        SqlDataReader reader = command.ExecuteReader();
+
+                        while (reader.Read())
+                        {
+                            if (reader[0] != null)
+                            {
+                                returnList.Add(new CustomerListItemModel
+                                {
+                                    MusteriAdi = reader["cari_unvan1"]?.ToString(),
+                                    Cari_Guid = Guid.Parse(reader["cari_Guid"]?.ToString()),
+                                });
+                            }
+                        }
+
+                        return Tuple.Create(string.Empty, returnList);
+
+                    }
+                    catch (Exception ex)
+                    {
+                        return Tuple.Create(ex.Message, returnList);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                return Tuple.Create(ex.Message, returnList);
+            }
+        }
+
+        public Tuple<string, int> GetMikroCompaniesWithPax360Count()
+        {
+            int count = 0;
+
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(_externalConfig.Value.MicroConnectionString))
+                {
+                    connection.Open();
+                    try
+                    {
+                        string query = @"SELECT COUNT([cari_Guid]) FROM [CARI_HESAPLAR]";
+
+                        SqlCommand command = new SqlCommand(query, connection);
+                        SqlDataReader reader = command.ExecuteReader();
+
+                        while (reader.Read())
+                        {
+                            if (reader[0] != null)
+                            {
+                                count = Convert.ToInt32(reader[0].ToString());
+                            }
+                        }
+
+                        return Tuple.Create(string.Empty, count);
+
+                    }
+                    catch (Exception ex)
+                    {
+                        return Tuple.Create(ex.Message, count);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                return Tuple.Create(ex.Message, count);
             }
         }
     }

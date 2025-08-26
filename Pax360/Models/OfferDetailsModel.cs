@@ -20,5 +20,7 @@ namespace Pax360.Models
         public string MusteriAdi { get; set; }
         public string cari_kod { get; set; }
         public Guid cari_Guid { get; set; }
+        public int selectedID { get; set; }
+        public bool IsModify { get; set; }
     }
 }

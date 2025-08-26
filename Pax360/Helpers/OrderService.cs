@@ -7,6 +7,7 @@ using System.Net;
 using System.Text.Json;
 using Pax360.Extensions;
 using System.Data;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Pax360.Helpers
 {
@@ -41,9 +42,9 @@ namespace Pax360.Helpers
                         FirstName = dataModel.AdSoyad,
                         LastName = dataModel.AdSoyad,
 
-                        ShippingAddress = dataModel.TeslimatAdresi,
-                        ShippingCityCode = StaticHelpers.CityList(dataModel.TeslimatIl),
-                        ShippingDistrict = dataModel.TeslimatIlce,
+                        ShippingAddress = (dataModel.DifferentCargoAddress) ? dataModel.TeslimatAdresi : dataModel.FaturaAdresi,
+                        ShippingCityCode = (dataModel.DifferentCargoAddress) ? StaticHelpers.CityList(dataModel.TeslimatIl) : StaticHelpers.CityList(dataModel.Il),
+                        ShippingDistrict = (dataModel.DifferentCargoAddress) ? dataModel.TeslimatIlce : dataModel.Ilce,
                         ShippingCounty = "Türkiye",
                         ShippingPostCode = 0,
 
@@ -62,6 +63,7 @@ namespace Pax360.Helpers
                         CompanyName = dataModel.TicariUnvan,
                         CompanyKnownAs = dataModel.TicariUnvan,
                         sip_satici_kod = _httpContextAccessor.HttpContext.Session.GetString("SIPSATICIKODU"),
+                        sip_evrakno_seri = "P"
                     };
                     List<OrderInputModel> kalemler = _httpContextAccessor.HttpContext.Session.GetObject<List<OrderInputModel>>("ORDERINPUT") ?? new List<OrderInputModel>();
                     decimal total = 0;
@@ -71,7 +73,6 @@ namespace Pax360.Helpers
                         AdSoyad = dataModel.AdSoyad ?? "",
                         FaturaAdresi = dataModel.FaturaAdresi,
                         MusteriAdi = dataModel.MusteriAdi,
-                        TeslimatAdresi = dataModel.TeslimatAdresi,
                         SahaFirmasi = dataModel.SahaFirmasi,
                         BankaOrtami = dataModel.BankaOrtami,
                         cari_Guid = dataModel.cari_Guid,
@@ -84,44 +85,57 @@ namespace Pax360.Helpers
                         SaticiPlasiyer = dataModel.SaticiPlasiyer,
                         Not = dataModel.Not,
                         SiparisNumarasi = dataModel.SiparisNumarasi,
+                        SiparisDurumu = "Sipariş Oluşturuldu",
                         Telefon = dataModel.Telefon,
-                        TeslimatIl = dataModel.TeslimatIl,
-                        TeslimatIlce = dataModel.TeslimatIlce,
+                        SiparisMusterisi = string.Empty,
+                        SiparisMusterisi_cari_Guid = default(Guid),
+                        TeslimatAdresi = (dataModel.DifferentCargoAddress) ? dataModel.TeslimatAdresi : dataModel.FaturaAdresi,
+                        TeslimatIl = (dataModel.DifferentCargoAddress) ? dataModel.TeslimatIl : dataModel.Il,
+                        TeslimatIlce = (dataModel.DifferentCargoAddress) ? dataModel.TeslimatIlce : dataModel.Ilce,
                         TeslimTuru = dataModel.TeslimTuru,
+
                         TicariUnvan = dataModel.TicariUnvan,
                         VadeTarihi = dataModel.VadeTarihi,
-                        YuklenecekBanka = dataModel.YuklenecekBanka,
+                        YuklenecekBanka = string.Join("#", dataModel.YuklenecekBanka),
                         VKNTCKN = dataModel.VKNTCKN,
-                        YuklenecekUygulama = dataModel.YuklenecekUygulama,
+                        SiparisTipi = dataModel.SiparisTipi,
                         SiparisTarihi = DateTime.Now,
                         UserID = userID,
                         UserName = nameSurname,
                         OrderItems = new List<OrdersItem>()
                     };
 
+                    if (!string.IsNullOrWhiteSpace(dataModel.SiparisMusterisi))
+                    {
+                        order.SiparisMusterisi = dataModel.SiparisMusterisi.Split('#')[1];
+                        order.SiparisMusterisi_cari_Guid = Guid.Parse(dataModel.SiparisMusterisi.Split('#')[0]);
+                    }
+
                     foreach (var item in kalemler)
                     {
                         request.Items.Add(new CreateLeadV2Item
                         {
-                            PaymentAmount = Convert.ToDecimal(item.birimfiyattl * item.miktar),
+                            PaymentAmount = (item.doviz == "USD") ? Convert.ToDecimal(item.birimfiyat * item.miktar) : Convert.ToDecimal(item.birimfiyattl * item.miktar),
                             LeadQuantity = item.miktar,
                             ProductCode = item.cihazmodeli.Split('#')[0],
                             HareketTipi = 0,
                             sip_eticaret_kanal_kodu = "PAX360SATIS",
-                            vergi_orani = 10,
+                            vergi_orani = Convert.ToInt32(item.kdv),
+                            sip_doviz_cinsi = (item.doviz == "USD") ? 1 : 0,
                         });
 
-                        total += Convert.ToDecimal(item.birimfiyattl * item.miktar);
+                        total += (item.doviz == "USD") ? Convert.ToDecimal(item.birimfiyat * item.miktar) : Convert.ToDecimal(item.birimfiyattl * item.miktar);
 
                         order.OrderItems.Add(new OrdersItem
                         {
                             BirimFiyat = item.birimfiyat,
                             BirimFiyatTL = item.birimfiyattl,
                             CihazModeli = item.cihazmodeli,
-                            Iskonto = item.iskonto,
                             Kdv = item.kdv,
                             Miktar = item.miktar,
-                            ToplamTutar = total
+                            ToplamTutar = total,
+                            DovizCinsi = item.doviz,
+
                         });
                     }
 
@@ -205,9 +219,10 @@ namespace Pax360.Helpers
                         TeslimTuru = order.TeslimTuru,
                         TicariUnvan = order.TicariUnvan,
                         VadeTarihi = order.VadeTarihi,
-                        YuklenecekBanka = order.YuklenecekBanka,
+                        YuklenecekBanka = order.YuklenecekBanka.Split('#'),
                         VKNTCKN = order.VKNTCKN,
-                        YuklenecekUygulama = order.YuklenecekUygulama,
+                        SiparisTipi = order.SiparisTipi,
+                        SiparisMusterisi = string.Format("{0}#{1}", order.SiparisMusterisi_cari_Guid, order.SiparisMusterisi),
                     };
 
                     List<OrderInputModel> kalemList = new List<OrderInputModel>();
@@ -220,7 +235,6 @@ namespace Pax360.Helpers
                             birimfiyat = item.BirimFiyat,
                             birimfiyattl = item.BirimFiyatTL,
                             cihazmodeli = item.CihazModeli,
-                            iskonto = item.Iskonto,
                             kdv = item.Kdv,
                             miktar = item.Miktar,
                             toplamtutar = item.ToplamTutar.ToString(),
@@ -312,12 +326,16 @@ namespace Pax360.Helpers
                     order.TeslimTuru = dataModel.TeslimTuru;
                     order.TicariUnvan = dataModel.TicariUnvan;
                     order.VadeTarihi = dataModel.VadeTarihi;
-                    order.YuklenecekBanka = dataModel.YuklenecekBanka;
+                    order.YuklenecekBanka = string.Join("#", order.YuklenecekBanka);
                     order.VKNTCKN = dataModel.VKNTCKN;
-                    order.YuklenecekUygulama = dataModel.YuklenecekUygulama;
+                    order.SiparisTipi = dataModel.SiparisTipi;
                     order.SiparisTarihi = DateTime.Now;
                     order.UserID = userID;
                     order.UserName = nameSurname;
+
+                    order.SiparisMusterisi = dataModel.SiparisMusterisi.Split('#')[1];
+                    order.SiparisMusterisi_cari_Guid = Guid.Parse(dataModel.SiparisMusterisi.Split('#')[0]);
+
                     order.OrderItems = new List<OrdersItem>();
 
                     foreach (var item in kalemler)
@@ -330,6 +348,7 @@ namespace Pax360.Helpers
                             HareketTipi = 0,
                             sip_eticaret_kanal_kodu = "PAX360SATIS",
                             vergi_orani = 10,
+                            sip_doviz_cinsi = (item.doviz == "USD") ? 1 : 0
                         });
 
                         total += Convert.ToDecimal(item.birimfiyattl * item.miktar);
@@ -339,10 +358,10 @@ namespace Pax360.Helpers
                             BirimFiyat = item.birimfiyat,
                             BirimFiyatTL = item.birimfiyattl,
                             CihazModeli = item.cihazmodeli,
-                            Iskonto = item.iskonto,
                             Kdv = item.kdv,
                             Miktar = item.miktar,
-                            ToplamTutar = total
+                            ToplamTutar = total,
+                            DovizCinsi = item.doviz
                         });
                     }
 

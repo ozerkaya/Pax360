@@ -1,0 +1,204 @@
+﻿@model Pax360.Models.CustomerListModel
+@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    var SahaFirmasiList = new List<SelectListItem>()
+{
+             new SelectListItem { Text = "Seçiniz", Value = "" },
+             new SelectListItem { Text = "Müşteri", Value = "Müşteri" },
+             new SelectListItem { Text = "Pax", Value = "Pax" },
+             new SelectListItem { Text = "Teknoser", Value = "Teknoser" },
+    };
+
+    var BankaOrtamiList = new List<SelectListItem>()
+{
+             new SelectListItem { Text = "Seçiniz", Value = "" },
+             new SelectListItem { Text = "Prod", Value = "Prod" },
+             new SelectListItem { Text = "Test", Value = "Test" },
+    };
+
+    var SiparisTipiList = new List<SelectListItem>()
+{
+             new SelectListItem { Text = "Seçiniz", Value = "" },
+             new SelectListItem { Text = "Satış", Value = "Satış" },
+             new SelectListItem { Text = "Konsinye", Value = "Konsinye" },
+    };
+
+    var CihazModuList = new List<SelectListItem>()
+{
+             new SelectListItem { Text = "Seçiniz", Value = "" },
+             new SelectListItem { Text = "Prod", Value = "Prod" },
+             new SelectListItem { Text = "Debug", Value = "Debug" },
+    };
+
+    var EntegrasyonList = new List<SelectListItem>()
+{
+             new SelectListItem { Text = "Seçiniz", Value = "" },
+             new SelectListItem { Text = "Nebim", Value = "Nebim" },
+             new SelectListItem { Text = "Logo", Value = "Logo" },
+             new SelectListItem { Text = "Tera", Value = "Tera" },
+              new SelectListItem { Text = "Encore ", Value = "Encore " },
+    };
+
+    var FirmaTipiList = new List<SelectListItem>()
+{
+             new SelectListItem { Text = "Seçiniz", Value = "" },
+             new SelectListItem { Text = "Normal Müşteri", Value = "Normal Müşteri" },
+             new SelectListItem { Text = "Kasa Firması", Value = "Kasa Firması" },
+    };
+
+    var BankaUygulamaList = new List<SelectListItem>()
+{
+             new SelectListItem { Text = "Select", Value = "" },
+             new SelectListItem { Text = "BKM TechPOS", Value = "BKM TechPOS" },
+             new SelectListItem { Text = "Application Manager", Value = "Application Manager" },
+             new SelectListItem { Text = "PCP Client", Value = "PCP Client" },
+             new SelectListItem { Text = "CRP", Value = "CRP" },
+             new SelectListItem { Text = "OS Güncelleme", Value = "OS Güncelleme" },
+             new SelectListItem { Text = "Toshiba", Value = "Toshiba" },
+             new SelectListItem { Text = "EnPOS", Value = "EnPOS" },
+             new SelectListItem { Text = "Menulux", Value = "Menulux" },
+             new SelectListItem { Text = "Garanti", Value = "Garanti" },
+             new SelectListItem { Text = "Akbank", Value = "Akbank" },
+             new SelectListItem { Text = "Yapı Kredi", Value = "Yapı Kredi" },
+    };
+
+    var SatisUygulamaList = new List<SelectListItem>()
+{
+             new SelectListItem { Text = "Seçiniz", Value = "" },
+             new SelectListItem { Text = "Uygulama1", Value = "Uygulama1" },
+             new SelectListItem { Text = "Uygulama2", Value = "Uygulama2" },
+    };
+
+    var CihazList = new List<SelectListItem>()
+{
+             new SelectListItem { Text = "Seçiniz", Value = "" },
+             new SelectListItem { Text = "A910SF", Value = "A910SF" },
+             new SelectListItem { Text = "MOVE5000F", Value = "MOVE5000F" },
+    };
+
+    var DovizList = new List<SelectListItem>()
+{
+             new SelectListItem { Text = "Seçiniz", Value = "" },
+             new SelectListItem { Text = "USD", Value = "USD" },
+             // new SelectListItem { Text = "TL", Value = "TL" },
+    };
+}
+
+@using (Html.BeginForm())
+{
+    <div class="content">
+        @await Html.PartialAsync("_Messages", new Dictionary<string, string> { { "ErrorMessage", Model.ErrorMessage }, { "SuccessMessage", Model.SuccessMessage } })
+        <div class="container">
+            @await Html.PartialAsync("_PageHeader", new Dictionary<string, string> { { "UserName", @HttpContextAccessor.HttpContext.Session.GetString("NAMESURNAME") }, { "Page", "Müşteri Özet" } })
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="panel panel-color panel-info">
+                        <div class="panel-heading" style="border: none !important; padding: 15px 20px; border-radius:4px 4px 0 0;background-color: #737a84;color: #fff;">
+                            <h3 class="panel-title" style="color:#fff;">MÜŞTERİ BİLGİLERİ</h3>
+                        </div>
+                        <div class="card-box" style="padding: 18px !important;border:none;margin-bottom:0px;">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        @Html.Label("Müşteri Adı")
+                                        @Html.TextBoxFor(Ok => Ok.MusteriAdi, new { @class = "form-control", autocomplete = "off", @readonly = "readonly" })
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        @Html.Label("Kontakt Kişi Ad Soyad")
+                                        @Html.TextBoxFor(Ok => Ok.KontakKisiAdSoyad, new { @class = "form-control", autocomplete = "off", @readonly = "readonly" })
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        @Html.Label("Kontakt Kişi Telefon")
+                                        @Html.TextBoxFor(Ok => Ok.KontakKisiAdTelefon, new { @class = "form-control", autocomplete = "off", @readonly = "readonly" })
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        @Html.Label("Kontakt Kişi E-mail")
+                                        @Html.TextBoxFor(Ok => Ok.KontakKisiAdEmail, new { @class = "form-control", autocomplete = "off", @readonly = "readonly" })
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        @Html.Label("Müşteri Segmenti")
+                                        @Html.DropDownListFor(ok => ok.Customer.MusteriSegmenti, new SelectList(@SiparisTipiList, "Value", "Text"), new { @class = "form-control select2" })
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        @Html.Label("Müşteri Sektörü")
+                                        @Html.DropDownListFor(ok => ok.Customer.MusteriSektoru, new SelectList(@SiparisTipiList, "Value", "Text"), new { @class = "form-control select2" })
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        @Html.Label("Müşteri Bankaları")
+                                        @Html.ListBoxFor(ok => ok.MusteriBankalari, new SelectList(@SiparisTipiList, "Value", "Text"), new { @class = "form-control select2", multiple = "multiple" })
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        @Html.Label("Kasa Firması")
+                                        @Html.ListBoxFor(ok => ok.KasaFirmasi, new SelectList(@SiparisTipiList, "Value", "Text"), new { @class = "form-control select2", multiple = "multiple" })
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        @Html.Label("Saha Firması")
+                                        @Html.DropDownListFor(ok => ok.Customer.SahaFirmasi, new SelectList(@SiparisTipiList, "Value", "Text"), new { @class = "form-control select2" })
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        @Html.Label("Mağaza Sayısı")
+                                        @Html.TextBoxFor(Ok => Ok.Customer.MagazaSayisi, new { @class = "form-control", autocomplete = "off", type = "number" })
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        @Html.Label("Kasa Sayısı")
+                                        @Html.TextBoxFor(Ok => Ok.Customer.KasaSayisi, new { @class = "form-control", autocomplete = "off", type = "number" })
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        @Html.Label("Account Manager")
+                                        @Html.DropDownListFor(ok => ok.Customer.AccountManagerID, new SelectList(@Model.AuthPersonList, "Value", "Text"), new { @class = "form-control select2" })
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        @Html.Label("Satış Kanalı")
+                                        @Html.DropDownListFor(ok => ok.Customer.SatisKanali, new SelectList(@SiparisTipiList, "Value", "Text"), new { @class = "form-control select2" })
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <button name="operation" type="submit" class="btn btn-facebook width-md waves-effect" value="Update" style=";padding:7px;min-width: 70px;">Güncelle</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    @Html.HiddenFor(Ok => Ok.Cari_Guid)
+    @Html.HiddenFor(Ok => Ok.ID)
+}

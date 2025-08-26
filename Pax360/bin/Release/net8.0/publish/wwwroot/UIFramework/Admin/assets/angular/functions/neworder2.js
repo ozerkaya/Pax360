@@ -6,12 +6,13 @@ app.controller("orderinputController", ['$scope', '$http', '$window', function (
         let cihazmodeli = document.getElementById("CihazModeli").value;
         let miktar = document.getElementById("Adet").value;
         let birimfiyat = document.getElementById("Fiyat").value;
+        let doviz = document.getElementById("DovizCinsi").value;
 
         $http({
             method: "POST",
             url: "/JS/SetOrder",
             dataType: 'json',
-            data: JSON.stringify({ cihazmodeli, miktar, birimfiyat }),
+            data: JSON.stringify({ cihazmodeli, miktar, birimfiyat,doviz }),
             headers: { "Content-Type": "application/json" }
         }).then(Success, Error);
 

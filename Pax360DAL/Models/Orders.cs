@@ -19,6 +19,8 @@ namespace Pax360DAL.Models
         [MaxLength(500)]
         public string? VKNTCKN { get; set; }
         [MaxLength(500)]
+        public string? SiparisTipi { get; set; }
+        [MaxLength(500)]
         public string? FaturaAdresi { get; set; }
         [MaxLength(500)]
         public string? Il { get; set; }
@@ -44,7 +46,7 @@ namespace Pax360DAL.Models
         [MaxLength(500)]
         public string? Telefon { get; set; }
         [MaxLength(500)]
-        public string? VadeTarihi { get; set; }
+        public int VadeTarihi { get; set; }
         [MaxLength(500)]
         public string? TeslimTuru { get; set; }
         [MaxLength(500)]
@@ -58,8 +60,6 @@ namespace Pax360DAL.Models
         [MaxLength(500)]
         public string? YuklenecekBanka { get; set; }
         [MaxLength(500)]
-        public string? YuklenecekUygulama { get; set; }
-        [MaxLength(500)]
         public string? Not { get; set; }
         public DateTime SiparisTarihi { get; set; }
         [MaxLength(500)]
@@ -68,6 +68,11 @@ namespace Pax360DAL.Models
 
         public int UserID { get; set; }
         public string UserName { get; set; }
+
+
+        public Guid SiparisMusterisi_cari_Guid { get; set; }
+        [MaxLength(500)]
+        public string SiparisMusterisi { get; set; }
 
     }
 }

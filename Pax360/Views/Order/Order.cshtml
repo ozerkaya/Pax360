@@ -2,7 +2,7 @@
 @using Microsoft.AspNetCore.Http
 @inject IHttpContextAccessor HttpContextAccessor
 
-<script src="~/UIFramework/admin/assets/angular/functions/neworder1.js"></script>
+<script src="~/UIFramework/admin/assets/angular/functions/neworder3.js"></script>
 
 @{
     ViewData["Title"] = "Users";
@@ -23,6 +23,13 @@
              new SelectListItem { Text = "Test", Value = "Test" },
     };
 
+    var SiparisTipiList = new List<SelectListItem>()
+{
+             new SelectListItem { Text = "Seçiniz", Value = "" },
+             new SelectListItem { Text = "Satış", Value = "Satış" },
+             new SelectListItem { Text = "Konsinye", Value = "Konsinye" },
+    };
+
     var CihazModuList = new List<SelectListItem>()
 {
              new SelectListItem { Text = "Seçiniz", Value = "" },
@@ -33,15 +40,33 @@
     var EntegrasyonList = new List<SelectListItem>()
 {
              new SelectListItem { Text = "Seçiniz", Value = "" },
-             new SelectListItem { Text = "Ocr", Value = "Ocr" },
-             new SelectListItem { Text = "Kasa Entegrasyonu", Value = "Kasa Entegrasyonu" },
+             new SelectListItem { Text = "Nebim", Value = "Nebim" },
+             new SelectListItem { Text = "Logo", Value = "Logo" },
+             new SelectListItem { Text = "Tera", Value = "Tera" },
+              new SelectListItem { Text = "Encore ", Value = "Encore " },
+    };
+
+    var FirmaTipiList = new List<SelectListItem>()
+{
+             new SelectListItem { Text = "Seçiniz", Value = "" },
+             new SelectListItem { Text = "Normal Müşteri", Value = "Normal Müşteri" },
+             new SelectListItem { Text = "Kasa Firması", Value = "Kasa Firması" },
     };
 
     var BankaUygulamaList = new List<SelectListItem>()
 {
-             new SelectListItem { Text = "Seçiniz", Value = "" },
+             new SelectListItem { Text = "Select", Value = "" },
+             new SelectListItem { Text = "BKM TechPOS", Value = "BKM TechPOS" },
+             new SelectListItem { Text = "Application Manager", Value = "Application Manager" },
+             new SelectListItem { Text = "PCP Client", Value = "PCP Client" },
+             new SelectListItem { Text = "CRP", Value = "CRP" },
+             new SelectListItem { Text = "OS Güncelleme", Value = "OS Güncelleme" },
+             new SelectListItem { Text = "Toshiba", Value = "Toshiba" },
+             new SelectListItem { Text = "EnPOS", Value = "EnPOS" },
+             new SelectListItem { Text = "Menulux", Value = "Menulux" },
+             new SelectListItem { Text = "Garanti", Value = "Garanti" },
              new SelectListItem { Text = "Akbank", Value = "Akbank" },
-             new SelectListItem { Text = "Halkbank", Value = "Halkbank" },
+             new SelectListItem { Text = "Yapı Kredi", Value = "Yapı Kredi" },
     };
 
     var SatisUygulamaList = new List<SelectListItem>()
@@ -57,31 +82,14 @@
              new SelectListItem { Text = "A910SF", Value = "A910SF" },
              new SelectListItem { Text = "MOVE5000F", Value = "MOVE5000F" },
     };
+
+    var DovizList = new List<SelectListItem>()
+{
+             new SelectListItem { Text = "Seçiniz", Value = "" },
+             new SelectListItem { Text = "USD", Value = "USD" },
+             // new SelectListItem { Text = "TL", Value = "TL" },
+    };
 }
-<script>
-    $(document).ready(function () {
-        if (document.getElementById("VadeTarihi") != null) {
-            let date_input = $('input[name="VadeTarihi"]');
-            let container = $('.bootstrap-iso form').length > 0 ? $('.bootstrap-iso form').parent() : "body";
-            let options = {
-                format: 'dd.mm.yyyy',
-                container: container,
-                todayHighlight: true,
-                autoclose: true,
-
-                daysOfWeekHighlighted: "0",
-                language: "tr",
-                locale: "tr",
-            };
-            date_input.datepicker(options);
-
-            if (document.getElementById("VadeTarihi") != null) {
-                document.getElementById("VadeTarihi").value = document.getElementById("VadeTarihi").value.replace("01.01.0001", "").replace("01/01/0001", "").replace("1/1/0001", "").replace("1.01.0001", "");
-                document.getElementById("VadeTarihi").value = document.getElementById("VadeTarihi").value.replace(" 00:00:00", "").replace(" 12:00:00 AM", "");
-            }
-        }
-    });
-</script>
 
 @using (Html.BeginForm())
 {
@@ -91,12 +99,12 @@
             <div class="container">
                 @await Html.PartialAsync("_PageHeader", new Dictionary<string, string> { { "UserName", @HttpContextAccessor.HttpContext.Session.GetString("NAMESURNAME") }, { "Page", "Sipariş Ekle" } })
 
-                
-                   <div class="row">
+
+                <div class="row">
                     <div class="col-lg-6">
                         <div class="panel panel-color panel-info">
                             <div class="panel-heading" style="border: none !important; padding: 15px 20px; border-radius:4px 4px 0 0;background-color: #737a84;color: #fff;">
-                                <h3 class="panel-title" style="color:#fff;">UYGULAMA BİLGİLERİ</h3>
+                                <h3 class="panel-title" style="color:#fff;">SİPARİŞ BİLGİLERİ</h3>
                             </div>
                             <div class="card-box" style="padding: 18px !important;border:none;margin-bottom:0px;">
                                 <div class="row">
@@ -129,51 +137,6 @@
                                         <div class="form-group">
                                             @Html.Label("Fatura İlçe")
                                             @Html.TextBoxFor(Ok => Ok.Ilce, new { @class = "form-control", autocomplete = "off", @readonly = "readonly" })
-
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <div class="form-group">
-                                            @Html.Label("Teslimat Adresi")
-                                            @Html.TextBoxFor(Ok => Ok.TeslimatAdresi, new { @class = "form-control", autocomplete = "off" })
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            @Html.Label("Teslimat İl")
-                                            @Html.DropDownListFor(ok => ok.TeslimatIl, new SelectList(@Model.CityList, "Value", "Text"), new { @class = "form-control select2", onchange = "Sehir_Ilceler();" })
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            @Html.Label("Teslimat İlçe")
-                                            @{
-                                                List<SelectListItem> ilcelist5 = new List<SelectListItem>();
-
-                                                if (Model.TeslimatIl != null)
-                                                {
-                                                    ilcelist5.Add(new SelectListItem
-                    {
-                        Text = "Seçiniz",
-                        Value = ""
-                    });
-
-                                                    ilcelist5.Add(new SelectListItem
-                    {
-                        Text = Model.TeslimatIlce,
-                        Value = Model.TeslimatIlce
-                    });
-                                                }
-                                                else
-                                                {
-                                                    ilcelist5.Add(new SelectListItem
-                    {
-                        Text = "Seçiniz",
-                        Value = ""
-                    });
-                                                }
-                                            }
-                                            @Html.DropDownListFor(ok => ok.TeslimatIlce, new SelectList(ilcelist5, "Value", "Text"), new { @class = "form-control select2" })
                                         </div>
                                     </div>
                                     <div class="col-lg-12">
@@ -191,6 +154,86 @@
                                     </div>
                                     <div class="col-lg-12">
                                         <div class="form-group">
+                                            @Html.Label("Vade Tarihi")
+                                            @Html.TextBoxFor(Ok => Ok.VadeTarihi, new { @class = "form-control", autocomplete = "off", @readonly = "readonly" })
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="form-group">
+                                            @Html.Label("Sipariş Tipi")
+                                            @Html.DropDownListFor(ok => ok.SiparisTipi, new SelectList(@SiparisTipiList, "Value", "Text"), new { @class = "form-control select2" })
+                                        </div>
+                                    </div>                                    
+                                    <div class="col-lg-12">
+                                        <div class="checkbox checkbox-primary pull-left p-t-0">
+                                            @Html.CheckBoxFor(Ok => Ok.KasaFirmasi, new { @class = "form-control" })
+                                            <label for="KasaFirmasi"> Kasa Firması </label>
+                                        </div>
+                                    </div>
+                                    <div id="kasafirmasi-address-wrapper">
+                                        <div class="col-lg-12">
+                                            <div class="form-group">
+                                                @Html.Label("Adına Sipariş Oluşturulacak Müşteri")
+                                                @Html.DropDownListFor(ok => ok.SiparisMusterisi, new SelectList(@Model.MikroCompanyList, "Value", "Text"), new { @class = "form-control select2", onchange = "Sehir_Ilceler();" })
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="checkbox checkbox-primary pull-left p-t-0">
+                                            @Html.CheckBoxFor(Ok => Ok.DifferentCargoAddress, new { @class = "form-control" })
+                                            <label for="DifferentCargoAddress"> Kargo Adresini Farklı Girmek İstiyorum </label>
+                                        </div>
+                                    </div>
+                                    <div id="billing-address-wrapper">
+                                        <div class="col-lg-12">
+                                            <div class="form-group">
+                                                @Html.Label("Teslimat Adresi")
+                                                @Html.TextBoxFor(Ok => Ok.TeslimatAdresi, new { @class = "form-control", autocomplete = "off" })
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                @Html.Label("Teslimat İl")
+                                                @Html.DropDownListFor(ok => ok.TeslimatIl, new SelectList(@Model.CityList, "Value", "Text"), new { @class = "form-control select2", onchange = "Sehir_Ilceler();" })
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                @Html.Label("Teslimat İlçe")
+                                                @{
+                                                    List<SelectListItem> ilcelist5 = new List<SelectListItem>();
+
+                                                    if (Model.TeslimatIl != null)
+                                                    {
+                                                        ilcelist5.Add(new SelectListItem
+                    {
+                        Text = "Seçiniz",
+                        Value = ""
+                    });
+
+                                                        ilcelist5.Add(new SelectListItem
+                    {
+                        Text = Model.TeslimatIlce,
+                        Value = Model.TeslimatIlce
+                    });
+                                                    }
+                                                    else
+                                                    {
+                                                        ilcelist5.Add(new SelectListItem
+                    {
+                        Text = "Seçiniz",
+                        Value = ""
+                    });
+                                                    }
+                                                }
+                                                @Html.DropDownListFor(ok => ok.TeslimatIlce, new SelectList(ilcelist5, "Value", "Text"), new { @class = "form-control select2" })
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-lg-12">
+                                        <div class="form-group">
                                             @Html.Label("E-Posta")
                                             @Html.TextBoxFor(Ok => Ok.Eposta, new { @class = "form-control", autocomplete = "off" })
                                         </div>
@@ -199,12 +242,6 @@
                                         <div class="form-group">
                                             @Html.Label("Telefon")
                                             @Html.TextBoxFor(Ok => Ok.Telefon, new { @class = "form-control", autocomplete = "off" })
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <div class="form-group">
-                                            @Html.Label("Vade Tarihi")
-                                            @Html.TextBoxFor(Ok => Ok.VadeTarihi, new { @class = "form-control", autocomplete = "off" })
                                         </div>
                                     </div>
                                     <div class="col-lg-12">
@@ -247,14 +284,8 @@
                                     </div>
                                     <div class="col-lg-12">
                                         <div class="form-group">
-                                            @Html.Label("Bankacılık Uygulaması")
-                                            @Html.DropDownListFor(ok => ok.YuklenecekBanka, new SelectList(BankaUygulamaList, "Value", "Text"), new { @class = "form-control select2"})
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <div class="form-group">
-                                            @Html.Label("Satış Uygulaması")
-                                            @Html.DropDownListFor(ok => ok.YuklenecekUygulama, new SelectList(SatisUygulamaList, "Value", "Text"), new { @class = "form-control select2" })
+                                            @Html.Label("Uygulamalar")
+                                            @Html.ListBoxFor(ok => ok.YuklenecekBanka, new SelectList(BankaUygulamaList, "Value", "Text"), new { @class = "select2 form-control", multiple = "multiple" })
                                         </div>
                                     </div>
                                     <div class="col-lg-12">
@@ -275,13 +306,13 @@
                             <div class="panel-heading" style="border: none !important; padding: 15px 20px; border-radius:4px 4px 0 0;background-color: #387ec3;color: #fff;">
                                 <a href="#"><h3 class="panel-title" style="color:#fff;"><a href="/Order/Order" style="padding-right: 10px;"><i class="fas fa-refresh"></i></a> SİPARİŞ KALEMLERİ</h3></a>
                                 <div class="btn-group" style="float:right;margin-top: -24px;">
-                                    @if(Model.IsModify)
+                                    @if (Model.IsModify)
                                     {
-                                      <buton class="btn btn-danger width-md waves-effect" style="margin-right: 10px;" data-toggle="modal" data-target="#updateAllModal">Güncelle</buton>
+                                        <buton class="btn btn-danger width-md waves-effect" style="margin-right: 10px;" data-toggle="modal" data-target="#updateAllModal">Güncelle</buton>
                                     }
                                     else
                                     {
-                                      <buton class="btn btn-danger width-md waves-effect" style="margin-right: 10px;" data-toggle="modal" data-target="#saveAllModal" ng-click="SetID(item.sira)">Kaydet</buton>
+                                        <buton class="btn btn-danger width-md waves-effect" style="margin-right: 10px;" data-toggle="modal" data-target="#saveAllModal" ng-click="SetID(item.sira)">Kaydet</buton>
                                     }
                                     <buton class="btn btn-danger width-md waves-effect" style="margin-right: -14px;" data-toggle="modal" data-target="#kalemEkleModal" ng-click="SetID(item.sira)"><i class="fas fa-plus" style="color: #fff;" aria-hidden="true"></i></buton>
                                 </div>
@@ -295,10 +326,10 @@
                                                 <th>Cihaz Modeli</th>
                                                 <th>Miktar</th>
                                                 <th>Birim Fiyat</th>
-                                                <th>Birim Fiyat (TL)</th>
                                                 <th>KDV (%)</th>
-                                                <th>İskonto (%)</th>
                                                 <th>Toplam Tutar</th>
+                                                <th>Toplam Tutar (KDV Dahil)</th>
+                                                <th>Döviz Cinsi</th>
                                                 <th></th>
                                             </tr>
                                         </thead>
@@ -315,19 +346,19 @@
                                                     {{item.miktar}}
                                                 </td>
                                                 <td>
-                                                    {{item.birimfiyat}}
-                                                </td>
-                                                <td>
-                                                    {{item.birimfiyattl}}
+                                                    {{ item.birimfiyat | turkishNumber  }}
                                                 </td>
                                                 <td>
                                                     {{item.kdv}}
                                                 </td>
                                                 <td>
-                                                    {{item.iskonto}}
+                                                    {{ item.toplamtutar | turkishNumber  }}
                                                 </td>
                                                 <td>
-                                                    {{item.toplamtutar}}
+                                                    {{ item.toplamtutarkdvdahil | turkishNumber  }}
+                                                </td>
+                                                <td>
+                                                    {{item.doviz}}
                                                 </td>
                                                 <td style="width:20px;">
                                                     <buton class="btn btn-danger width-md waves-effect" data-toggle="modal" data-target="#removeModal" ng-click="SetID(item.sira)"><i class="fas fa-trash" style="color: #fff;"></i></buton>
@@ -342,10 +373,10 @@
                     </div>
                 </div>
 
-                
 
 
-              
+
+
             </div>
         </div>
 
@@ -443,7 +474,7 @@
             </div>
         </div>
 
-        <div id="kalemEkleModal" class="modal fade" tabindex="-1" role="dialog" style="padding-right: 16px;" aria-modal="true">
+        <div id="kalemEkleModal" class="modal fade" role="dialog" style="padding-right: 16px;" aria-modal="true">
             <div class="modal-dialog modal-md">
                 <div class="modal-content p-0 b-0">
                     <div class="card mb-0" style="border: 1px solid #e7eaed; border-radius: .25rem;">
@@ -462,21 +493,29 @@
                                     </div>
                                 </div>
                             </div>
-
                             <div class="row">
-                            <div class="col-lg-12">
-                                <div class="form-group">
-                                    @Html.Label("Ürün Fiyat")
-                                    @Html.TextBoxFor(Ok => Ok.Fiyat, new { @class = "form-control", autocomplete = "off", type = "number" })
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        @Html.Label("Doviz Cinsi")
+                                        @Html.DropDownListFor(ok => ok.DovizCinsi, new SelectList(@DovizList, "Value", "Text"), new { @class = "form-control select2" })
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="form-group">
                                         @Html.Label("Adet")
                                         @Html.TextBoxFor(Ok => Ok.Adet, new { @class = "form-control", autocomplete = "off", type = "number" })
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        @Html.Label("Ürün Fiyat")
+                                        @Html.TextBoxFor(Ok => Ok.Fiyat, new { @class = "form-control", autocomplete = "off", type = "number" })
                                     </div>
                                 </div>
                                 <div class="col-lg-2">
@@ -547,9 +586,14 @@
         let cihazmodeli = document.getElementById("CihazModeli").value;
         let miktar = document.getElementById("Adet").value;
         let fiyat = document.getElementById("Fiyat").value;
+        let doviz = document.getElementById("DovizCinsi").value;
 
         if (cihazmodeli == "") {
             document.getElementById('lblErrorPopup').textContent = "Model Boş Olamaz!"
+            $('#errorModal').modal('show');
+        }
+        else if (doviz == "") {
+            document.getElementById('lblErrorPopup').textContent = "Döviz Cinsi Boş Olamaz!"
             $('#errorModal').modal('show');
         }
         else if (miktar == "" || miktar == "0") {
@@ -568,6 +612,8 @@
 
             document.getElementById("CihazModeli").value = "";
             document.getElementById("Adet").value = "";
+            document.getElementById("Fiyat").value = "";
+            document.getElementById("DovizCinsi").value = "";
         }
     }
 
@@ -592,4 +638,32 @@
     function clickUpdateAll() {
         document.getElementById("operationUpdate").click();
     }
+
+    $(document).ready(function () {
+        if (!$('#DifferentCargoAddress').is(':checked')) {
+            $('#billing-address-wrapper').hide();
+        }
+
+        $('#DifferentCargoAddress').on('change', function () {
+            if ($(this).is(':checked')) {
+                $('#billing-address-wrapper').show();
+            } else {
+                $('#billing-address-wrapper').hide();
+            }
+        });
+    });
+
+    $(document).ready(function () {
+        if (!$('#KasaFirmasi').is(':checked')) {
+            $('#kasafirmasi-address-wrapper').hide();
+        }
+
+        $('#KasaFirmasi').on('change', function () {
+            if ($(this).is(':checked')) {
+                $('#kasafirmasi-address-wrapper').show();
+            } else {
+                $('#kasafirmasi-address-wrapper').hide();
+            }
+        });
+    });
 </script>

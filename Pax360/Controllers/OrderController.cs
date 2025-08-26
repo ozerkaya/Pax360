@@ -151,7 +151,14 @@ namespace Pax360.Controllers
                 else
                 {
                     model = getResult.Item2;
+                    model.DifferentCargoAddress = true;
                     model.IsModify = true;
+
+                    if (!string.IsNullOrWhiteSpace(model.SiparisMusterisi))
+                    {
+                        model.KasaFirmasi = true;
+                    }
+
                     id = model.cari_Guid;
                     model.selectedID = orderID;
                 }
@@ -166,6 +173,16 @@ namespace Pax360.Controllers
                 if (string.IsNullOrWhiteSpace(companyResult.Item1))
                 {
                     model = companyResult.Item2;
+                    List<string> appList = new List<string>
+                    {
+                        "BKM TechPOS",
+                        "Application Manager",
+                        "PCP Client",
+                        "CRP",
+                        "OS Güncelleme"
+                    };
+
+                    model.YuklenecekBanka = appList.ToArray();
                 }
                 else
                 {
@@ -181,6 +198,16 @@ namespace Pax360.Controllers
             else
             {
                 model.ErrorMessage = "Ürünler Bulunamadı.";
+            }
+
+            var mikroCompanies = _mikroService.GetMikroCompanies();
+            if (string.IsNullOrWhiteSpace(mikroCompanies.Item1))
+            {
+                model.MikroCompanyList = mikroCompanies.Item2;
+            }
+            else
+            {
+                model.ErrorMessage = "Kurumlar Bulunamadı.";
             }
 
             model.cari_Guid = id;
@@ -266,11 +293,22 @@ namespace Pax360.Controllers
                 model.ErrorMessage = "Ürünler Bulunamadı.";
             }
 
+            var mikroCompanies = _mikroService.GetMikroCompanies();
+            if (string.IsNullOrWhiteSpace(mikroCompanies.Item1))
+            {
+                model.MikroCompanyList = mikroCompanies.Item2;
+            }
+            else
+            {
+                model.ErrorMessage = "Kurumlar Bulunamadı.";
+            }
+
             model.selectedID = dataModel.selectedID;
             model.ErrorMessage = errorMessage;
             model.SuccessMessage = successMessage;
             model.cari_Guid = dataModel.cari_Guid;
             model.CityList = CityBinder.SehirBind();
+            model.YuklenecekBanka = dataModel.YuklenecekBanka;
             return View(model);
         }
 
@@ -321,25 +359,36 @@ namespace Pax360.Controllers
         {
             string result = "";
 
-            if (string.IsNullOrWhiteSpace(dataModel.TeslimatAdresi))
+            if (dataModel.KasaFirmasi)
             {
-                result += "Teslimat Adresi Zorunlu. ";
+                if (string.IsNullOrWhiteSpace(dataModel.SiparisMusterisi))
+                {
+                    result += "Adına Sipariş Oluşturulacak Müşteri Zorunlu. ";
+                }
             }
 
-            if (string.IsNullOrWhiteSpace(dataModel.TeslimatIl))
+            if (dataModel.DifferentCargoAddress)
             {
-                result += "Teslimat İl Zorunlu. ";
+                if (string.IsNullOrWhiteSpace(dataModel.TeslimatAdresi))
+                {
+                    result += "Teslimat Adresi Zorunlu. ";
+                }
+
+                if (string.IsNullOrWhiteSpace(dataModel.TeslimatIl))
+                {
+                    result += "Teslimat İl Zorunlu. ";
+                }
+
+                if (string.IsNullOrWhiteSpace(dataModel.TeslimatIlce))
+                {
+                    result += "Teslimat İlçe Zorunlu. ";
+                }
             }
 
-            if (string.IsNullOrWhiteSpace(dataModel.TeslimatIlce))
-            {
-                result += "Teslimat İlçe Zorunlu. ";
-            }
-
-            if (string.IsNullOrWhiteSpace(dataModel.VadeTarihi))
-            {
-                result += "Vade Tarihi Zorunlu. ";
-            }
+            //if (dataModel.VadeTarihi == 0)
+            //{
+            //    result += "Vade Tarihi Zorunlu. ";
+            //}
 
             if (string.IsNullOrWhiteSpace(dataModel.SahaFirmasi))
             {
@@ -361,15 +410,16 @@ namespace Pax360.Controllers
                 result += "Entegrasyon Zorunlu. ";
             }
 
-            if (string.IsNullOrWhiteSpace(dataModel.YuklenecekBanka))
+            if (string.IsNullOrWhiteSpace(dataModel.SiparisTipi))
+            {
+                result += "Sipariş Tipi Zorunlu. ";
+            }
+
+            if (dataModel.YuklenecekBanka == null || dataModel.YuklenecekBanka.Length == 0)
             {
                 result += "Bankacılık Uygulaması Zorunlu. ";
             }
 
-            if (string.IsNullOrWhiteSpace(dataModel.YuklenecekUygulama))
-            {
-                result += "Satış Uygulaması Zorunlu. ";
-            }
 
             List<OrderInputModel> list = _httpContextAccessor.HttpContext.Session.GetObject<List<OrderInputModel>>("ORDERINPUT") ?? new List<OrderInputModel>();
 

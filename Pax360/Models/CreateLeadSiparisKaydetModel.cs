@@ -59,6 +59,8 @@
         public List<UserTablo> user_tablo { get; set; }
         public List<RenkBeden> renk_beden { get; set; }
         public string sip_ExternalProgramId { get; set; }
+        public int sip_doviz_cinsi { get; set; }
+        public int sip_satis_fiyat_doviz_kuru { get; set; }
     }
 
     public class UserTablo

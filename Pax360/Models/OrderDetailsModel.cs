@@ -16,11 +16,15 @@ namespace Pax360.Models
         public string SuccessMessage { get; set; }
         public string ErrorMessage { get; set; }
         public string MusteriAdi { get; set; }
+        public string SiparisMusterisi { get; set; }
+        public bool KasaFirmasi { get; set; }
         public string TicariUnvan { get; set; }
         public string VKNTCKN { get; set; }
+        public string SiparisTipi { get; set; }
         public string FaturaAdresi { get; set; }
         public string Il { get; set; }
         public string Ilce { get; set; }
+        public bool DifferentCargoAddress { get; set; }
         public string SaticiPlasiyer { get; set; }
         public string TeslimatAdresi { get; set; }
         public string TeslimatIl { get; set; }
@@ -32,19 +36,19 @@ namespace Pax360.Models
         public string AdSoyad { get; set; }
         public string Eposta { get; set; }
         public string Telefon { get; set; }
-        public string VadeTarihi { get; set; }
+        public int VadeTarihi { get; set; }
         public string TeslimTuru { get; set; }
         public string SahaFirmasi { get; set; }
         public List<SelectListItem> CityList { get; set; }
         public List<SelectListItem> MikroCompanyList { get; set; }
         public List<SelectListItem> MikroProductList { get; set; }
         public string CihazModeli { get; set; }
+        public string DovizCinsi { get; set; }
         public int Adet { get; set; }
         public string BankaOrtami { get; set; }
         public string CihazModu { get; set; }
         public string Entegrasyon { get; set; }
-        public string YuklenecekBanka { get; set; }
-        public string YuklenecekUygulama { get; set; }
+        public string[] YuklenecekBanka { get; set; }
         public string Not { get; set; }
         public decimal Fiyat { get; set; }
         public bool IsModify { get; set; }
